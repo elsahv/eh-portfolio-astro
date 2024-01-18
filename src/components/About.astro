@@ -1,0 +1,33 @@
+---
+import {Image} from "astro:assets";
+import Self from "../../public/self.jpg";
+import JtLogo from "../../public/jt-logo.png";
+---
+      <div class="grid 2xl:grid-cols-2 grid-cols-1">
+        <Image
+          class="border border-black 2xl:w-full w-2/3"
+          src={Self}
+          alt=""
+        />
+        <span class="text-lg font-bold flex items-end pt-[50px] px-5 h-full">
+          Hi there, {"I'm"} Elsa. <br />
+          {"I'm"} a web developer based in Joshua Tree, CA.
+        </span>
+      </div>
+
+  <div class="grid 2xl:grid-cols-2 grid-cols-1">
+        <p class="pt-5">
+          Over the last decade, {"I've"} hoarded and thought of many different
+          and creative ideas. Since 2019, {"I've"} decided to learn how to bring
+          these ideas to life through javascript progamming and frameworks.
+        </p>
+        <div>
+          <Image src={JtLogo} alt="laughing coyote logo" class="w-full" />
+        </div>
+      </div>
+      <p>
+        My days are spent working on my websites, and freelance projects. I am
+        also very interested in working with other developers to gain team
+        building experience, and build up a network to bounce ideas off of.
+      </p>
+        
