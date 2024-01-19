@@ -12,12 +12,18 @@ import Header from "../components/Header.astro"
       integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>  
+    ></script> 
+    <style>
+      p{ 
+        padding: 20px;
+      }
+    </style> 
     <title>Elsa Hovey</title>
+
   </head>
   <body class="">
-    <!-- <Header /> -->
-    <section class="grid grid-cols-2">
+    <Header />
+    <section class="grid grid-cols-2  ">
       <slot />
     </section>
 
