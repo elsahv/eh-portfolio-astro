@@ -9,7 +9,7 @@ import Img4 from "./public/screenshots/jungle.png";
 
 const posts = [
   {
-    // title: 'Laughing Coyote',
+    website: 'Laughing Coyote',
     title: "small businesses",
     image: Img1,
     url: "http://laughingcoyote.dev",
@@ -17,6 +17,7 @@ const posts = [
     github: "https://github.com/elsahv/laughing-coyote-dev",
   },
   {
+    website: 'The Running Quail',
     title: "high desert locals and enthusiasts",
     image: Img2,
     url: "http://therunningquail.com",
@@ -24,6 +25,7 @@ const posts = [
     github: "https://github.com/elsahv/-the-running-quail",
   },
   {
+    website: 'The Indoor Jungle Project',
     title: "wordpress users",
     image: Img4,
     url: "http://theindoorjungleproject.com",
@@ -31,6 +33,7 @@ const posts = [
     github: "https://github.com/elsahv/php-template-blog",
   },
   {
+    website: 'Writing to Better Health',
     title: "and dietitians/ nutritionists",
     image: Img3,
     url: "http://writingtobetterhealth.com",
@@ -39,6 +42,7 @@ const posts = [
   },
 ];
 
+
 --- 
 
 <style>
@@ -46,69 +50,42 @@ const posts = [
     padding: 20PX;
   }
 </style>
-<div class="2xl:mt-[75px] md:mt-[50px] mt-1">
-  <div class="flex items-center text-4xl">
-    <h2 class="pt-5 underline ml-3">Portfolio</h2>
-
+<!-- todo: websites nav links v -->
+<div class="2xl:mt-[155px] md:mt-[50px] mt-1">
+  <div id="website-navigation" class="flex space-x-4">
+    <div class="text-aquamarine py-2 px-3 flex items-center bg-onyx rounded">All featured sites</div>
+    
+  {posts.map((post) => (
+    <div class="bg-onyx text-aquamarine py-2 px-3 rounded-md">{post.website}</div>
+  ))}
   </div>
-
-  <p class="text-2xl">
+  <div class="flex items-center text-4xl">
+<!-- todo: websites nav links ^ -->
+    
+    <h2 class="mt-5 pt-5 underline ml-3 text-onyx">Portfolio</h2>
+  </div>
+  <p class="text-2xl text-onyx">
     Listed below are some of my featured websites projects, all currently a
     <span class="underline px-1">work in progress.</span>
     These websites are being built to assist...
   </p>
-<div id="website-grid" class="grid grid-cols-1 gap-x-4 gap-y-16 mt-5">
+<div id="website-grid" class="grid grid-cols-2 gap-x-6 gap-y-8 mt-5">
+
     {posts.map((item) => (
-      <div class="rounded dropshadow-lg">
-        {/* // todo sooner, last viewed- 12/20/23: CARD STARTS HERE v */}
-        {/* <Card /> */}
         <div
           id="sq"
-          class="2xl:grid 2xl:grid-cols-2 grid-cols-1 bg-test2 border-2 border-cerulean rounded-lg "
+          class=""
         >
           <a
             class="hover:opacity-80 hover:ease-in duration-300"
             href={item.url}
           >
             <Image
-              class="2xl:w-[850px] w-full rounded-tl-lg rounded-bl-lg drop-shadow-3xl 2xl:border-r 2xl:border-b-0 border-b border-rosyBrown"
+              class="2xl:w-[850px] w-full rounded-lg drop-shadow-3xl border-2 border-black"
               src={item.image}
               alt={item.title}
             />
           </a>
-          <div class="py-5">
-            <h3 class="text-2xl font-bold pt-5 pl-5">
-              ...{item.title}
-            </h3>
-            <p class="text-lg">{item.p}</p>
-            <>
-              <div
-                id="sm-links"
-                class="text-2xl flex 2xl:ml-5 ml-2 mb-5 2xl:mb-1"
-              >
-                <div class="pl-2">
-                  <a
-                    class="hover:opacity-80 hover:ease-in duration-300"
-                    href={item.url}
-                  >
-                  {/*<MdFileOpen />*/}
-                    
-                  </a>
-                </div>
-                <div class="pl-2">
-                  <a
-                    class="hover:opacity-80 hover:ease-in duration-300"
-                    href={item.github}
-                  >
-                  {/*<FaGithub />*/}
-
-                  </a>
-                </div>
-              </div>
-            </>
-          </div>
         </div>
-        {/* // todo sooner, last viewed- 12/20/23: CARD STARTS HERE- END^ */}
-      </div>
     ))}
   </div>
