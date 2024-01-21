@@ -1,17 +1,42 @@
   ---
- 
+  import {Image} from "astro:assets";
+  import Img1 from "./public/screenshots/lc.png";
+  import Img2 from "./public/screenshots/rq.png";
+  import Img3 from "./public/screenshots/wtbh.png";
+  import Img4 from "./public/screenshots/jungle.png";
+  
+  const posts = [
+    {
+      website: 'github',
+      title: "wordpress users",
+      image: Img4,
+      url: "http://theindoorjungleproject.com",
+      p: "The Indoor Jungle Project- currently a blog about plants and house projects",
+      github: "https://github.com/elsahv/php-template-blog",
+    },
+    {
+      website: 'email',
+      title: "and dietitians/ nutritionists",
+      image: Img3,
+      url: "http://writingtobetterhealth.com",
+      p: "Writing to Better Health- A blog template for now, and future blog regarding nutrition and mental wellness",
+      github: "https://github.com/elsahv/writing-to-better-health",
+    },
+  ];
   ---
   
   
-  <header class="w-full bg-aquamarine border-b-2 border-cerulean flex flex-row 2xl:justify-center md:fixed justify-end relative z-10" >
+  <header class="w-full bg-aquamarine border-b-2 border-cerulean flex flex-row justify-end md:fixed relative z-10" >
       <nav class="2xl:py-5 md:pt-[25px] p-3">
         <div class="flex">
-            <h1 class="pr-4 mr-3 font-bold text-3xl md:ml-3 ml-0 lg:pl-4 pl-0 text-onyx">
-              <a href="/">
-              Elsa Hovey
-              </a>
-            </h1>
-         
+            <div class="mt-1">
+              <div id="website-navigation" class="flex space-x-4">
+                <!-- <div class="text-aquamarine py-2 px-3 flex items-center bg-onyx rounded">All featured sites</div> -->
+                
+              {posts.map((post) => (
+                <div class="bg-onyx text-aquamarine py-2 px-3 rounded-md">{post.website}</div>
+              ))}
+              </div>
         </div>
       </nav>
     </header>
