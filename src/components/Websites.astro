@@ -4,62 +4,66 @@ import Img1 from "./public/screenshots/lc.png";
 import Img2 from "./public/screenshots/rq.png";
 import Img3 from "./public/screenshots/wtbh.png";
 import Img4 from "./public/screenshots/jungle.png";
+import Sun from "./public/icons/current/folder.png";
 import DownArrow from "./public/icons/current/down-arrow.png";
 import Card from './Card.astro'
+
 const posts = [
   {
-    title: "small businesses",
+    title: "Laughing Coyote Dev",
     image: Img1,
+    iconImg: Sun,
     url: "http://laughingcoyote.dev",
-    p: "Laughing Coyote Dev- the start of a freelancing website for small business/ creative websites",
+    p: "- the start of a freelancing website for small business/ creative websites",
     github: "https://github.com/elsahv/laughing-coyote-dev",
   },
   {
-    title: "high desert locals and enthusiasts",
+    title: "The Running Quail",
     image: Img2,
+    iconImg: Sun,
     url: "http://therunningquail.com",
-    p: "The Running Quail- currently a survey/ blog for a future Morongo Basin community website",
+    p: " currently a survey/ blog for a future Morongo Basin community website",
     github: "https://github.com/elsahv/-the-running-quail",
   },
   {
-    title: "wordpress users",
+    title: "The Indoor Jungle Project",
     image: Img4,
+    iconImg: Sun,
     url: "http://theindoorjungleproject.com",
-    p: "The Indoor Jungle Project- currently a blog about plants and house projects",
+    p: "currently a blog about plants and house projects",
     github: "https://github.com/elsahv/php-template-blog",
   },
   {
-    title: "and dietitians/ nutritionists",
+    title: "Writing to Better Health",
     image: Img3,
+    iconImg: Sun,
     url: "http://writingtobetterhealth.com",
-    p: "Writing to Better Health- A blog template for now, and future blog regarding nutrition and mental wellness",
+    p: "A blog template for now, and future blog regarding nutrition and mental wellness",
     github: "https://github.com/elsahv/writing-to-better-health",
   },
 ];
-
- 
-
 --- 
 
   <div class="flex items-center text-4xl">
-    <h2 class="text-5xl mt-14 pt-5 underline ml-3 text-onyx">Portfolio</h2>
+    <h2 class="text-5xl mt-12 pt-5 underline ml-3 text-onyx">Portfolio</h2>
   </div>
 
-<div class="pl-3 mt-2 text-aquamarine">
+<div class="pl-3 mt-2 text-onyx">
   <p class="text-2xl text-onyx py-1">
     Listed below are some of my featured websites projects, all currently a
-    work in progress. Click on each image to view description 
+    work in progress. Click on each folder image to view descriptions. 
   </p>
-  <!-- todo: DECIDE IMG OVERLAY EFFECTS v -->
   <button class="">
-  <Image src={DownArrow} alt="" width={35} height={35} class="">
-  </button>
-    <!-- todo end: DECIDE IMG OVERLAY EFFECTS ^ -->
-
+    <Image src={DownArrow} alt="" width={35} height={35} class="">
+    </button>
+    
   </div>
-    <div id="website-grid" class="grid 2xl:grid-cls-2 grid-cols-1 gap-6 mt-[100px]">
-  {posts.map((item) => (
-      <Card title={item.title} p={item.p} image={item.image} />
+  <div id="website-grid" class="my-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12">
+    {posts.map((item) => (
+      <!-- * https://www.youtube.com/watch?v=5Xri4ZdfnAo v -->
+      <!-- todo: DECIDE IMG OVERLAY EFFECTS v -->
+      <Card title={item.title} p={item.p} image={item.image} iconImg={item.iconImg} />
+      <!-- todo end: DECIDE IMG OVERLAY EFFECTS ^ -->
     ))}
   </div>
 
