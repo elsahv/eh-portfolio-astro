@@ -1,5 +1,6 @@
+github: for commit, use start and end for tasks
+
 - TODO:
-- Create Card Component -_finalize css mobile_
   -Create slug:
   1.description
   2.title
