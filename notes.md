@@ -1,7 +1,8 @@
 github: for commit, use start and end for tasks
 
 - TODO:
-  -Create slug:
+  -Changed slug to custom pg:
+  -figure out dynamic layout for website pgs
   1.description
   2.title
   3.date

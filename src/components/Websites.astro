@@ -13,7 +13,7 @@ const posts = [
     title: "Laughing Coyote Dev",
     image: Img1,
     iconImg: Sun,
-    url: "http://laughingcoyote.dev",
+    url: "/laughing-coyote-dev",
     p: "- the start of a freelancing website for small business/ creative websites",
     github: "https://github.com/elsahv/laughing-coyote-dev",
   },
@@ -21,7 +21,7 @@ const posts = [
     title: "The Running Quail",
     image: Img2,
     iconImg: Sun,
-    url: "http://therunningquail.com",
+    url: "/the-running-quail",
     p: " currently a survey/ blog for a future Morongo Basin community website",
     github: "https://github.com/elsahv/-the-running-quail",
   },
@@ -29,7 +29,7 @@ const posts = [
     title: "The Indoor Jungle Project",
     image: Img4,
     iconImg: Sun,
-    url: "http://theindoorjungleproject.com",
+    url: "/the-indoor-jungle-project",
     p: "currently a blog about plants and house projects",
     github: "https://github.com/elsahv/php-template-blog",
   },
@@ -37,7 +37,7 @@ const posts = [
     title: "Writing to Better Health",
     image: Img3,
     iconImg: Sun,
-    url: "http://writingtobetterhealth.com",
+    url: "/writing-to-better-health",
     p: "A blog template for now, and future blog regarding nutrition and mental wellness",
     github: "https://github.com/elsahv/writing-to-better-health",
   },
@@ -59,7 +59,7 @@ const posts = [
     {posts.map((item) => (
       <!-- * https://www.youtube.com/watch?v=5Xri4ZdfnAo v -->
       <!-- todo: DECIDE IMG OVERLAY EFFECTS v -->
-      <Card title={item.title} p={item.p} image={item.image} iconImg={item.iconImg} />
+      <Card title={item.title} p={item.p} image={item.image} iconImg={item.iconImg} url={item.url} />
       <!-- todo end: DECIDE IMG OVERLAY EFFECTS ^ -->
     ))}
   </div>
