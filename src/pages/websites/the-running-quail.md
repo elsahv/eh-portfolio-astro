@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Running Quail"
 pubDate: 2022-07-01
-description: "testing"
+description: "a future Morongo Basin community website"
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

@@ -1,7 +1,7 @@
 ---
 title: "Laughing Coyote Dev"
 pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
+description: "the start of a freelancing website for small business/ creative websites"
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

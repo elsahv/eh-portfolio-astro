@@ -1,11 +1,54 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
+import {Image} from "astro:assets"
+import EH from "./public/screenshots/eh.png";
 ---
-<BaseLayout pageTitle={frontmatter.title}>
-  <p>{frontmatter.pubDate.slice(0,10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <p>Written by: {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  
+  <div id="" class="text-parchment bg-parchment">
+    <div id="back-btn-wrapper" class="pl-[72px] ml-0 pt-5 text-lg bg-carribean">
+      <a href="/" class="underline hover:text-white">
+          {'<---'} back to home 
+      </a>
+      </div>
+
+
+      <div id="post-header-grid" class="border-b border-black grid 2xl:grid-cols-2 grid-cols-1 bg-carribean">
+        <div id="bg-test1" class="flex items-center 2xl:justify-center">
+        <div class="2xl:pr-5 ml-2 py-2 my-[50px]">
+            <h1 class="md:text-5xl text-4xl pb-2 mt-1">{frontmatter.title}</h1>
+            <div class="md:text-2xl pr-3">{frontmatter.description}</div>
+        </div>
+    </div>
+    <div id="" class="2xl:mr-[50px] mr-[25px] flex items-center bg-teal pb-[35px]">
+      <img src={frontmatter.image.url} width="1200px" height="" alt={frontmatter.image.alt} class=""/>
+    </div>
+</div>
+
+
+<div id="body-content" class="text-carribean bg-parchment mt-[45px] 2xl:ml-[450px] lg:ml-[250px] ml-5 mr-[50px] mb-[55px]">
+  <!-- <span class="text-2xl font-bold">1/28/24</span> -->
+  <p class="text-2xl font-bold">{frontmatter.pubDate.slice(0,10)}</p>
+  
+  <h2 class="text-2xl pt-1">eprehenderit est quam a</h2>
   <slot />
-</BaseLayout>
+
+<!-- <p class="text-lg mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorum voluptates d periores veritatis cumque placeat harum facilis accusantium animi magnam aut. Quae ipsa reprehenderit est quam animi repellendus? Necessitatibus porro sapiente deleniti culpa quo similique, quod optio accusamus rem, illo voluptas?</p>
+<h2 class="text-2xl pt-4">i magnam aut. Quae i</h2>
+<p class="text-lg mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorum voluptates dolor laboriosam pe delectus deleniti rerum magni consectetur, dolor, iste explicabo nobis blanditiis ullam beatae odit aspernatur accusamus. Aperiam, debitis ip o accusamus rem, illo voluptas?</p>
+<h2 class="text-2xl pt-4 ">Tempore dolorum voluptates dolor laboriosam pe </h2>
+<p class="text-lg mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorum voluptates dolor laboriosam pe delectus deleniti rerum magni consectetur, dolor, iste explicabo nobis blanditiis ullam beatae odit aspernatur accusamus. Aperiam, debitis ipsa ad odit in nulla, veniam ea id aliquid molestias, voluptates dolorem voluptatum earum recusandae et possimus asperiores veritatis cumque placeat harum facilis accusantium animi magnam aut. Quae ipsa reprehenderit est quam animi repellendus? Necessitatibus porro sapiente deleniti culpa quo similique, quod optio accusamus rem, illo voluptsa ad odit in nulla, veniam ea id aliquid molestias, voluptates dolorem voluptatum earum recusandae et possimus asperiores veritatis cumque placeat harum facilis accusantium animi magnam aut. Quae ipsa reprehenderit est quam animi repellendus? Necessitatibus porro sapiente deleniti culpa quo similique, quod optivas?</p>  -->
+</div>
+
+
+  <!-- <p>{frontmatter.pubDate.slice(0,10)}</p> -->
+  <!-- <p class="bg-test1"><em>{frontmatter.description}</em></p> -->
+  <!-- <p>Written by: {frontmatter.author}</p> -->
+  <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
+</div>
+
+
+
+
+
+<!-- USE LC DEV LAYOUT -->

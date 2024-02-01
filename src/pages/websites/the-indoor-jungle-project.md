@@ -2,8 +2,8 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Indoor Jungle Project"
-pubDate: 2022-07-01
-description: "testing"
+pubDate: 2024-02-01
+description: "currently a blog about plants and house projects"
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/4611246/pexels-photo-4611246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -11,7 +11,7 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+# My First Blog Post!!
 
 Published on: 2022-07-01
 
