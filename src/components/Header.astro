@@ -1,9 +1,7 @@
   ---
   import {Image} from "astro:assets";
-  import Img1 from "./public/screenshots/lc.png";
-  import Img2 from "./public/screenshots/rq.png";
-  import Img3 from "./public/screenshots/wtbh.png";
-  import Img4 from "./public/screenshots/jungle.png";
+  import Img3 from "./public/icons/current/email.png";
+  import Img4 from "./public/icons/current/github.png";
   
   const posts = [
     {
@@ -34,7 +32,11 @@
                 <!-- <div class="text-aquamarine py-2 px-3 flex items-center bg-onyx rounded">All featured sites</div> -->
                 
               {posts.map((post) => (
-                <div class="bg-onyx text-aquamarine py-2 px-3 rounded-md">{post.website}</div>
+                <div class="border border-black bg-rosyBrown text-aquamarine py-2 px-3 rounded-md">
+                  <a href="/">
+                  <Image src={post.image} alt="" width={35} height={35}/>
+                  </a>
+                  </div>
               ))}
               </div>
         </div>

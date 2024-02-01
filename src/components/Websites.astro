@@ -1,11 +1,12 @@
 ---
-import {Image} from "astro:assets";
+// import {Image} from "astro:assets";
 import Img1 from "./public/screenshots/lc.png";
 import Img2 from "./public/screenshots/rq.png";
 import Img3 from "./public/screenshots/wtbh.png";
 import Img4 from "./public/screenshots/jungle.png";
 import Sun from "./public/icons/current/folder.png";
-import DownArrow from "./public/icons/current/down-arrow.png";
+// import DownArrow from "./public/icons/current/down-arrow.png";
+// import OpenBook from "./public/icons/current/open-book.png";
 import Card from './Card.astro'
 
 const posts = [
@@ -41,21 +42,12 @@ const posts = [
     p: "A blog template for now, and future blog regarding nutrition and mental wellness",
     github: "https://github.com/elsahv/writing-to-better-health",
   },
+  
 ];
 --- 
-
+  <div id="websites" class="mt-[100px]">
     <h2 class="lg:text-5xl md:text-4xl text-3xl md:mt-14 pt-5 underline ml text-onyx">Portfolio</h2>
-<div class="mt-2 text-onyx">
-  <p class="lg:text-2xl text-md py-1">
-    Listed below are some of my featured websites projects, all currently a
-    work in progress. Click on each folder image to view descriptions. 
-  </p>
-  <button class="md:w-9 w-7 py-1">
-    <Image src={DownArrow} alt="" class="">
-    </button>
-    
-  </div>
-  <div id="website-grid" class="mb-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 md:gap-y-12 gap-y-1">
+    <div id="website-grid" class="mb-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 md:gap-y-12 gap-y-1">
     {posts.map((item) => (
       <!-- * https://www.youtube.com/watch?v=5Xri4ZdfnAo v -->
       <!-- todo: DECIDE IMG OVERLAY EFFECTS v -->
@@ -63,4 +55,4 @@ const posts = [
       <!-- todo end: DECIDE IMG OVERLAY EFFECTS ^ -->
     ))}
   </div>
-
+</div>

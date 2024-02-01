@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        carribean: "#15616D",
         munsell: "#0792a5",
         cerulean: "#007ba5",
         onyx: "#313638",
