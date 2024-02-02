@@ -1,15 +1,17 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
+# title: "My First Blog Post"
 title: "Laughing Coyote Dev"
-pubDate: 2022-07-01
-description: "the start of a freelancing website for small business/ creative websites"
+pubDate: 2024-02-01
+description: "currently a freelancing blog"
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  url: "https://images.pexels.com/photos/259554/pexels-photo-259554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+# My First Blog Post!!
 
 Published on: 2022-07-01
 

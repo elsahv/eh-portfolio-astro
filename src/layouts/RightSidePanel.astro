@@ -1,11 +1,13 @@
 ---
 import Footer from "../components/Footer.astro";
+import Card from "../components/Card.astro";
 import DownArrow from "./public/icons/current/down-arrow.png";
 import OpenBook from "./public/icons/current/open-book.png";
 import {Image} from "astro:assets";
-import FileIcon from "./public/icons/current/folder.png"
 const allWebsites = await Astro.glob('../pages/websites/*.md')
 ---
+
+
 <section id="right-panel" class="overflow-y-scroll overflow-x-hidden md:absolute relative right-0 md:top-0 bottom-0 md:w-3/5 w-full md:h-screen h-[100%] bg-munsell text-onyx">
   <div class="md:m-3 my-1 mx-1 pl-3 py-[20px] pr-[10px] mt-[70px]">
     <p class="lg:text-2xl text-md mt-2 pt-1 pb-3">
@@ -19,26 +21,17 @@ const allWebsites = await Astro.glob('../pages/websites/*.md')
       </a>
       </button>
       <button class="md:w-9 w-7 py-1 ml-3 hover:opacity-9"> 
-        <a href="/blog">
+        <a href="/journal-archives">
         <Image src={OpenBook} alt="" class="">
         </a>
         </button> 
       </div>
-
       <div id="websites2" class="mt-[100px]">
       <h2 class="lg:text-5xl md:text-4xl text-3xl md:mt-14 pt-5 underline ml text-onyx">Portfolio </h2>
       <div id="website-grid" class="mb-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 md:gap-y-12 gap-y-1">
-{allWebsites.map((website) => <li class="list-none">
- <div id="card">
-<a href={website.url} class="px-1 pl-3 hover:text-aquamarine text-xl">
-  <div class="flex items-center mt-5 pl-1">
-  <Image src={FileIcon} alt="" class="mr-2 mb-1 w-[35px] drop-shadow-3xl opacity-90" />
-  {website.frontmatter.title} 
-</div>
-    <img src={website.frontmatter.image.url} alt="" class="2xl:w-[1020px] w-full drop-shadow-3xl border-2 border-onyx" />
-    </a>
-</div>    
-  </li>)}
+{allWebsites.map((website) => <div class="list-none">
+  <Card title={website.frontmatter.title} url={website.url} SiteImg={website.frontmatter.image.url} />
+  </div>)}
   </div>
     <Footer />
     </div>
