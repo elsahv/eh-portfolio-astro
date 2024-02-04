@@ -1,14 +1,8 @@
 github: for commit, use start and end for tasks
 
 - TODO:
-  -Changed slug to custom pg:
-  -figure out dynamic layout for website pgs
-  1.description
-  2.title
-  3.date
-  4.body
-  5.imgs
-  6.back btn
+  -change portfolio to Grid component?
+  -learn button component
 
 SITE MAP:
 -header z-20

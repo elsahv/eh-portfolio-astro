@@ -1,14 +1,13 @@
 ---
-import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";  
+import Portfolio from "../components/Portfolio.astro";
 import DownArrow from "./public/icons/current/down-arrow.png";
 import OpenBook from "./public/icons/current/open-book.png";
 import {Image} from "astro:assets";
-const allWebsites = await Astro.glob('../pages/websites/*.md')
 ---
 
 
-<section id="right-panel" class="overflow-y-scroll overflow-x-hidden md:absolute relative right-0 md:top-0 bottom-0 md:w-3/5 w-full md:h-screen h-[100%] bg-munsell text-onyx">
+<section id="right-side-panel" class="overflow-y-scroll overflow-x-hidden md:absolute relative right-0 md:top-0 bottom-0 md:w-3/5 w-full md:h-screen h-[100%] bg-munsell text-onyx">
   <div class="md:m-3 my-1 mx-1 pl-3 py-[20px] pr-[10px] mt-[70px]">
     <p class="lg:text-2xl text-md mt-2 pt-1 pb-3">
       Listed below are some of my featured websites projects, all currently a
@@ -16,7 +15,7 @@ const allWebsites = await Astro.glob('../pages/websites/*.md')
     </p>  
     <div id="btn-wrapper" class="mb-5">
     <button class="md:w-9 w-7 py-1">
-      <a href="/#websites">
+      <a href="/#portfolio">
       <Image src={DownArrow} alt="" class="">
       </a>
       </button>
@@ -26,14 +25,7 @@ const allWebsites = await Astro.glob('../pages/websites/*.md')
         </a>
         </button> 
       </div>
-      <div id="websites2" class="mt-[100px]">
-      <h2 class="lg:text-5xl md:text-4xl text-3xl md:mt-14 pt-5 underline ml text-onyx">Portfolio </h2>
-      <div id="website-grid" class="mb-5 grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 md:gap-y-12 gap-y-1">
-{allWebsites.map((website) => <div class="list-none">
-  <Card title={website.frontmatter.title} url={website.url} SiteImg={website.frontmatter.image.url} />
-  </div>)}
-  </div>
+     <Portfolio />
     <Footer />
-    </div>
   </div>
 </section>
