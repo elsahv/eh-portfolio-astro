@@ -10,18 +10,18 @@ export interface Props {
  const { title, SiteImg, url
  } = Astro.props as Props
 
- import FileIcon from "./public/icons/current/folder.png"
+//  import FileIcon from "./public/icons/current/folder.png"
 ---
 <>
-<a href={url} class="px-1 pl-3 hover:text-aquamarine text-xl">
-<div class="flex items-center space-x-2 mt-5 pl-1">
-        <Image
+<a href={url} class="px-1 pl-3 text-onyx text-lg">
+<div class="flex items-center space-x-2 ">
+        <!-- <Image
         class="ml-1 mb-1 w-[35px] drop-shadow-3xl opacity-90"
         src= {FileIcon}  
         alt={title}
-      />
- <p class="">{title}</p>
+      /> -->
+ <h3 class="border-2 border-onyx bg-carribean text-aquamarine py-1 px-5 ">{title}</h3>
 </div>
-<img src={SiteImg} alt="" class="drop-shadow-3xl border-2 border-onyx" />
+<img src={SiteImg} alt="" class="border-2 border-black drop-shadow-3xl" />
 </a>
 </>
