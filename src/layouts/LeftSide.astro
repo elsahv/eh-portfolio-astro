@@ -5,17 +5,22 @@ import JtLogo from "../../public/jt-logo.png";
 ---
 
 
-<section id="left-side-panel" class="pb-[45px] overflow-y-scroll overflow-x-hidden md:absolute relative md:left-0 top-0 z-50 md:h-screen h-[100%] md:w-2/5 w-full  border-r-2 border-cerulean">
+<section id="left-side-panel" class="pb-[45px] overflow-y-scroll overflow-x-hidden md:absolute relative md:left-0 top-0 z-50 md:h-screen h-[100%] md:w-2/5 w-full  border-r-2 border-black">
    <div class="grid 2xl:grid-cols-2 grid-cols-1 ">
       <Image
         class="border border-black 2xl:w-full w-2/3"
         src={Self}
         alt=""
       />
-      <div class="text-lg font-bold flex items-end pt-[50px] px-5 h-full">
-        <p class="">Hi there, {"I'm"} Elsa Hovey. <br />
-        {"I'm"} a web developer based in Joshua Tree, CA.
+      <div class="text-lg font-semibold flex items-end pt-[50px] px-5 h-full">
+        <p class="">
+          <span id="future-h1" class="text-2xl">
+            Hi there, {"I'm"} Elsa Hovey.
+          </span> <br />
+        {"I'm"} a web developer based in Joshua Tree, CA.  Listed on the right --> <span>(or below for mobile!)</span> are some of my featured websites projects, all currently a
+        work in progress. 
       </p>
+      
       </div>
     </div>
 
@@ -24,7 +29,9 @@ import JtLogo from "../../public/jt-logo.png";
         Over the last decade, I've hoarded and thought of many different
         and creative ideas. Since 2019, I've decided to learn how to bring
         these ideas to life through javascript progamming and frameworks.
+      
       </p>
+    
       <div>
         <Image src={JtLogo} alt="laughing coyote logo" class="w-full" />
       </div>
