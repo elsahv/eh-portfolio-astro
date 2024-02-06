@@ -16,8 +16,10 @@ const { frontmatter } = Astro.props;
             </p>
         </div>    
     </div>
-    <div id="left-sq" class="flex items-center bg-onyx border border-rosyBrown dropshadow-2xl">
-      <img src={frontmatter.image.url} alt={frontmatter.image.alt} class=""/>
+    <div id="left-sq" class="flex items-center bg-onyx border border-rosyBrown dropshadow-2xl rounded-tl-2xl">
+     <a href={frontmatter.websiteUrl} > 
+      <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="rounded-tl-2xl"/>
+    </a>
     </div>
 </div>
 <div id="body-content" class="text-munsel mt-[45px] 2xl:ml-[450px] lg:ml-[250px] ml-5 mr-[50px] mb-[55px] text-black">

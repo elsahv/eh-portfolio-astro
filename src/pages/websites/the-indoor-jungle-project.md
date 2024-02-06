@@ -8,6 +8,7 @@ author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/4611246/pexels-photo-4611246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The full Astro logo."
+websiteUrl: ""
 tags: ["astro", "blogging", "learning in public"]
 ---
 
