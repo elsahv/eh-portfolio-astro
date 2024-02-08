@@ -4,7 +4,7 @@ const allWebsites = await Astro.glob('../pages/websites/*.md')
 ---
 
 <div id="portfolio" class="mx-2">
-  <h2 class="lg:text-5xl md:text-4xl text-3xl md:mt-14 pl-5 pt-5 underline text-onyx">Portfolio </h2>
+  <!-- <h2 class="lg:text-5xl md:text-4xl text-3xl md:mt-14 pl-5 pt-5 underline text-onyx">Portfolio </h2> -->
 <div id="website-grid" class="mb-5 mr-5 grid grid-cols-1 gap-x-10 md:gap-y-12">
   <div id="website-grid" class="flex flex-col gap-x-10 md:gap-y-12">
     {allWebsites.map((website) => <div class="list-none">
