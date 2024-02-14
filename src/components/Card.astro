@@ -8,15 +8,26 @@ export interface Props {
  const { title, SiteImg, url
  } = Astro.props as Props
 
+
+// import { Image } from "astro:assets";
+//  import FileIcon from "./public/icons/current/folder.png"
 ---
-<div class="px-5">
-<a href={url} class="px-1 pl-3 text-onyx text-lg">
+<div class="px-5 ">
+<a href={url} class=" px-1 pl-3 text-onyx text-lg">
 <div class="flex items-center space-x-2">
  <h3 class="hover:text-white rounded-tr-lg rounded-tl-lg py-1 px-1" >
-    <span class="font-semibold">
+    <span id="text-bold"class="font-semibold">
   {title}
-</span> 
-   -visit website case study</h3>
+</span>
+ <i>-visit the website case study</i>
+
+        <!-- <Image
+        class="ml-1 mb-1 w-[35px] drop-shadow-3xl opacity-90"
+        src= {FileIcon}  
+        alt={title}
+      /> -->
+
+</h3>
 </div>
 <img src={SiteImg} alt="" class="border-2 border-onyx drop-shadow-3xl rounded-md opacity-70 hover:opacity-100"  />
 </a>
