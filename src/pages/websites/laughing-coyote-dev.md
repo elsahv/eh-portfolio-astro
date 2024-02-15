@@ -9,6 +9,7 @@ image:
   url: "https://www.laughingcoyote.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffish-expo-demo.b70b83ec.png&w=1920&q=75"
   alt: "The full Astro logo."
 websiteUrl: "https://laughingcoyote.dev"
+githubUrl: "https://laughingcoyote.dev"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
