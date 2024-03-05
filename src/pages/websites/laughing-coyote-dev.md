@@ -6,31 +6,12 @@ pubDate: 2024-02-01
 description: "currently a freelancing blog"
 author: "Astro Learner"
 image:
-  url: "https://www.laughingcoyote.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffish-expo-demo.b70b83ec.png&w=1920&q=75"
-  alt: "The full Astro logo."
+  url: "https://images.pexels.com/photos/15707992/pexels-photo-15707992/free-photo-of-portrait-of-coyote.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  alt: "laughing coyote dev website"
 websiteUrl: "https://laughingcoyote.dev"
 githubUrl: "https://laughingcoyote.dev"
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-<!--
-# My First Blog Post!!
-
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come. -->
 
 # Telling the story of a website involves _highlighting_ its **inception, purpose, evolution, and impact**. Here's how you could go about it:
 
