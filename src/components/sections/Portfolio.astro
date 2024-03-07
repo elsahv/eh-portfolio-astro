@@ -11,20 +11,16 @@ const allWebsites = await Astro.glob("../../pages/websites/*.md");
   </h2>
   <div
     id="website-grid"
-    class="mb-5 mr-5 grid grid-cols-1 gap-x-10 md:gap-y-12"
+    class="mt-5 mb-5 mr-5 grid grid-cols-1 gap-x-10 gap-y-24"
   >
-    <div id="website-grid" class="flex flex-col gap-x-10 md:gap-y-12">
-      {
-        allWebsites.map((website) => (
-          <div class="list-none">
-            <Card
-              title={website.frontmatter.title}
-              url={website.url}
-              SiteImg={website.frontmatter.image.url}
-            />
-          </div>
-        ))
-      }
-    </div>
+    {
+      allWebsites.map((website) => (
+        <Card
+          title={website.frontmatter.title}
+          url={website.url}
+          SiteImg={website.frontmatter.image.url}
+        />
+      ))
+    }
   </div>
 </div>

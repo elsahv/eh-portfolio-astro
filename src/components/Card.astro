@@ -8,32 +8,29 @@ export interface Props {
 const { title, SiteImg, url } = Astro.props as Props;
 
 import { Image } from "astro:assets";
-import OpenBook from "./public/icons/current/open-book.png";
+import Github from "./public/icons/current/github.png";
 import FileIcon from "./public/icons/current/folder.png";
 ---
 
 <div class="md:px-5 px-0">
-  <a href={url} class="px-1 pl-3 text-onyx text-lg">
-    <div class="">
-      <h3 class="flex hover:text-white rounded-tr-lg rounded-tl-lg py-1 px-1">
-        <div class="flex xl:flex-row flex-col">
-          <span id="text-bold" class="mr-3 font-semibold">
-            {title}
-          </span>
-          <i>-visit the website case study</i>
-        </div>
-        <!-- <Image
-        class="ml-1 mb-1 mx-1 w-[30px] drop-shadow-3xl opacity-90"
-        src= {FileIcon}  
-        alt={title}
-      />
-      <Image
-      class="ml-1 mb-1 mx-1 w-[30px] drop-shadow-3xl opacity-90"
-      src= {FileIcon}  
+  <div class="pb-1 flex rounded-tr-lg rounded-tl-lg">
+    <h3 id="text-bold" class="text-2xl mr-3 font-semibold">
+      {title}
+    </h3>
+    <Image
+      class="ml-1 mb-1 mr-2 w-[30px] drop-shadow-3xl opacity-80"
+      src={Github}
       alt={title}
-    /> -->
-      </h3>
-    </div>
+    />
+    <Image
+      class="ml-1 mb-1 mr-2 w-[30px] drop-shadow-3xl opacity-80"
+      src={FileIcon}
+      alt={title}
+    />
+  </div>
+  <!-- <p>This is the website description</p> -->
+
+  <a href={url} class="">
     <img
       src={SiteImg}
       alt=""
