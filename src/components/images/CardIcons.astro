@@ -1,0 +1,26 @@
+---
+const items = [
+  {
+    website: "github",
+    src: "https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Github-256.png",
+    url: "https://github.com/elsahv",
+  },
+  {
+    website: "visit site",
+    src: "https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-256.png",
+    url: "https://google.com",
+  },
+];
+---
+
+<div class="bg-test1 flex">
+  {
+    items.map((item) => (
+      <div class="px-1">
+        <a href={item.url}>
+          <img src={item.src} alt={item.website} width={35} height={35} />
+        </a>
+      </div>
+    ))
+  }
+</div>

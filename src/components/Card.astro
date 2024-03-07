@@ -7,9 +7,7 @@ export interface Props {
 
 const { title, SiteImg, url } = Astro.props as Props;
 
-import { Image } from "astro:assets";
-import Github from "./public/icons/current/github.png";
-import FileIcon from "./public/icons/current/folder.png";
+import CardIcons from "./images/CardIcons.astro";
 ---
 
 <div class="md:px-5 px-0">
@@ -17,16 +15,8 @@ import FileIcon from "./public/icons/current/folder.png";
     <h3 id="text-bold" class="text-2xl mr-3 font-semibold">
       {title}
     </h3>
-    <Image
-      class="ml-1 mb-1 mr-2 w-[30px] drop-shadow-3xl opacity-80"
-      src={Github}
-      alt={title}
-    />
-    <Image
-      class="ml-1 mb-1 mr-2 w-[30px] drop-shadow-3xl opacity-80"
-      src={FileIcon}
-      alt={title}
-    />
+
+    <CardIcons />
   </div>
   <!-- <p>This is the website description</p> -->
 
