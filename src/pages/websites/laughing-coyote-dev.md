@@ -3,13 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "Laughing Coyote Dev"
 pubDate: 2024-02-01
-description: "currently a freelancing blog"
-author: "Astro Learner"
+description: "about project"
 image:
   url: "https://images.pexels.com/photos/15707992/pexels-photo-15707992/free-photo-of-portrait-of-coyote.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "laughing coyote dev website"
+
 websiteUrl: "https://laughingcoyote.dev"
-githubUrl: "https://laughingcoyote.dev"
 tags: ["astro", "blogging", "learning in public"]
 ---
 

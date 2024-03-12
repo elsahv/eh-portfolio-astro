@@ -18,7 +18,9 @@ const allWebsites = await Astro.glob("../../pages/websites/*.md");
         <Card
           title={website.frontmatter.title}
           url={website.url}
-          SiteImg={website.frontmatter.image.url}
+          image={website.frontmatter.image.url}
+          description={website.frontmatter.description}
+          websiteUrl={website.frontmatter.websiteUrl}
         />
       ))
     }

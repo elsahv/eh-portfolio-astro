@@ -2,12 +2,12 @@
 export interface Props {
   title: string;
   url: any;
-  SiteImg: any;
+  image: any;
+  description: string;
+  websiteUrl: any;
 }
 
-const { title, SiteImg, url } = Astro.props as Props;
-
-import CardIcons from "./images/CardIcons.astro";
+const { title, image, url, description, websiteUrl } = Astro.props as Props;
 ---
 
 <div class="md:px-5 px-0">
@@ -15,16 +15,26 @@ import CardIcons from "./images/CardIcons.astro";
     <h3 id="text-bold" class="text-2xl mr-3 font-semibold">
       {title}
     </h3>
-
-    <CardIcons />
+    <a href={url} class="">
+      <p class="hover:text-parchment hover:bg-cerulean px-2 py-1">
+        <i>-{description}</i>
+      </p>
+    </a>
   </div>
-  <!-- <p>This is the website description</p> -->
 
-  <a href={url} class="">
+  <a href={websiteUrl} class="">
     <img
-      src={SiteImg}
+      src={image}
       alt=""
       class="border-2 border-onyx drop-shadow-3xl rounded-md opacity-70 hover:opacity-100"
     />
+    <p class="hover:text-aquamarine hover:bg-carribean w-24 mt-1 p-1">
+      <i>-visit site-</i>
+    </p>
   </a>
+  <!-- <section id="link-icons">
+    <div>github</div>
+    <div>view journal</div>
+  </section> -->
+  <!-- <p class="p-1">{description}</p> -->
 </div>
