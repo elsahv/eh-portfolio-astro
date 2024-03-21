@@ -1,37 +1,16 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Running Quail"
-pubDate: 2022-07-01
-description: "online bulletin board for Morongo Basin area"
-author: "Astro Learner"
+title: "the indoor jungle project"
+pubDate: 2024-02-01
+description: "a horror-themed botany journal"
 image:
-  url: "https://images.pexels.com/photos/1294137/pexels-photo-1294137.jpeg"
-  alt: "The Running Quail"
-websiteUrl: "https://therunningquail.com"
-githubUrl: "https://github.com/elsahv/-the-running-quail"
+  url: "https://images.pexels.com/photos/7562989/pexels-photo-7562989.jpeg?auto=compress&cs=tinysrgb&w=600"
+  alt: "the indoor jungle project dev website"
+
+websiteUrl: "https://theindoorjungleproject.com"
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-<!--
-# My First Blog Post
-
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
- -->
 
 # Telling the story of a website involves _highlighting_ its **inception, purpose, evolution, and impact**. Here's how you could go about it:
 
@@ -54,3 +33,5 @@ I will finish the Astro tutorial, and then keep adding more posts. Watch this sp
 **Future Outlook**: Conclude by sharing the website's vision for the future. What are its goals and aspirations moving forward? How does it plan to continue evolving and making an impact in the years to come?
 
 By weaving these elements together, you can effectively _tell the story of a website, providing insight into its journey, purpose, and significance_.
+
+---
