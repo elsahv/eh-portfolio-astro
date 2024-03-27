@@ -1,11 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Writing to Better Health"
+title: "Writing to better health"
+postTitle: "post title 1"
 pubDate: 2024-02-01
-description: "mindmaps for bettering health"
+description: "some mindmaps for bettering health- Lorem ip deleniti nihil molestiae"
 image:
-  url: "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600"
+  url: "https://i.pinimg.com/736x/94/5e/6a/945e6a23f534d1ea9474cf932f571565.jpg"
   alt: "writing to Better Health website"
 
 websiteUrl: "https://writingtobetterhealth.com"

@@ -1,23 +1,28 @@
 ---
+import { Image } from "astro:assets";
+import Img1 from "../../public/icons/github.png";
+import Img2 from "../../public/icons/file.png";
 export interface Props {
   title: string;
+  postTitle: string;
   url: any;
   image: any;
   description: string;
   websiteUrl: any;
+  githubUrl: any;
 }
 
-const { title, image, description, websiteUrl } = Astro.props as Props;
+const { title, image, description, websiteUrl, githubUrl } =
+  Astro.props as Props;
 ---
 
-<div class="md:pl-1">
+<div class="lg:px-5 md:px-2 px-0 opacity-70 hover:opacity-100">
   <div class="pb-1 flex">
-    <div
-      id="text-bold"
-      class="text-2xl font-semibold 2xl:absolute relative 2xl:text-white text-black"
-    >
-      <h2 class="text-onyx">{title}</h2>
-      <p class="text-onyx opacity-80">-{description}</p>
+    <div id="text-bold" class="mr-3 font-semibold flex flex-col mt-5 pt-5">
+      <!-- <h2 class="text-xl lowercase">_{title}</h2> -->
+      <h3 class="font-semibold owercase">
+        {title}
+      </h3>
     </div>
   </div>
 
@@ -25,11 +30,26 @@ const { title, image, description, websiteUrl } = Astro.props as Props;
     <img
       src={image}
       alt=""
-      class="w-full border-2 border-onyx drop-shadow-3xl rounded-md 2xl:opacity-70 2xl:hover:opacity-100"
+      class="border-2 border-onyx drop-shadow-3xl rounded"
     />
+    <div id="card-body" class="mt-1 p-1">
+      <div id="icons" class="flex space-x-2">
+        <a href={websiteUrl} class="">
+          <Image src={Img2} alt="visit" class="w-[27px]" />
+        </a>
+        <a href={githubUrl}>
+          <Image src={Img1} alt='github""' class="w-[27px] ml-1" />
+        </a>
+      </div>
+      <div id="card-cta-btns" class="flex items-center justify-end space-x-2">
+        <p class="pl-2 pt-1">
+          {description}
+        </p>
+      </div>
+    </div>
   </a>
 
-  <div class="text-right p-1 mr-1 list-none">
+  <!-- <div id="cta-btns-list" class="text-right flex space p-1 mr-1 list-none">
     <li class="font-semibold hover:text-parchment">
       <a href="/">view case study</a>
     </li>
@@ -37,5 +57,5 @@ const { title, image, description, websiteUrl } = Astro.props as Props;
     <li class="hover:text-aquamarine">
       <a href={websiteUrl}> visit site </a>
     </li>
-  </div>
+  </div> -->
 </div>

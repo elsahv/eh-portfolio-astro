@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Laughing Coyote Dev"
+title: "Laughing coyote dev"
+postTitle: "post title 3"
 pubDate: 2024-02-01
-description: "freelancing website"
+description:
+  "a freelancing website  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+  ratione obcaecati aliquam recusandae aut inventore deleniti nihil molestiae"
 image:
-  url: "https://images.pexels.com/photos/15707992/pexels-photo-15707992/free-photo-of-portrait-of-coyote.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  url: "https://i.pinimg.com/736x/dd/2e/f9/dd2ef956b62db22e449e458528c51fa2.jpg"
   alt: "laughing coyote dev website"
 
 websiteUrl: "https://laughingcoyote.dev"
+githubUrl: "https://github.com/elsahv/--LC-astro"
 tags: ["astro", "blogging", "learning in public"]
 ---
 

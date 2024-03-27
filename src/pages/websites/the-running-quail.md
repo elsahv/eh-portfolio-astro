@@ -1,12 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Running Quail"
+title: "The running quail"
+postTitle: "post title 4"
 pubDate: 2022-07-01
-description: "online bulletin board for Morongo Basin area"
+description:
+  "an online bulletin board for Morongo Basin area Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+  ratione obcaecati aliquam recusandae aut inventore deleniti nihil molestiae"
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/1294137/pexels-photo-1294137.jpeg"
+  url: "https://i.pinimg.com/736x/c8/91/22/c891225aa4ed9ac811d20029292fe6af.jpg"
   alt: "The Running Quail"
 websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"

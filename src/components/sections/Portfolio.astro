@@ -9,12 +9,17 @@ const allWebsites = await Astro.glob("../../pages/websites/*.md");
   >
     Portfolio
   </h2>
-  <div id="website-grid" class="mt-5 mb-5 mr-5 flex flex-col gap-x-10 gap-y-24">
+  <div
+    id="website-grid"
+    class="grid 2xl:grid-cols-2 grid-cols-1 space-y-5 space-x-2"
+  >
     {
       allWebsites.map((website) => (
         <Card
           title={website.frontmatter.title}
+          postTitle={website.frontmatter.postTitle}
           url={website.url}
+          githubUrl={website.frontmatter.githubUrl}
           image={website.frontmatter.image.url}
           description={website.frontmatter.description}
           websiteUrl={website.frontmatter.websiteUrl}

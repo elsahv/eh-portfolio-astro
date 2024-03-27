@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "the indoor jungle project"
+title: "The indoor jungle project"
+postTitle: "post title 1"
 pubDate: 2024-02-01
-description: "a horror-themed botany journal"
+description:
+  "a horror-themed botany journal  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+  ratione obcaecati aliquam recusandae aut nihil molestiae"
 image:
-  url: "https://images.pexels.com/photos/7562989/pexels-photo-7562989.jpeg?auto=compress&cs=tinysrgb&w=600"
+  url: "https://i.pinimg.com/736x/ed/e8/3c/ede83ceb813ecf60eb328c61b9bf3063.jpg"
   alt: "the indoor jungle project dev website"
 
 websiteUrl: "https://theindoorjungleproject.com"
+githubUrl: "https://github.com/elsahv/-the-indoor-jungle-project"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
