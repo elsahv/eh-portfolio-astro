@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/tests/Markpostlayout.astro
 # title: "My First Blog Post"
 title: "The indoor jungle project"
 postTitle: "post title 1"

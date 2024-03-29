@@ -2,17 +2,20 @@
 const { frontmatter } = Astro.props;
 ---
 
-<div id="" class="text-onyx">
-  <div id="back-btn-wrapper" class="pl-[72px] ml-0 pt-5 text-lg bg-munsell">
+<div id="" class="">
+  <div id="back-btn-wrapper" class="pl-[72px] ml-0 pt-5 text-lg bg-#fff">
     <a href="/" class="underline hover:text-white">
       {"<---"} back to home
     </a>
   </div>
   <div
     id="post-header-grid"
-    class="grid 2xl:grid-cols-2 grid-cols-1 bg-munsell drop-shadow-xl"
+    class="grid 2xl:grid-cols-2 grid-cols-1 h-[750px] bg-munsell drop-shadow-xl border border-t-black border-b-black"
   >
-    <div id="left-sq" class="flex items-center 2xl:justify-center">
+    <div
+      id="left-sq"
+      wclass="flex items-center 2xl:justify-center border border-r-black"
+    >
       <div class="2xl:pr-5 ml-2 py-2 px-5 my-[50px] w-3/4">
         <h1 class="md:text-5xl text-3xl pb-2 mt-1 text-onyx">
           {frontmatter.title}
@@ -24,14 +27,10 @@ const { frontmatter } = Astro.props;
     </div>
     <div
       id="right-sq"
-      class="flex items-center bg-onyx border border-rosyBrown dropshadow-2xl rounded-tl-2xl"
+      class="flex items-center border border-rosyBrown dropshadow-2xl rounded-tl-2xl"
     >
       <a href={frontmatter.websiteUrl}>
-        <img
-          src={frontmatter.image.url}
-          alt={frontmatter.image.alt}
-          class="rounded-tl-2xl"
-        />
+        <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="" />
       </a>
     </div>
   </div>

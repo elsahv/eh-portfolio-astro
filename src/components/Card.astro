@@ -5,14 +5,14 @@ import Img2 from "../../public/icons/file.png";
 export interface Props {
   title: string;
   postTitle: string;
-  url: any;
   image: any;
   description: string;
+  url: any;
   websiteUrl: any;
   githubUrl: any;
 }
 
-const { title, image, description, websiteUrl, githubUrl } =
+const { title, image, description, url, websiteUrl, githubUrl } =
   Astro.props as Props;
 ---
 
@@ -27,11 +27,11 @@ const { title, image, description, websiteUrl, githubUrl } =
     </div>
   </div>
 
-  <a href={websiteUrl} class="">
+  <a href={url} class="">
     <img
       src={image}
       alt=""
-      class="border-2 border-onyx drop-shadow-3xl rounded"
+      class="border border-carribean drop-shadow-3xl rounded w-full"
     />
     <div id="card-body" class="mt-1 p-1">
       <div id="icons" class="flex space-x-2 opacity-90">
@@ -42,9 +42,14 @@ const { title, image, description, websiteUrl, githubUrl } =
           <Image src={Img1} alt='github""' class="w-[27px] ml-1" />
         </a>
       </div>
-      <p class="mb-5 pl-2 pt-1 text-parchment">
-        {description}
-      </p>
+      <div class="mb-5 pl-2 pt-1 text-parchment">
+        <p>
+          {description}
+          <!-- <span class="underline text-">
+            <a href="">read more...</a>
+          </span> -->
+        </p>
+      </div>
     </div>
   </a>
 </div>
