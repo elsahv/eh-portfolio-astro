@@ -13,6 +13,7 @@ export default {
         rosyBrown: "#B18D9B",
         test1: "#f88379",
         test2: "lightgreen",
+        aliceBlue: "#f1f5f9",
       },
     },
   },
