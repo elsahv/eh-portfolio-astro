@@ -43,12 +43,11 @@ const { title, image, description, url, websiteUrl, githubUrl } =
         </a>
       </div>
       <div class="mb-5 pl-2 pt-1 text-parchment">
-        <p>
-          {description}
-          <!-- <span class="underline text-">
-            <a href="">read more...</a>
-          </span> -->
-        </p>
+        <a href={url}>
+          <p>
+            {description}
+          </p>
+        </a>
       </div>
     </div>
   </a>
