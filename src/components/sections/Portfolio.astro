@@ -1,14 +1,23 @@
 ---
+import { Image } from "astro:assets";
+import SimpleDownArrow from "../../../public/icons/down-arrow.png";
+
 import Card from "../Card.astro";
 const allWebsites = await Astro.glob("../../pages/websites/*.md");
 ---
 
 <div id="portfolio" class="mt-[250px] pl- mx- md:pt-[50px] pt-1">
-  <h2
+  <div
     class="p-2 text-4xl md:mt-14 mb-5 ml-5 border-t border-b 2xl:border-l border-onyx bg-aliceBlue text-carribean opacity-95 rounded-tl rounded-bl"
   >
-    Featured Works
-  </h2>
+    <div id="container" class="flex py-1">
+      <h2>Featured Works</h2>
+      <div id="down-arrow" class="ml-5 w-10 h-10 opacity-80">
+        <Image src={SimpleDownArrow} alt="" />
+      </div>
+    </div>
+  </div>
+
   <div id="website-grid" class="grid 2xl:grid-cols-2 grid-cols-1 px-5">
     {
       allWebsites.map((website) => (
