@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import SimpleDownArrow from "../../../public/icons/down-arrow.png";
+import SimpleDownArrow from "../../../public/icons/briefcase.png";
 
 import Card from "../Card.astro";
 const allWebsites = await Astro.glob("../../pages/websites/*.md");
@@ -8,12 +8,13 @@ const allWebsites = await Astro.glob("../../pages/websites/*.md");
 
 <div id="portfolio" class="mt-[250px] pl- mx- md:pt-[50px] pt-1">
   <div
-    class="p-2 text-4xl md:mt-14 mb-5 ml-5 border-t border-b 2xl:border-l border-onyx bg-aliceBlue text-carribean opacity-95 rounded-tl rounded-bl"
+    class="p-2 text-4xl md:mt-14 mb-5 ml-5 border-t border-b 2xl:border-l border-onyx bg-aliceBlue rounded-tl rounded-bl"
   >
     <div id="container" class="flex py-1">
-      <h2>Featured Works</h2>
+      <h2 class="text-carribean">Featured Works</h2>
       <div id="down-arrow" class="ml-5 w-10 h-10 opacity-80">
         <Image src={SimpleDownArrow} alt="" />
+        <!-- todo: PORTFOLIO ICON, CTA TO POPUP TOOLKIT/ LANGUAGES USED -->
       </div>
     </div>
   </div>
