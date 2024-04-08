@@ -4,7 +4,7 @@ layout: ../../layouts/tests/Markpostlayout.astro
 title: "Writing to better health"
 postTitle: "post title 1"
 pubDate: 2024-02-01
-description: "some mindmaps for bettering health- Lorem ip deleniti nihil molestiae"
+description: "ADD mindmap/diagrams for bettering health - thru WTBH"
 image:
   url: "https://i.pinimg.com/736x/94/5e/6a/945e6a23f534d1ea9474cf932f571565.jpg"
   alt: "writing to Better Health website"

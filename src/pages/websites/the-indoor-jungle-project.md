@@ -4,9 +4,7 @@ layout: ../../layouts/tests/Markpostlayout.astro
 title: "The indoor jungle project"
 postTitle: "post title 1"
 pubDate: 2024-02-01
-description:
-  "a horror-themed botany journal  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-  ratione obcaecati aliquam recusandae aut nihil molestiae"
+description: "a horror-themed botany journal"
 image:
   url: "https://i.pinimg.com/736x/ed/e8/3c/ede83ceb813ecf60eb328c61b9bf3063.jpg"
   alt: "the indoor jungle project dev website"
