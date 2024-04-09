@@ -17,16 +17,18 @@ const { title, image, description, url, websiteUrl, githubUrl } =
 ---
 
 <div
-  class="lg:px-5 md:px-2 px-0 2xl:opacity-70 opacity-90 2xl:hover:opacity-100 pb-5"
+  class="text-aliceBlue lg:px-5 md:px-2 px-0 2xl:opacity-70 opacity-90 2xl:hover:opacity-100 pb-5"
 >
-  <div class="pb-1 flex">
-    <div id="text-bold" class="mr-3 font-semibold flex flex-col mt-5 pt-5">
-      <h3 class="text-xl capitalize font-bold text-aliceBlue">
-        {title}
-      </h3>
-    </div>
+  <div id="text-bold" class="mr-3 font-semibold flex flex-col mt-5 pt-5">
+    <h3 class="text-xl capitalize">
+      {title}
+    </h3>
   </div>
-
+  <div class="text-parchment">
+    <p class="pl-1 pr-3 pb-2">
+      {description}
+    </p>
+  </div>
   <a href={websiteUrl} class="">
     <img
       src={image}
@@ -34,21 +36,14 @@ const { title, image, description, url, websiteUrl, githubUrl } =
       class="border border-black drop-shadow-3xl rounded w-full"
     />
     <div id="card-body" class="mt-1 p-1">
-      <div id="icons" class="flex space-x-2 opacity-90">
+      <!-- <div id="icons" class="flex space-x-2 opacity-90">
         <a href={websiteUrl} class="hover:opacity-80">
           <Image src={Img2} alt="visit" class="w-[27px]" />
         </a>
         <a href={githubUrl} class="hover:opacity-70">
           <Image src={Img1} alt='github""' class="w-[27px] ml-1" />
         </a>
-      </div>
-      <div class="mb-5 pl-2 pt-1 text-aliceBlue">
-        <a href={websiteUrl}>
-          <p>
-            {description}
-          </p>
-        </a>
-      </div>
+      </div> -->
     </div>
   </a>
 </div>

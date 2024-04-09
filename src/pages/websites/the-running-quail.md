@@ -4,7 +4,7 @@ layout: ../../layouts/tests/Markpostlayout.astro
 title: "The running quail"
 postTitle: "post title 4"
 pubDate: 2022-07-01
-description: "As a resident in Joshua Tree, I've noticed that there are limited online resources to promote your business, or to look up events online. With RQ, you can do both, post and research"
+description: "an online bulletin board for the Morongo Basin Community"
 author: "Astro Learner"
 image:
   url: "https://i.pinimg.com/736x/c8/91/22/c891225aa4ed9ac811d20029292fe6af.jpg"

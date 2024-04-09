@@ -19,7 +19,7 @@ const allWebsites = await Astro.glob("../../pages/websites/*.md");
     </div>
   </div>
 
-  <div id="website-grid" class="grid 2xl:grid-cols-2 grid-cols-1 px-5">
+  <div id="website-grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-x-3 px-5">
     {
       allWebsites.map((website) => (
         <Card

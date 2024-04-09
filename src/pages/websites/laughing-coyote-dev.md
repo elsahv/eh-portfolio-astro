@@ -4,7 +4,7 @@ layout: ../../layouts/tests/Markpostlayout.astro
 title: "Laughing coyote dev"
 postTitle: "post title 3"
 pubDate: 2024-02-01
-description: "Laughing Coyote Dev is an online resource to help small businesses get their website started. Most owners do not have the time or ability to create a large site. This is where I come in..."
+description: "an online resource to help small businesses get their website started. "
 image:
   url: "https://i.pinimg.com/736x/dd/2e/f9/dd2ef956b62db22e449e458528c51fa2.jpg"
   alt: "laughing coyote dev website"
