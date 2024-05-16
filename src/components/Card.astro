@@ -16,47 +16,31 @@ const { title, image, description, url, websiteUrl, githubUrl } =
   Astro.props as Props;
 ---
 
-<div
-  class="text-aliceBlue lg:px-5 md:px-2 px-0 2xl:opacity-70 opacity-90 2xl:hover:opacity-100 pb-5 mt-5 pt-5"
->
-  <!-- <div id="text-bold" class="mr-3 font-semibold flex flex-col mt-5 pt-5">
-    <h3 class="text-xl capitalize">
-      {title}
-    </h3>
+<div class="w-[1170px] py-5 mt-5">
+  <div class="">
+    <a href={websiteUrl} class="">
+      <div class="pl-3">
+        <h2 class="text-3xl">new post!</h2>
+        <p class="">project: Laughing Coyote Dev</p>
+        <p>5/15/24</p>
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          quas illum asperiores nulla adipisci sit facere doloremque repellendus
+          recusandae maxime aut ut vero unde eaque nesciunt, cupiditate maiores,
+          quasi inventore!
+        </p> -->
+      </div>
+      <img
+        src={image}
+        alt=""
+        class="border border-black drop-shadow-3xl rounded-md mt-5 grayscale hover:grayscale-0 transition duration-300 ease-in-ou"
+      />
+      <p class="p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quas
+        illum asperiores nulla adipisci sit facere doloremque repellendus
+        recusandae maxime aut ut vero unde eaque nesciunt, cupiditate maiores,
+        quasi inventore!
+      </p>
+    </a>
   </div>
-  <div class="text-parchment">
-    <p class="pl-1 pr-3 pb-2">
-      {description}
-    </p>
-  </div> -->
-  <a href={websiteUrl} class="">
-    <img
-      src={image}
-      alt=""
-      class="border border-black drop-shadow-3xl rounded-md w-full mt-5"
-    />
-    <div class="pl-2 pt-1">
-      <div id="text-bold" class="mr-3 font-semibold flex flex-col mb- pt-1">
-        <h3 class="text-xl capitalize">
-          {title}
-        </h3>
-      </div>
-      <div class="text-parchment">
-        <p class="pl-1 pr-3 pb-2">
-          {description}
-        </p>
-      </div>
-    </div>
-
-    <div id="card-body" class="mt-1 p-1">
-      <!-- <div id="icons" class="flex space-x-2 opacity-90">
-        <a href={websiteUrl} class="hover:opacity-80">
-          <Image src={Img2} alt="visit" class="w-[27px]" />
-        </a>
-        <a href={githubUrl} class="hover:opacity-70">
-          <Image src={Img1} alt='github""' class="w-[27px] ml-1" />
-        </a>
-      </div> -->
-    </div>
-  </a>
 </div>

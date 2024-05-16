@@ -1,42 +1,60 @@
-  ---
-  import {Image} from "astro:assets";
-  import Img3 from "./public/icons/current/email.png";
-  import Img4 from "./public/icons/current/github.png";
-  
-  const posts = [
+---
+import { Image } from "astro:assets";
+import ProfilePic from "../../public/eh-img.jpg";
+import Icon1 from "../../public/icons/github.png";
+import Icon2 from "../../public/icons/linkedin.png";
+
+const items = [
+  // {
+  //   title: "Latest",
+  //   link: "/",
+  // },
+  {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
+    title: "work-with me",
+    link: "/about",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+];
+---
+
+<header
+  class="pb-[45px] md:fixed relative md:left-0 top-0 z-50 md:h-screen h-[100%] md:w-1/4 w-full md:border-r-2 border-black bg-munsell"
+>
+  <nav
+    class="_shadowText text-white dropshadow-3xl text-2xl p-2 w-full absolute z-10 bottom-0 bg-"
+  >
+    <h1 class="">
+      <span class="text-4xl semi-bold">Elsa Hovey-</span>
+      Portfolio/ Journal
+    </h1>
+    <p class="text-xl mb-1 pl-1">
+      Hi there, I'm Elsa, a web developer located in Joshua Tree, CA
+    </p>
     {
-      website: 'github',
-      title: "wordpress users",
-      image: Img4,
-      url: "http://theindoorjungleproject.com",
-      p: "The Indoor Jungle Project- currently a blog about plants and house projects",
-      github: "https://github.com/elsahv/php-template-blog",
-    },
-    {
-      website: 'email',
-      title: "and dietitians/ nutritionists",
-      image: Img3,
-      url: "http://writingtobetterhealth.com",
-      p: "Writing to Better Health- A blog template for now, and future blog regarding nutrition and mental wellness",
-      github: "https://github.com/elsahv/writing-to-better-health",
-    },
-  ];
-  ---
-  
-  
-  <header class="w-full bg-aquamarine border-b-2 border-cerulean flex flex-row justify-end md:fixed relative z-10" >
-      <nav class="2xl:py-5 md:pt-[25px] p-3">
-        <div class="flex">
-            <div class="mt-1">
-              <div id="website-navigation" class="flex space-x-4">
-              {posts.map((post) => (
-                <div class="border border-black bg-rosyBrown text-aquamarine py-2 px-3 rounded-md">
-                  <a href="/">
-                  <Image src={post.image} alt="" width={35} height={35}/>
-                  </a>
-                  </div>
-              ))}
-              </div>
-        </div>
-      </nav>
-    </header>
+      items.map((item) => (
+        <ul class="pl-1">
+          <li class="hover:text-cer">
+            <a href={item.link}>{item.title}</a>
+          </li>
+        </ul>
+      ))
+    }
+
+    <ul id="sm-icons" class="flex gap-x-2 mt-3">
+      <li class="bg-test">
+        <Image src={Icon1} alt="" width={32} height={32} />
+        <li>
+          <Image src={Icon2} alt="" width={32} height={32} />
+        </li>
+      </li>
+    </ul>
+  </nav>
+  <Image src={ProfilePic} alt="" class="absolute bottom-0 z-0 h-full w-" />
+</header>

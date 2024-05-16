@@ -6,7 +6,7 @@ postTitle: "post title 1"
 pubDate: 2024-02-01
 description: "ADD mindmap/diagrams for bettering health - thru WTBH"
 image:
-  url: "https://i.pinimg.com/736x/94/5e/6a/945e6a23f534d1ea9474cf932f571565.jpg"
+  url: "https://images.pexels.com/photos/18693120/pexels-photo-18693120/free-photo-of-green-aurora-on-sky-at-night.jpeg"
   alt: "writing to Better Health website"
 
 websiteUrl: "https://writingtobetterhealth.com"

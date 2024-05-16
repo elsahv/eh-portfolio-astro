@@ -1,8 +1,10 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,14 +13,15 @@ import '../styles/global.css'
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js"
       integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> 
-    <script src="https://kit.fontawesome.com/f75d956e91.js" crossorigin="anonymous"></script>
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://kit.fontawesome.com/f75d956e91.js"
+      crossorigin="anonymous"></script>
     <title>Elsa Hovey | Web Developer Portfolio</title>
   </head>
-  <body class="">
-      <slot />
+  <Header />
+  <body class="bg- absolute right-0 w-3/4 p-5">
+    <slot />
   </body>
+  <!-- <Footer /> -->
 </html>
-
-    

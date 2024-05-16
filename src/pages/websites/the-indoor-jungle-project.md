@@ -6,7 +6,7 @@ postTitle: "post title 1"
 pubDate: 2024-02-01
 description: "a horror-themed botany journal"
 image:
-  url: "https://i.pinimg.com/736x/ed/e8/3c/ede83ceb813ecf60eb328c61b9bf3063.jpg"
+  url: "https://plus.unsplash.com/premium_photo-1714229505201-072ef1c6edcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   alt: "the indoor jungle project dev website"
 
 websiteUrl: "https://theindoorjungleproject.com"

@@ -7,7 +7,7 @@ pubDate: 2022-07-01
 description: "an online bulletin board for the Morongo Basin Community"
 author: "Astro Learner"
 image:
-  url: "https://i.pinimg.com/736x/c8/91/22/c891225aa4ed9ac811d20029292fe6af.jpg"
+  url: "https://images.pexels.com/photos/3026093/pexels-photo-3026093.jpeg"
   alt: "The Running Quail"
 websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"

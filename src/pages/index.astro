@@ -1,10 +1,25 @@
 ---
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import LeftSide from "../layouts/LeftSide.astro";
-import RightSide from "../layouts/RightSide.astro";
+const allWebsites = await Astro.glob("../pages/websites/*.md");
 ---
 
-<MainLayout class="absolute z-0">
-  <LeftSide />
-  <RightSide />
+<MainLayout class="">
+  <div id="portfolio-wrapper" class="flex justify-center">
+    <div id="portfolio-grid" class="grid grid-cols-1 gap-y-5">
+      {
+        allWebsites.map((website) => (
+          <Card
+            title={website.frontmatter.title}
+            postTitle={website.frontmatter.postTitle}
+            url={website.url}
+            githubUrl={website.frontmatter.githubUrl}
+            image={website.frontmatter.image.url}
+            description={website.frontmatter.description}
+            websiteUrl={website.frontmatter.websiteUrl}
+          />
+        ))
+      }
+    </div>
+  </div>
 </MainLayout>

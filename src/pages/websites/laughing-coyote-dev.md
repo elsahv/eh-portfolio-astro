@@ -6,7 +6,7 @@ postTitle: "post title 3"
 pubDate: 2024-02-01
 description: "an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. "
 image:
-  url: "https://i.pinimg.com/736x/dd/2e/f9/dd2ef956b62db22e449e458528c51fa2.jpg"
+  url: "https://images.pexels.com/photos/17786579/pexels-photo-17786579/free-photo-of-nature-beach-sand-coast.jpeg"
   alt: "laughing coyote dev website"
 
 websiteUrl: "https://laughingcoyote.dev"
