@@ -4,7 +4,7 @@ layout: ../../layouts/tests/Markpostlayout.astro
 title: "post title 4 "
 websiteTag: "The running quail"
 pubDate: 2022-07-01
-description: "an online bulletin board for the Morongo Basin Community"
+description: "an online bulletin board for the Morongo Basin Community    "
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/3026093/pexels-photo-3026093.jpeg"
