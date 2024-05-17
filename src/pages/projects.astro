@@ -1,40 +1,27 @@
 ---
-import { Image } from "astro:assets";
+import Banner from "../components/Banner.astro";
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import img1 from "../../public/screenshots/lc.png";
-import img2 from "../../public/screenshots/rq.png";
-import img3 from "../../public/screenshots/wtbh.png";
-import img4 from "../../public/screenshots/jungle.png";
-
-const items = [
-  {
-    title: "Laughing Coyote Dev",
-    img: img1,
-  },
-  {
-    title: "The Running Quail",
-    img: img2,
-  },
-  {
-    title: "Writing to Better Health",
-    img: img3,
-  },
-  {
-    title: "The Indoor Jungle Project",
-    img: img4,
-  },
-];
+const allWebsites = await Astro.glob("../pages/websites/*.md");
 ---
 
-<MainLayout>
-  <h2>projects</h2>
-  <div id="grid-container" class="">
-    <div id="grid" class="grid grid-cols-2 gap-5">
+<MainLayout class="">
+  <Banner title="Projects" />
+  <div id="portfolio-wrapper" class="flex justify-center">
+    <div id="portfolio-grid" class="grid grid-cols-2 gap-5">
       {
-        items.map((item) => (
-          <div id="sq" class="border-4 border-cerulean ">
-            <h2>{item.title}</h2>
-            <Image src={item.img} alt="/" />
+        allWebsites.map((website) => (
+          <div class="w-[570px]">
+            <Card
+              title={website.frontmatter.title}
+              websiteTag={website.frontmatter.websiteTag}
+              url={website.url}
+              githubUrl={website.frontmatter.githubUrl}
+              image={website.frontmatter.image.url}
+              description={website.frontmatter.description}
+              websiteUrl={website.frontmatter.websiteUrl}
+            />
+            <div />
           </div>
         ))
       }

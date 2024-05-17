@@ -4,7 +4,7 @@ import Img1 from "../../public/icons/github.png";
 import Img2 from "../../public/icons/file.png";
 export interface Props {
   title: string;
-  postTitle: string;
+  websiteTag: string;
   image: any;
   description: string;
   url: any;
@@ -12,16 +12,16 @@ export interface Props {
   githubUrl: any;
 }
 
-const { title, image, description, url, websiteUrl, githubUrl } =
+const { title, websiteTag, image, description, url, websiteUrl, githubUrl } =
   Astro.props as Props;
 ---
 
-<div class="w-[1170px] py-5 mt-5">
+<div class="w-full py-5 mt-5">
   <div class="">
     <a href={websiteUrl} class="">
       <div class="pl-3">
-        <h2 class="text-3xl">new post!</h2>
-        <p class="">project: Laughing Coyote Dev</p>
+        <h2 class="text-3xl">{title}</h2>
+        <h3>website:{websiteTag}</h3>
         <p>5/15/24</p>
         <!-- <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
@@ -33,14 +33,11 @@ const { title, image, description, url, websiteUrl, githubUrl } =
       <img
         src={image}
         alt=""
-        class="border border-black drop-shadow-3xl rounded-md mt-5 grayscale hover:grayscale-0 transition duration-300 ease-in-ou"
+        class="border border-black drop-shadow-3xl rounded-md mt-5 grayscale hover:grayscale-0 transition duration-300 ease-in-out"
       />
-      <p class="p-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quas
-        illum asperiores nulla adipisci sit facere doloremque repellendus
-        recusandae maxime aut ut vero unde eaque nesciunt, cupiditate maiores,
-        quasi inventore!
-      </p>
+      <div class="pl-3 pt-3 pr-5 mr-5">
+        <p class="pr-5">{description}</p>
+      </div>
     </a>
   </div>
 </div>

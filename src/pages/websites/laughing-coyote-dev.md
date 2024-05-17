@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/tests/Markpostlayout.astro
 # title: "My First Blog Post"
-title: "Laughing coyote dev"
-postTitle: "post title 3"
+title: "post title 3"
+websiteTag: "Laughing coyote dev"
 pubDate: 2024-02-01
 description: "an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. "
 image:

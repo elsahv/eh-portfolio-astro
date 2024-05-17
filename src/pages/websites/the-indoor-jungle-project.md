@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/tests/Markpostlayout.astro
 # title: "My First Blog Post"
-title: "The indoor jungle project"
-postTitle: "post title 1"
+title: "post title 1 "
+websiteTag: "The indoor jungle project"
 pubDate: 2024-02-01
 description: "a horror-themed botany journal"
 image:

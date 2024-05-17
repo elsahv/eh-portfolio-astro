@@ -1,1 +1,3 @@
-CURRENTLY WORKING ON: turn left side into header
+CURRENTLY WORKING ON: create dynamic banner, put under dynamic container
+
+- create dynamic container

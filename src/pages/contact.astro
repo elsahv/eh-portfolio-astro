@@ -1,0 +1,27 @@
+---
+import Banner from "../components/Banner.astro";
+import ContactForm from "../components/ContactForm.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <Banner title="contact" />
+  <div id="container" class="mt-5 p-5">
+    <div id="grid-container" class="mt-5">
+      <div id="grid" class="grid grid-cols-2 gap-x-5">
+        <div id="sq1" class="border border-black bg- rounded pl-2 pt-2">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea
+            maxime consectetur quam facilis vero tempora exercitationem aliquam
+            saepe fugiat ex delectus repellat numquam corrupti, odit ullam magni
+            hic animi?
+          </p>
+        </div>
+        <div id="sq2">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

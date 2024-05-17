@@ -1,23 +1,49 @@
 ---
+import Banner from "../components/Banner.astro";
 import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 const allWebsites = await Astro.glob("../pages/websites/*.md");
 ---
 
 <MainLayout class="">
+  <!-- <Banner title="-" /> -->
+  <div id="hero" class="py-4">
+    <h2 class="pl-5">
+      Hi there, I'm Elsa, a web developer located in Joshua Tree, CA.
+    </h2>
+    <p class="p-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+      mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+      consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+      aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+      doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+      consequatur
+    </p>
+
+    <p class="p-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+      mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+      consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+      aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+      doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+      consequatur
+    </p>
+  </div>
   <div id="portfolio-wrapper" class="flex justify-center">
     <div id="portfolio-grid" class="grid grid-cols-1 gap-y-5">
       {
         allWebsites.map((website) => (
-          <Card
-            title={website.frontmatter.title}
-            postTitle={website.frontmatter.postTitle}
-            url={website.url}
-            githubUrl={website.frontmatter.githubUrl}
-            image={website.frontmatter.image.url}
-            description={website.frontmatter.description}
-            websiteUrl={website.frontmatter.websiteUrl}
-          />
+          <div class="w-[1170px] ">
+            <Card
+              title={website.frontmatter.title}
+              websiteTag={website.frontmatter.websiteTag}
+              url={website.url}
+              githubUrl={website.frontmatter.githubUrl}
+              image={website.frontmatter.image.url}
+              description={website.frontmatter.description}
+              websiteUrl={website.frontmatter.websiteUrl}
+            />
+          </div>
         ))
       }
     </div>

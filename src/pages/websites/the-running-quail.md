@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/tests/Markpostlayout.astro
 # title: "My First Blog Post"
-title: "The running quail"
-postTitle: "post title 4"
+title: "post title 4 "
+websiteTag: "The running quail"
 pubDate: 2022-07-01
 description: "an online bulletin board for the Morongo Basin Community"
 author: "Astro Learner"

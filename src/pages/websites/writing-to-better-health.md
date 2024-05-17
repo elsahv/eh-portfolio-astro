@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/tests/Markpostlayout.astro
 # title: "My First Blog Post"
-title: "Writing to better health"
-postTitle: "post title 1"
+title: "post title 1 "
+websiteTag: "Writing to better health"
 pubDate: 2024-02-01
 description: "ADD mindmap/diagrams for bettering health - thru WTBH"
 image:
-  url: "https://images.pexels.com/photos/18693120/pexels-photo-18693120/free-photo-of-green-aurora-on-sky-at-night.jpeg"
+  url: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bnV0cml0aW9ufGVufDB8fDB8fHww"
   alt: "writing to Better Health website"
 
 websiteUrl: "https://writingtobetterhealth.com"
