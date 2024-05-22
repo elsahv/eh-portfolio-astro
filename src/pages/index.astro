@@ -1,51 +1,74 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import ProfilePic from "../../public/eh-img.jpg";
 import Banner from "../components/Banner.astro";
 import Card from "../components/Card.astro";
-import MainLayout from "../layouts/MainLayout.astro";
 const allWebsites = await Astro.glob("../pages/websites/*.md");
 ---
 
 <MainLayout class="">
-  <!-- <Banner title="-" /> -->
-  <div id="hero" class="py-4">
-    <h2 class="pl-5">
-      Hi there, I'm Elsa, a web developer located in Joshua Tree, CA.
-    </h2>
-    <p class="p-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
-      mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
-      consectetur adipisicing elit necessitatibus iste voluptas nihil qui
-      aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
-      doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
-      consequatur
-    </p>
+  <div
+    id="HERO-GRID"
+    class="border-t border-l border-r border-black grid grid-cols-1 py-4 bg-munsell"
+  >
+    <div id="SQ1" class="bg-test1 2xl:hidden flex justify-center">
+      <Image src={ProfilePic} alt="" class="" />
+    </div>
 
-    <p class="p-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
-      mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
-      consectetur adipisicing elit necessitatibus iste voluptas nihil qui
-      aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
-      doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
-      consequatur
-    </p>
+    <div id="SQ2" class="">
+      <h2 class="pl-5 text-2xl font-bold">
+        Hi there, I'm Elsa, a web developer located in Joshua Tree, CA.
+      </h2>
+      <div id="paragraph-container" class="bg-test">
+        <p class="p-5">
+         about me- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+          mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+          consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+          aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+          doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+          consequatur
+        </p>
+
+        <p id="projects" class="p-5">
+          about projects-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+          mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+          consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+          aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+          doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+          consequatur
+        </p>
+      </div>
+    </div>
   </div>
-  <div id="portfolio-wrapper" class="flex justify-center">
-    <div id="portfolio-grid" class="grid grid-cols-1 gap-y-5">
-      {
-        allWebsites.map((website) => (
-          <div class="w-[1170px] ">
-            <Card
-              title={website.frontmatter.title}
-              websiteTag={website.frontmatter.websiteTag}
-              url={website.url}
-              githubUrl={website.frontmatter.githubUrl}
-              image={website.frontmatter.image.url}
-              description={website.frontmatter.description}
-              websiteUrl={website.frontmatter.websiteUrl}
-            />
-          </div>
-        ))
-      }
+  <div id="" class="flex justify-center">
+    <div id="projects-container-grid" class="grid grid-cols-1 gap-y-5">
+      <Banner title="Projects" />
+      <!-- TODO: create grid vs list view comp with icon v-->
+      <!-- icon -->
+      <!-- TODO: create grid vs list view comp with icon ^-->
+      <>
+        <div>
+          {
+            allWebsites.map((post) => (
+            <!-- TODO: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE v-->
+              <>
+                <Card />
+                <div id="sq" class="p-5 m-5">
+                  <a href={post.url}>
+                    <h2 class="p-3 mt-5 text-2xl font-bold capitalize">
+                      {post.frontmatter.title}
+                    </h2>
+                    <img src={post.frontmatter.image.url} class="w-full " />
+                    <p class="p-3">{post.frontmatter.p}</p>
+                  </a>
+                </div>
+              </>
+    <!-- TODO: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE ^ -->
+            ))
+          }
+        </div>
+      </>
     </div>
   </div>
 </MainLayout>

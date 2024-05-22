@@ -3,6 +3,11 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        dmserif: ["DM Serif", "serif"],
+        com: ["Comfortaa", "cursive"],
+      },
+
       colors: {
         carribean: "#15616D",
         munsell: "#0792a5",

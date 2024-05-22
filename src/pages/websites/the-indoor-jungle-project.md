@@ -1,39 +1,35 @@
 ---
-layout: ../../layouts/tests/Markpostlayout.astro
-# title: "My First Blog Post"
-title: "post title 1 "
-websiteTag: "The indoor jungle project"
-pubDate: 2024-02-01
-description: "a horror-themed botany journal"
+layout: ../../layouts/Website.astro
+title: The Indoor Jungle Project
+author: Astro Learner
+p: a horror-themed botany journal
 image:
-  url: "https://plus.unsplash.com/premium_photo-1714229505201-072ef1c6edcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  alt: "the indoor jungle project dev website"
-
-websiteUrl: "https://theindoorjungleproject.com"
-githubUrl: "https://github.com/elsahv/-the-indoor-jungle-project"
-tags: ["astro", "blogging", "learning in public"]
+  url: "https://media.istockphoto.com/id/1489074247/photo/epiphytes-bromilead-growing-on-tree-in-tropical-rain-forest-stock-photo.jpg?s=1024x1024&w=is&k=20&c=p4njb35iFIeWgDfSFieESLgYT4w5SusZqrJdzE5ZngQ="
+  alt: "The word astro against an illustration of planets and stars."
+pubDate: 2022-08-08
+tags: ["astro", "successes"]
 ---
 
-# Telling the story of a website involves _highlighting_ its **inception, purpose, evolution, and impact**. Here's how you could go about it:
+# 1st paragraph
 
-**Introduction**: Begin by introducing the website and its primary purpose or mission. This sets the stage for the story you're about to tell.
+This post should show up with my other blog posts, because `Astro.glob()` is returning a list of all my posts in order to create my list.
+I really need to learn markdown!!!
 
-**Inception**: Share the backstory of how the website came into existence. This could include the inspiration behind its creation, the individuals or team involved, and any challenges or obstacles they faced in bringing it to life.
+## 2nd paragraph
 
-**Purpose**: Clearly articulate the purpose or goals of the website. What problem or need does it address? How does it aim to make a difference in its users' lives or in the broader context of its industry or community?
+lorem ipsum dolor sit amet,
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+consequatur
 
-**Evolution**: Describe how the website has evolved over time. This could include updates to its design, functionality, or content, as well as any major milestones or achievements it has reached along the way.
+## 3rd paragraph
 
-**Impact**: Highlight the impact the website has had on its users, community, or industry. Share testimonials, success stories, or metrics that demonstrate its effectiveness in fulfilling its purpose and achieving its goals.
-
-**Unique Features**: Discuss any unique or innovative features that set the website apart from others in its niche. What makes it stand out, and how has it contributed to its success?
-
-**User Experience**: Talk about the user experience the website provides. How does its design, navigation, and functionality enhance the overall experience for visitors? What steps has the team taken to ensure a positive and seamless user experience?
-
-**Community and Engagement**: If applicable, discuss the website's community and how it fosters engagement among its users. This could include features like forums, user-generated content, or social media integration.
-
-**Future Outlook**: Conclude by sharing the website's vision for the future. What are its goals and aspirations moving forward? How does it plan to continue evolving and making an impact in the years to come?
-
-By weaving these elements together, you can effectively _tell the story of a website, providing insight into its journey, purpose, and significance_.
-
----
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
+mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
+consectetur adipisicing elit necessitatibus iste voluptas nihil qui
+aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
+doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
+consequatur
