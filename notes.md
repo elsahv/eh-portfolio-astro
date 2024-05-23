@@ -1,6 +1,6 @@
 - CREATE create dynamic projects and journal cards, blog post slugs
 
-CURRENTLY:
+**CURRENTLY:COMPARE WORK W ME LAYOUT TO INDEX HERO**
 
 \*\*change website card main pics to website screenshots--LEARN CLOUDINARY??
 

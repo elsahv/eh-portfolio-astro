@@ -1,47 +1,67 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { Image } from "astro:assets";
-import ProfilePic from "../../public/eh-img.jpg";
 import Banner from "../components/Banner.astro";
 import Card from "../components/Card.astro";
 const allWebsites = await Astro.glob("../pages/websites/*.md");
 ---
 
 <MainLayout class="">
-  <div
-    id="HERO-GRID"
-    class="border-t border-l border-r border-black grid grid-cols-1 py-4 bg-munsell"
-  >
-    <div id="SQ1" class="bg-test1 2xl:hidden flex justify-center">
-      <Image src={ProfilePic} alt="" class="" />
-    </div>
+  
+ <!-- !REMINDER: THIS HERO SECTION SERVES AS SHORT CTAS LINKS AND INTRO FOR WHOLE SITE v -->
+  <div id="HERO-CTA" class="p-5 bg-munsell">
+    <h1 class="font-bold mt-5 pt-5 text-lg">Hi there, I'm Elsa... a web developer based in Joshua Tree, CA.</h1>
+    <p>
+      ABOUT ME-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius
+      magnam labore repellat beatae molestiae id qui debitis ipsam nemo
+      assumenda rerum, possimus atque quaerat. Quia delectus quidem natus
+      architecto. Lor ing elit. Iure eius magnam labore repellat beatae
+      molestiae id qui debitis ipsam nemo assumenda rerum, possimus atque
+      quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Iure eius magnam labore repellat
+      beatae molestiae id qui debitis ipsam nemo assumenda . Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Iure eius magnam labore repellat
+      beatae molestiae id qui debitis ipsam nemo assumenda
+    </p>
+ <!-- !REMINDER: THIS HERO SECTION SERVES AS SHORT CTAS LINKS AND INTRO FOR WHOLE SITE ^ -->
+ 
 
-    <div id="SQ2" class="">
-      <h2 class="pl-5 text-2xl font-bold">
-        Hi there, I'm Elsa, a web developer located in Joshua Tree, CA.
-      </h2>
-      <div id="paragraph-container" class="bg-test">
-        <p class="p-5">
-         about me- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
-          mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
-          consectetur adipisicing elit necessitatibus iste voluptas nihil qui
-          aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
-          doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
-          consequatur
-        </p>
 
-        <p id="projects" class="p-5">
-          about projects-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus
-          mollitia possimus reiciendis, aperiam consequuntur quas dolor sit amet
-          consectetur adipisicing elit necessitatibus iste voluptas nihil qui
-          aliquid labor ssimus reiciendis, aperiamiosam consequatur dolore
-          doloremque illum modi temporibus eos. as nihil qui aliquid laboriosam
-          consequatur
-        </p>
-      </div>
-    </div>
+    <ul class="py-5">
+      <li>LANGUAGES:</li>
+      <li>Javascript- headless</li>
+      <li>PHP-wp</li>
+    </ul>
+
+
+ 
+
+    <p>
+      I use
+      <span class="text-carribean font-semibold"
+        >Laughing Coyote CTA,-
+      </span>for catering for creatives who need a small, brochure website. ipsum dolor sit amet consectetur adipisicing elit. Iure eius
+      magnam labore repellat beatae molestiae id qui debitis ipsam nemo
+      assumenda rerum, possimus atque quaerat. Quia delectus quidem natus
+      architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Iure eius dolor sit amet consectetur adipisicing elit. <span
+        class="text-carribean font-semibold"
+        >All other projects CTA-
+      </span>Iure eius magnam labore repellat beatae molestiae id qui debitis
+      ipsam nemo assumenda
+    </p>
+
+    <ul class="pt-5 mt-2">
+      <li class="pb-1">
+        <a href="/#projects" class="underline text-onyx">Projects CTA</a>
+      </li>
+      <li>
+        <a href="/contact" class="underline text-onyx">Contact cta</a>
+      </li>
+    </ul>
   </div>
-  <div id="" class="flex justify-center">
+ 
+ 
+  <div id="projects" class="flex justify-center">
     <div id="projects-container-grid" class="grid grid-cols-1 gap-y-5">
       <Banner title="Projects" />
       <!-- TODO: create grid vs list view comp with icon v-->
@@ -51,20 +71,11 @@ const allWebsites = await Astro.glob("../pages/websites/*.md");
         <div>
           {
             allWebsites.map((post) => (
-            <!-- TODO: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE v-->
+            <!-- *: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE v-->
               <>
-                <Card />
-                <div id="sq" class="p-5 m-5">
-                  <a href={post.url}>
-                    <h2 class="p-3 mt-5 text-2xl font-bold capitalize">
-                      {post.frontmatter.title}
-                    </h2>
-                    <img src={post.frontmatter.image.url} class="w-full " />
-                    <p class="p-3">{post.frontmatter.p}</p>
-                  </a>
-                </div>
+                <Card title={post.frontmatter.title} p={post.frontmatter.p} url={post.frontmatter.url } image={post.frontmatter.image.url} />
               </>
-    <!-- TODO: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE ^ -->
+    <!-- *: 5/22/24 EVENTUALLY CREATE CARD EXP FOR HOMEPAGE ^ -->
             ))
           }
         </div>
