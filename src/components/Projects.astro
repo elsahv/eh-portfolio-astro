@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import lc from "../images/lc.jpg";
+import rq from "../images/rq.png";
+import wtbh from "../images/wtbh.png";
+import jungle from "../images/jungle.png";
+
+import FileOpen from "../../public/icons/file.png";
+import Github from "../../public/icons/github.png";
+
+const websites = [
+  {
+    title: "Laughing Coyote Dev",
+    p: "list the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business.",
+    screenshot: lc,
+    url: "https://laughingcoyote.dev",
+    github: "https://github.com/elsahv/--LC-astro",
+  },
+  {
+    title: "The Running Quail",
+    p: "an online bulletin board for the Morongo Basin Community",
+    screenshot: rq,
+    url: "https://therunningquail.com",
+    github: "https://github.com/elsahv/-the-running-quail",
+  },
+  {
+    title: " Writing to Better Health",
+    p: "ADD mindmap/diagrams for bettering health - thru WTBH",
+    screenshot: wtbh,
+    url: "https://writingtobetterhealth.com",
+    github: "https://github.com/elsahv/writing-to-better-health",
+  },
+  {
+    title: "The Indoor Jungle Project",
+    p: "a horror-themed botany journal",
+    screenshot: jungle,
+    url: "https://theindoorjungleproject.com",
+    github: "https://github.com/elsahv/-the-indoor-jungle-project",
+  },
+];
+---
+
+<div class="bg-test bg-test">
+  {
+    websites.map((website: any) => (
+      <div id="sq-wrapper" class="pb-5 my-[90px]">
+        <div id="sq" class="2xl:px-5 px-0 m-5 mb-[45px]">
+          <a href={website.url}>
+            <Image
+              src={website.screenshot}
+              alt=""
+              class="border-2 border-onyx opacity-80 hover:opacity-100 rounded"
+            />
+          </a>
+
+          <p class="p-3">{website.p}</p>
+
+          <div class="pl-3 space-x-2 flex">
+            <a href={website.url}>
+              <Image
+                src={FileOpen}
+                alt="view website"
+                class="w-8 h-8 opacity-80 hover:opacity-60"
+              />
+            </a>
+
+            <a href={website.github}>
+              <Image
+                src={Github}
+                alt="view github"
+                class="w-8 h-8 opacity-80 hover:opacity-60"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
