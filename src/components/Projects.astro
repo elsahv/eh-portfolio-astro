@@ -11,40 +11,46 @@ import Github from "../../public/icons/github.png";
 const websites = [
   {
     title: "Laughing Coyote Dev",
-    p: "list the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business.",
     screenshot: lc,
+    p: "list the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business.",
+    description:
+      "Laughing coyote is going to be a resource for small business owners.",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
   },
   {
     title: "The Running Quail",
-    p: "an online bulletin board for the Morongo Basin Community",
     screenshot: rq,
+    p: "an online bulletin board for the Morongo Basin Community",
+    description: "RQ is going to be a resource for small business owners.",
     url: "https://therunningquail.com",
     github: "https://github.com/elsahv/-the-running-quail",
   },
   {
     title: " Writing to Better Health",
-    p: "ADD mindmap/diagrams for bettering health - thru WTBH",
     screenshot: wtbh,
+    p: "ADD mindmap/diagrams for bettering health - thru WTBH",
+    description: "ADD mindmap/diagrams for bettering health - thru WTBH",
     url: "https://writingtobetterhealth.com",
     github: "https://github.com/elsahv/writing-to-better-health",
   },
   {
     title: "The Indoor Jungle Project",
-    p: "a horror-themed botany journal",
     screenshot: jungle,
+    p: "a horror-themed botany journal",
+    description: "a horror-themed botany journal",
     url: "https://theindoorjungleproject.com",
     github: "https://github.com/elsahv/-the-indoor-jungle-project",
   },
 ];
 ---
 
-<div class="bg-test bg-test">
+<div class="pt-5 mt-5">
   {
     websites.map((website: any) => (
       <div id="sq-wrapper" class="pb-5 my-[90px]">
         <div id="sq" class="2xl:px-5 px-0 m-5 mb-[45px]">
+          <h2 class="font-bold"> {website.description}</h2>
           <a href={website.url}>
             <Image
               src={website.screenshot}
@@ -52,9 +58,7 @@ const websites = [
               class="border-2 border-onyx opacity-80 hover:opacity-100 rounded"
             />
           </a>
-
           <p class="p-3">{website.p}</p>
-
           <div class="pl-3 space-x-2 flex">
             <a href={website.url}>
               <Image

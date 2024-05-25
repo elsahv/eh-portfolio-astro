@@ -1,6 +1,6 @@
 - WE ARE STICKING TO CARD CTA, SAVE BLOG POSTS FOR LATER.... <--- STOP CHANGING YOUR MIND!!
 
-**CURRENTLY:**
+**CURRENTLY:CHANGING MOBILE HEADER**
 
 \*\*change website card main pics to website screenshots--LEARN CLOUDINARY??
 
