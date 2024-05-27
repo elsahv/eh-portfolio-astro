@@ -21,7 +21,7 @@ const websites = [
   {
     title: "The Running Quail",
     screenshot: rq,
-    p: "an online bulletin board for the Morongo Basin Community",
+    p: "an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     description: "RQ is going to be a resource for small business owners.",
     url: "https://therunningquail.com",
     github: "https://github.com/elsahv/-the-running-quail",
@@ -29,7 +29,7 @@ const websites = [
   {
     title: " Writing to Better Health",
     screenshot: wtbh,
-    p: "ADD mindmap/diagrams for bettering health - thru WTBH",
+    p: "ADD mindmap/diagrams for bettering health - thru WTBH. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     description: "ADD mindmap/diagrams for bettering health - thru WTBH",
     url: "https://writingtobetterhealth.com",
     github: "https://github.com/elsahv/writing-to-better-health",
@@ -37,51 +37,51 @@ const websites = [
   {
     title: "The Indoor Jungle Project",
     screenshot: jungle,
-    p: "a horror-themed botany journal",
-    description: "a horror-themed botany journal",
+    p: "a horror-themed botany journal. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
+    description: "a horror-themed botany journal.",
     url: "https://theindoorjungleproject.com",
     github: "https://github.com/elsahv/-the-indoor-jungle-project",
   },
 ];
 ---
 
-<div class="pt-5 mt-5">
+<div class="px-5">
   {
     websites.map((website: any) => (
       <div id="sq-wrapper" class="pb-5 my-[90px]">
-        <div id="sq" class="2xl:px-5 px-0 m-5 mb-[45px]">
+        <div id="sq" class="2xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg">
           <a href={website.url}>
             <Image
               src={website.screenshot}
               alt=""
-              class="border-2 border-onyx opacity-80 hover:opacity-100 rounded-md"
+              class="border-2 border-black opacity-80 hover:opacity-100 rounded-md"
             />
 
-            <h2 class="font-bold pl-1 pt-1"> {website.description}</h2>
-            <div class=" space-x-3 flex bg-">
-              <a href={website.url}>
-                <div id="btn-wrapper" class="flex bg-">
-                  {/* <button class="pr-1">view code</button> */}
-                  <Image
-                    src={FileOpen}
-                    alt="view website"
-                    class="w-8 h-8 opacity-80 hover:opacity-60"
-                  />
-                </div>
-              </a>
+            <div id="content-wrapper" class="py-2 p-5 ">
+              <h2 class="font-bold pl-1 pt-1"> {website.description}</h2>
+              <div class=" space-x-3 flex bg-">
+                <a href={website.url}>
+                  <div id="btn-wrapper" class="flex bg-">
+                    <Image
+                      src={FileOpen}
+                      alt="view website"
+                      class="w-8 h-8 opacity-80 hover:opacity-60"
+                    />
+                  </div>
+                </a>
 
-              <a href={website.github}>
-                <div id="btn-wrapper" class="flex bg-">
-                  {/* <button class="pr-1">view code</button> */}
-                  <Image
-                    src={Github}
-                    alt="view github"
-                    class="w-8 h-8 opacity-80 hover:opacity-60"
-                  />
-                </div>
-              </a>
+                <a href={website.github}>
+                  <div id="btn-wrapper" class="flex bg-">
+                    <Image
+                      src={Github}
+                      alt="view github"
+                      class="w-8 h-8 opacity-80 hover:opacity-60"
+                    />
+                  </div>
+                </a>
+              </div>
+              <p class="pl-1 py-1">{website.p}</p>
             </div>
-            <p class="pl-1 py-1">{website.p}</p>
           </a>
         </div>
       </div>
