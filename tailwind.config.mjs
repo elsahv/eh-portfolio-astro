@@ -7,7 +7,6 @@ export default {
         dmserif: ["DM Serif", "serif"],
         com: ["Comfortaa", "cursive"],
       },
-
       colors: {
         carribean: "#15616D",
         munsell: "#0792a5",
