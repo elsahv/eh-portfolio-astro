@@ -6,6 +6,9 @@ export interface Props {
 const { title } = Astro.props as Props;
 ---
 
-<div id="wrapper" class="rounded bg-munsell py-2 px-3 mt-[70]">
-  <h1 class="text-4xl capitalize py-2 px-2">{title}</h1>
+<div
+  id="banner-wrapper"
+  class="mt-[70px] rounded bg-munsell px-3 border border-black"
+>
+  <h1 class="text-4xl capitalize py-4">{title}</h1>
 </div>

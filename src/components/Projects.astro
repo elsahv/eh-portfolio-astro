@@ -7,13 +7,13 @@ import jungle from "../images/jungle.png";
 import FileOpen from "../../public/icons/file.png";
 import Github from "../../public/icons/github.png";
 
-const websites = [
+const projects = [
   {
     title: "Laughing Coyote Dev",
     screenshot: lc,
     p: "list the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business.",
     description:
-      "Laughing coyote is going to be a resource for small business owners.",
+      "Laughing Coyote Dev- going to be a resource for small business owners.",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
   },
@@ -44,21 +44,25 @@ const websites = [
 ];
 ---
 
-<div class="px-5">
+<div class="md:p-5 p-0 bg-">
   {
-    websites.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 my-[90px]">
+    projects.map((website: any) => (
+      <div id="sq-wrapper" class="pb-5 my-[90px] pl-4">
         <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg">
           <a href={website.url}>
-            <Image
-              src={website.screenshot}
-              alt=""
-              class="border-2 border-black hover:border-carribean opacity-80 hover:opacity-100 rounded-md"
-            />
 
-            <div id="content-wrapper" class="py-2 p-5 ">
-              <h2 class="font-bold pl-1 pt-1"> {website.description}</h2>
-              <div class=" space-x-3 flex bg-">
+
+          <div id="website-screenshot-wrapper" class="">
+                      <Image
+                        src={website.screenshot}
+                        alt=""
+                        class="m-5 border-2 border-black hover:border-carribean opacity-80 hover:opacity-100 rounded-md"
+                      />
+          </div>
+            <div id="content-wrapper" class="py-2 p-5 bg-test">
+              <div id="content-container" class="py-2 px-5">
+  
+              <div id="sm-icons" class=" space-x-2 flex bg-">
                 <a href={website.url}>
                   <div id="btn-wrapper" class="flex bg-">
                     <Image
@@ -79,8 +83,13 @@ const websites = [
                   </div>
                 </a>
               </div>
-              <p class="pl-1 py-1">{website.p}</p>
+              <div id="words-wrapper" class="ml-1 py-2 pt-1">
+                <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
+                            <h2 class="font-bold pl-1 mt-1 pt-1"> {website.title}</h2>
+                <p class=" m-1 pr-3 opacity-90">{website.p}</p>
+              </div>
             </div>
+          </div>
           </a>
         </div>
       </div>
