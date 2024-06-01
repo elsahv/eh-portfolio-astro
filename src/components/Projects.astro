@@ -44,14 +44,12 @@ const projects = [
 ];
 ---
 
-<div class="md:p-5 p-0 bg-">
+<div class="p-5">
   {
     projects.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 my-[90px] pl-4">
+      <div id="sq-wrapper" class="pb-5 my-[120px] my pl-4">
         <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg">
           <a href={website.url}>
-
-
           <div id="website-screenshot-wrapper" class="">
                       <Image
                         src={website.screenshot}
@@ -59,12 +57,11 @@ const projects = [
                         class="m-5 border-2 border-black hover:border-carribean opacity-80 hover:opacity-100 rounded-md"
                       />
           </div>
-            <div id="content-wrapper" class="py-2 p-5 bg-test">
-              <div id="content-container" class="py-2 px-5">
-  
-              <div id="sm-icons" class=" space-x-2 flex bg-">
+            <div id="content-wrapper" class="bg-test px-5 bg-test">
+              <div id="content-container" class="px-5">
+              <div id="sm-icons" class="flex space-x-2">
                 <a href={website.url}>
-                  <div id="btn-wrapper" class="flex bg-">
+                  <div id="btn-wrapper" class="flex">
                     <Image
                       src={FileOpen}
                       alt="view website"
@@ -72,7 +69,6 @@ const projects = [
                     />
                   </div>
                 </a>
-
                 <a href={website.github}>
                   <div id="btn-wrapper" class="flex bg-">
                     <Image
@@ -83,7 +79,7 @@ const projects = [
                   </div>
                 </a>
               </div>
-              <div id="words-wrapper" class="ml-1 py-2 pt-1">
+              <div id="words-wrapper" class="ml-1 py-2">
                 <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
                             <h2 class="font-bold pl-1 mt-1 pt-1"> {website.title}</h2>
                 <p class=" m-1 pr-3 opacity-90">{website.p}</p>
