@@ -44,11 +44,11 @@ const projects = [
 ];
 ---
 
-<div class="p-5">
+<div class="p-5 max-h-screen snap-y snap-mandatory overflow-y-scroll">
   {
     projects.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 my-[120px] my pl-4">
-        <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg">
+      <div id="sq-wrapper" class="pb-5 my-[220px] my pl-4 snap-start h-screen">
+        <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg snap-center">
           <a href={website.url}>
           <div id="website-screenshot-wrapper" class="">
                       <Image
