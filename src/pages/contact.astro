@@ -2,6 +2,7 @@
 import Banner from "../components/Banner.astro";
 import ContactForm from "../components/ContactForm.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+const today = new Date();
 ---
 
 <MainLayout>
@@ -24,4 +25,10 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </div>
   </div>
+  <footer
+    id="projects-footer"
+    class="fixed bottom-0 border-t border-r rounded-tr-sm border-black pr-1 opacity-60"
+  >
+    &copy; {today.getFullYear()}
+  </footer>
 </MainLayout>

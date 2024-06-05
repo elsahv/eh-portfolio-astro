@@ -50,7 +50,7 @@ const projects = [
 <div class="mt-[50px] pl-5 max-h-screen snap-y snap-mandatory overflow-y-scroll no-">
   {
     projects.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 mb-[220px] pl-4 snap-start h-screen ">
+      <div id="sq-wrapper" class="pb-5 mb-[20px] pl-4 snap-start h-screen ">
         <div id="sq" class="mx-5 mb-[45px] dropshadow-lg snap-center scroll-smooth bg-test">
           <a href={website.url}>
           <div id="website-screenshot-wrapper" class="">
@@ -82,14 +82,14 @@ const projects = [
                   </div>
                 </a>
               </div>
-              <div id="content-wrapper" class="bg- text- ml-1 mt-3 py-2 pl-1">
+              <div id="content-wrapper" class=" ml-1 mt-3 py-2 pl-1">
                 <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
                             <h2 class="pt-1 font-bold mt-1 pl-1 text-lg hover:underline decoration-test1">
                               <a href={website.url}>
                                {website.title}
                                </a>
                                </h2>
-                <p class=" m-1 pl-1 pb-1 opacity-90">{website.p}</p>
+                <p class=" mb-5 pl-1  bg-test opacity-90">{website.p}</p>
               </div>
             </div>
           </div>
