@@ -26,17 +26,23 @@ const items = [
   <nav
     class="_shadowText1 text-white dropshadow-3xl text-xl p-2 w-full absolute z-10 bottom-0 bg-"
   >
-    <h1 class="text-3xl py-1">
-      <a href="/" class="text-aquamarine">Projects Journal</a>
+    <h1 class="pb-3">
+      <a href="/" class="text-aquamarine"
+        ><span class="text-4xl">Elsa Hovey </span><br />
+        <span class="text-munsell py-1 pb-1 text-2xl"
+          >Web Development <br />Design</span
+        >
+      </a>
     </h1>
 
     <button class="pl-1 2xl:hidden">
       <a href="/#HERO-CTA">About</a>
     </button>
+
     {
       items.map((item) => (
-        <ul class="pl-1">
-          <li class="hover:text-munsell">
+        <ul class="">
+          <li class="hover:text-test1 text-">
             <a href={item.link}>{item.title}</a>
           </li>
         </ul>
