@@ -7,6 +7,7 @@ import jungle from "../images/jungle.png";
 import FileOpen from "../../public/icons/file.png";
 import Github from "../../public/icons/github.png";
 import Banner from "./Banner.astro";
+const today = new Date();
 
 const projects = [
   {
@@ -98,5 +99,7 @@ const projects = [
     ))
   }
 </div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid itaque esse iusto earum fuga ad fugit cupiditate, possimus aperiam voluptatem tenetur eius nam tempora! Mollitia nostrum distinctio commodi totam!
+ <footer id="projects-footer" class="fixed bottom-0 border-t border-r rounded-tr-sm border-black pr-1  opacity-60">
+  &copy; {today.getFullYear()}
+ </footer>
 </div>
