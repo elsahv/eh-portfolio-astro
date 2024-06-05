@@ -1,6 +1,7 @@
 - WE ARE STICKING TO CARD CTA, SAVE BLOG POSTS FOR LATER.... <--- STOP CHANGING YOUR MIND!!
 - - KEEP AS SIMPLE AS POSSIBLE!!
 
+**HIDE SCROLLBAR- PROJECTS SECTION**
 **CURRENTLY:CHANGING MOBILE- adjust all**
 \_---5/27/24- mobile 600px- figure out solution for too-stretched image
 

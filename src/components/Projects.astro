@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Laughing Coyote Dev",
     screenshot: lc,
-    p: "list the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business.",
+    p: "Hi there, I'm Elsa! Above is my main project, the Laughing Coyote Dev. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
     description:
       "Laughing Coyote Dev- going to be a resource for small business owners.",
     url: "https://laughingcoyote.dev",
@@ -26,7 +26,7 @@ const projects = [
     github: "https://github.com/elsahv/-the-running-quail",
   },
   {
-    title: " Writing to Better Health",
+    title: "Writing to Better Health",
     screenshot: wtbh,
     p: "ADD mindmap/diagrams for bettering health - thru WTBH. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     description: "ADD mindmap/diagrams for bettering health - thru WTBH",
@@ -44,11 +44,11 @@ const projects = [
 ];
 ---
 
-<div class="p-5 max-h-screen snap-y snap-mandatory overflow-y-scroll">
+<div class="mt-[50px] p-5 max-h-screen snap-y snap-mandatory overflow-y-scroll no-scrollbar">
   {
     projects.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 my-[220px] my pl-4 snap-start h-screen">
-        <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg snap-center">
+      <div id="sq-wrapper" class="pb-5 mb-[220px] my pl-4 snap-start h-screen bg-">
+        <div id="sq" class="xl:px-5 px-0 m-5 mb-[45px] dropshadow-lg snap-center scroll-smooth bg-test">
           <a href={website.url}>
           <div id="website-screenshot-wrapper" class="">
                       <Image
@@ -57,7 +57,7 @@ const projects = [
                         class="m-5 border-2 border-black hover:border-carribean opacity-80 hover:opacity-100 rounded-md"
                       />
           </div>
-            <div id="content-wrapper" class="bg-test px-5 bg-test">
+            <div id="content-wrapper" class="bg-test px-5">
               <div id="content-container" class="px-5">
               <div id="sm-icons" class="flex space-x-2">
                 <a href={website.url}>
@@ -79,10 +79,10 @@ const projects = [
                   </div>
                 </a>
               </div>
-              <div id="words-wrapper" class="ml-1 py-2">
+              <div id="content-wrapper" class="bg- text- ml-1 mt-3 py-2 pl-1">
                 <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
-                            <h2 class="font-bold pl-1 mt-1 pt-1"> {website.title}</h2>
-                <p class=" m-1 pr-3 opacity-90">{website.p}</p>
+                            <h2 class="pt-1 font-bold mt-1 pl-1 text-lg"> {website.title}</h2>
+                <p class=" m-1 pl-1 pb-1 opacity-90">{website.p}</p>
               </div>
             </div>
           </div>
