@@ -2,6 +2,10 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    // screens: {
+    //   600: "600px",
+    // },
+
     extend: {
       fontFamily: {
         dmserif: ["DM Serif", "serif"],
