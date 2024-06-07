@@ -3,8 +3,9 @@
 
 * \*??TURN TEMP FOOTER INTO PERMANANT WHEN FIGURED OUT\*\*
 
-**LEARN HOW TO MAKE 1ST PROJECT SQ(LQ) different style than other sqs.**
 **CURRENTLY:CHANGING MOBILE- adjust all**
+
+**LEARN HOW TO MAKE 1ST PROJECT SQ(LQ) different style than other sqs.**
 \_---5/27/24- mobile 600px- figure out solution for too-stretched image
 
 \*\*organize websites by priority 0R latest posts-/homepage

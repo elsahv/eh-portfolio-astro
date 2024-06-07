@@ -45,19 +45,19 @@ const projects = [
   },
 ];
 ---
-<div class="p-1">
+<div class="p-">
   <Banner title="Featured Works"/>
-<div class="mt-[50px] lg:pl-5 pl-0 max-h-screen snap-y snap-mandatory overflow-y-scroll ">
+<div class="mt-[50px] lg:pl-5  max-h-screen snap-y snap-mandatory overflow-y-scroll md:ml-0 ml-5 pl-5">
   {
     projects.map((website: any) => (
-      <div id="sq-wrapper" class="pb-5 mb-[20px] md:pl-4 pl-1 snap-start 2xl:h-screen ">
+      <div id="sq-wrapper" class="pb-5 mb-[20px] md:pl-4 pl-1 snap-start 2xl:h-screen">
         <div id="sq" class="mb-[45px] dropshadow-lg snap-center scroll-smooth ">
           <a href={website.url}>
           <div id="website-screenshot-wrapper" class="">
                       <Image
                         src={website.screenshot}
                         alt=""
-                        class="mb-4 mt-4 mr-0  border-black border-t-2 border-l-2 border-b-2 hover:border-carribean opacity-80 hover:opacity-100 rounded-bl-md rounded-tl-md"
+                        class="mb-4 mt-4 mr-0 ml-5  border-black border-t-2 border-l-2 border-b-2 hover:border-carribean opacity-80 hover:opacity-100 rounded-bl-md rounded-tl-md"
                       />
           </div>
             <div id="content-wrapper" class="bg-test md:px-5 px-0">
