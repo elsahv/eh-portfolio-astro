@@ -13,17 +13,14 @@ const projects = [
   {
     title: "Laughing Coyote Dev",
     screenshot: lc,
-    p: "website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
-    description:
-      "Laughing Coyote Dev- going to be a resource for small business owners.",
+    p: "Laughing Coyote Dev provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
   },
   {
     title: "The Running Quail",
     screenshot: rq,
-    p: "an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
-    description: "RQ is going to be a resource for small business owners.   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optio vero sed itaque odio, voluptatem maxime nemo aperiam! Ducimus animi repudiandae corporis.   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.",
+    p: "RQ is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     url: "https://therunningquail.com",
     github: "https://github.com/elsahv/-the-running-quail",
   },
@@ -31,7 +28,7 @@ const projects = [
     title: "Writing to Better Health",
     screenshot: wtbh,
     p: "ADD mindmap/diagrams for bettering health - thru WTBH. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
-    description: "ADD mindmap/diagrams for bettering health - thru WTBH.   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optio vero sed itaque odio, voluptatem maxime nemo aperiam! Ducimus animi repudiandae corporis.",
+ 
     url: "https://writingtobetterhealth.com",
     github: "https://github.com/elsahv/writing-to-better-health",
   },
@@ -39,18 +36,17 @@ const projects = [
     title: "The Indoor Jungle Project",
     screenshot: jungle,
     p: "a horror-themed botany journal. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.",
-    description: "a horror-themed botany journal.",
     url: "https://theindoorjungleproject.com",
     github: "https://github.com/elsahv/-the-indoor-jungle-project",
   },
 ];
 ---
 <div class="">
-<div class="md:mt-[50px] mt-[75px] lg:pl-[35px] md:pl-5 pl-0 max-h-screen snap-y snap-mandatory overflow-y-scroll">
+<div class="md:mt-[50px] mt-[75px] lg:pl-[35px] md:pl-5 pl-0 max-h-screen snap-y snap-mandatory">
   {
     projects.map((website: any) => (
       <div id="sq-wrapper" class="2xl:p-5 p-1 mb-[20px] mr-5 md:pl-4 pl-1 snap-start">
-        <div id="sq" class="mr-5 mb-[75px] dropshadow-lg snap-center scroll-smooth">
+        <div id="sq" class=" snap-center mr-5 mb-[75px] dropshadow-lg scroll-smooth">
           <a href={website.url} target="_blank" rel="noopener noreferrer">
                       <Image  
                         src={website.screenshot}
