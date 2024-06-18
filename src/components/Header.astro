@@ -1,53 +1,33 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
-// import Icon1 from "../../public/icons/github.png";
-// import Icon2 from "../../public/icons/linkedin.png";
-
-// const items = [
-//   {
-//     title: "Featured Works",
-//     link: "/#projects",
-//   },
-//   {
-//     title: "Work with me",
-//     link: "/work-with-me/#work-with-me",
-//   },
-//   {
-//     title: "Contact",
-//     link: "/contact/#contact",
-//   },
-// ];
 ---
 
 <header
   class="bg-carribean pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen 2xl:w-1/4 lg:w-[390px] md:w-[345px] w-full md:border-r-2 border-b-2 border-black"
 >
   <nav
-    class="_shadowText1 text-aliceBlue dropshadow-3xl text-lg pl-4 w-full absolute z-10 bottom-0 mb-2"
+    class="_shadowText1 text-aliceBlue dropshadow-3xl pl-4 w-full absolute z-10 bottom-0 mb-2"
   >
-    <p class="text-xl mb-1 pb-1 pl-2">
+    <p class="text-lg mb-1 pb-1 pl-2">
       <span class="text-munsell text-2xl">
-        <a href="/"> Hi there, I'm Elsa,</a>
+        <a href="/"> Hi there, I'm Elsa...</a>
         <br /></span
       >
 
-      <span class="text-aquamarine pr-1"
-        >I build niche websites for creatives and small business owners</span
-      >
+      <span class="text-parchment pr-5"
+        >I build niche websites for creatives and small business owners
+      </span>
     </p>
 
-    <div class="bg- p-1">
+    <div class="bg- pb-5">
       <!-- </div> -->
       <div id="LINKS-CONTAINER" class="pt-1">
         <div class="flex items-center">
-          <!-- <Image
-            src={Icon1}
-            alt=""
-            width={32}
-            height={32}
-            class="bg-munsell rounded p-1 m-1"
-          /> -->
+          <a href="/"><span class="text-test2 font-bold">-</span> Portfolio</a>
+        </div>
+
+        <div class="flex items-center">
           <a href="/work-with-me"
             ><span class="text-munsell font-bold">-</span> Work with me</a
           >
@@ -55,38 +35,11 @@ import ProfilePic from "../../public/eh-img.jpg";
       </div>
 
       <div class="flex items-center">
-        <!-- <Image
-          src={Icon2}
-          alt=""
-          width={32}
-          height={32}
-          class="bg-test2 p-1 m-1"
-        /> -->
         <a href="/contact"
           ><span class="text-test1 font-bold">-</span> Contact</a
         >
       </div>
     </div>
-    <!-- 
-    {
-      items.map((item) => (
-        <ul class="">
-          <li class="hover:text-test1 text-">
-            <a href={item.link}>{item.title}</a>
-          </li>
-        </ul>
-      ))
-    } -->
-    <!-- ?? UNSURE ABOUT USAGE v -->
-    <!-- <ul id="sm-icons" class="flex gap-x-2 mt-3">
-      <li class="bg-test">
-        <Image src={Icon1} alt="" width={32} height={32} />
-        <li>
-          <Image src={Icon2} alt="" width={32} height={32} />
-        </li>
-      </li>
-    </ul> -->
-    <!-- ?? UNSURE ABOUT USAGE ^ -->
   </nav>
   <Image
     src={ProfilePic}

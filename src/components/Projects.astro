@@ -46,49 +46,23 @@ const projects = [
 ];
 ---
 <div class="">
-  <!-- <Banner title="Featured Works"/> -->
 <div class="md:mt-[50px] mt-[75px] lg:pl-[35px] md:pl-5 pl-0 max-h-screen snap-y snap-mandatory overflow-y-scroll">
-
   {
     projects.map((website: any) => (
       <div id="sq-wrapper" class="2xl:p-5 p-1 mb-[20px] mr-5 md:pl-4 pl-1 snap-start">
         <div id="sq" class="mr-5 mb-[75px] dropshadow-lg snap-center scroll-smooth">
           <a href={website.url} target="_blank" rel="noopener noreferrer">
-                      <Image
+                      <Image  
                         src={website.screenshot}
                         alt=""
                         class="ml-5 2xl:m-5 m-2 border border-rosyBrown hover:border-carribean opacity-80 hover:opacity-100 "
                       />
             <div id="content-wrapper" class="xl:px-5 px-0">
               <div id="content-container" class="px-5">
-              {/* <div id="sm-icons" class="flex space-x-2">
-                <a href={website.url} target="_blank " rel="noopener noreferrer">
-                  <div id="btn-wrapper" class="flex">
-                    <Image
-                      src={FileOpen}
-                      alt="view website"
-                      class="w-8 h-8 opacity-80 hover:opacity-60"
-                    />
-                  </div>
-                </a>
-                <a href={website.github} target="_blank" rel="noopener noreferrer">
-                  <div id="btn-wrapper" class="flex bg-">
-                    <Image
-                      src={Github}
-                      alt="view github"
-                      class="w-8 h-8 opacity-80 hover:opacity-60"
-                    />
-                  </div>
-                </a>
-              </div> */}
               <div id="content-wrapper" class="ml-1 mt-3 py-2 pl-1">
                 <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
-                            {/* <h2 class="pt-1 font-bold mt-1 pl-1 text-2xl hover:underline decoration-test1">
-                              <a href={website.url}>
-                               {website.title}
-                               </a>
-                               </h2> */}
-                <p class="px-[70px] mb-5 opacity-90 text-onyx">{website.p}</p>
+                         
+                <p class="2xl:px-[70px] md:px-2 px-1 mb-5 opacity-90 text-onyx">{website.p}</p>
               </div>
             </div>
           </div>
