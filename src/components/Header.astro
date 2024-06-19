@@ -1,56 +1,69 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
+import Hamburger from "../images/hamburger-menu.png";
 ---
 
-<header
-  class="bg-carribean pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen 2xl:w-1/4 lg:w-[390px] md:w-[345px] w-full md:border-r-2 border-b-2 border-black"
->
-  <nav
-    class="_shadowText1 text-aliceBlue dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 mb-2"
+<>
+  <header
+    class="bg-carribean pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen 2xl:w-1/4 lg:w-[390px] md:w-[345px] w-full md:border-r-2 border-b-2 border-black"
   >
-    <p class="text-lg mb-1 pb-1 pl-2">
-      <span class="text-munsell text-2xl">
-        <a href="/">
-          Hi there, I'm
-          <span class="hover:text-aquamarine underline decoration-aquamarine"
-            >Elsa.</span
-          >
-        </a>
-        <br /></span
-      >
-
-      <span class="text-parchment pr-5"
-        >I build niche websites for creatives and small business owners
-      </span>
-    </p>
-
-    <div class="bg- pb-5">
-      <!-- </div> -->
-      <div id="LINKS-CONTAINER" class="pt-1">
-        <div class="flex items-center">
-          <a href="/#portfolio"
-            ><span class="text-test2 font-bold">-</span> Portfolio</a
-          >
-        </div>
-
-        <div class="flex items-center">
-          <a href="/work-with-me/#work-with-me"
-            ><span class="text-munsell font-bold">-</span> Work with me</a
-          >
-        </div>
-      </div>
-
-      <div class="flex items-center">
-        <a href="/contact/#contact"
-          ><span class="text-test1 font-bold">-</span> Contact</a
+    <nav
+      class="_shadowText1 text-aliceBlue dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 mb-2"
+    >
+      <p class="text-lg mb-1 pb-1 pl-2">
+        <span class="text-munsell text-2xl">
+          <a href="/">
+            Hi there, I'm
+            <span class="hover:text-aquamarine underline decoration-aquamarine"
+              >Elsa.</span
+            >
+          </a>
+          <br /></span
         >
+
+        <span class="text-parchment pr-5"
+          >I build niche websites for creatives and small business owners
+        </span>
+      </p>
+
+      <div class="bg- pb-5">
+        <!-- </div> -->
+        <div id="LINKS-CONTAINER" class="pt-1">
+          <div class="flex items-center">
+            <a href="/#portfolio"
+              ><span class="text-test2 font-bold">-</span> Portfolio</a
+            >
+          </div>
+
+          <div class="flex items-center">
+            <a href="/#work-with-me"
+              ><span class="text-munsell font-bold">-</span> Work with me</a
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <a href="/#contact"
+            ><span class="text-test1 font-bold">-</span> Contact</a
+          >
+        </div>
       </div>
+    </nav>
+    <Image
+      src={ProfilePic}
+      alt=""
+      class="absolute bottom-0 z-0 h-screen border border-t-black"
+    />
+  </header>
+  <!-- TODO: HAMBURGER MENU v-->
+  <div
+    id="HAMBURGER-MENU"
+    class="sticky top-0 z-40 bg- flex flex-start md:hidden"
+  >
+    <div class="bg-aliceBlue p-5">
+      <Image src={Hamburger} alt="" width={25} height={25} />
     </div>
-  </nav>
-  <Image
-    src={ProfilePic}
-    alt=""
-    class="absolute bottom-0 z-0 h-screen border border-t-black"
-  />
-</header>
+  </div>
+  <!-- TODO: HAMBURGER MENU ^-->
+</>
