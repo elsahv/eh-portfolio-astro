@@ -1,7 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
-import Hamburger from "../images/hamburger-menu.png";
+
+const menuItems = [
+  {
+    title: "about",
+    scrollLink: "/#about",
+  },
+  {
+    title: "contact",
+    scrollLink: "/#contact",
+  },
+];
 ---
 
 <>
@@ -12,38 +22,32 @@ import Hamburger from "../images/hamburger-menu.png";
       class="_shadowText1 text-aliceBlue dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 mb-2"
     >
       <p class="text-lg mb-1 pb-1 pl-2">
-        <span class="text-munsell text-2xl">
+        <span class="text-munsell text-3xl">
           Hi there, I'm
           <span class="">Elsa.</span>
           <br /></span
         >
 
-        <span class="text-parchment pr-5"
-          >I build niche websites for creatives and small business owners
+        <span class="text- text-md pr-5">
+          I'm the developer who's built:
+          <a href="https://therunningquail.com" class="underline ext-white"
+            >The Running Quail
+          </a> and
+          <a href="https://laughingcoyote.dev" class="underline ext-white"
+            >Laughing Coyote Dev</a
+          >
+          .
         </span>
       </p>
 
-      <div class="bg- pb-5">
-        <!-- </div> -->
-        <div id="LINKS-CONTAINER" class="pt-1">
-          <div class="flex items-center">
-            <a href="/#portfolio"
-              ><span class="text-test2 font-bold">-</span> Featured Websites</a
-            >
-          </div>
-
-          <div class="flex items-center">
-            <a href="/#work-with-me"
-              ><span class="text-munsell font-bold">-</span> Work with me</a
-            >
-          </div>
-        </div>
-
-        <div class="flex items-center">
-          <a href="/#contact"
-            ><span class="text-test1 font-bold">-</span> Contact</a
-          >
-        </div>
+      <div id="LINKS-CONTAINER" class="pl-2 pb-5">
+        {
+          menuItems.map((menuItem) => (
+            <div>
+              <a href={menuItem.scrollLink}>-{menuItem.title}</a>
+            </div>
+          ))
+        }
       </div>
     </nav>
     <Image
@@ -52,14 +56,4 @@ import Hamburger from "../images/hamburger-menu.png";
       class="absolute bottom-0 z-0 h-screen border border-t-black"
     />
   </header>
-  <!-- TODO: HAMBURGER MENU-(COME BACK TO) v-->
-  <!-- <div
-    id="HAMBURGER-MENU"
-    class="sticky top-0 z-40 bg- flex flex-start md:hidden"
-  >
-    <div class="bg-aliceBlue p-5">
-      <Image src={Hamburger} alt="" width={25} height={25} />
-    </div>
-  </div> -->
-  <!-- TODO: HAMBURGER MENU ^-->
 </>

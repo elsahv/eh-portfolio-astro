@@ -8,36 +8,38 @@ import jungle from "../images/jungle.png";
 // import Github from "../../public/icons/github.png";
 // import Banner from "./Banner.astro";
 
+// TODO:FOCUS ON LC, RQ FOR NOW
+
 const websites = [
   {
     title: "Laughing Coyote Dev",
     screenshot: lc,
-    p: "Portfolio Highlight- Laughing Coyote Dev provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
+    p: "Provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
   },
   {
     title: "The Running Quail",
     screenshot: rq,
-    p: "RQ is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
-    url: "https://therunningquail.com",
+    p: "Going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
+    url: "rq",
     github: "https://github.com/elsahv/-the-running-quail",
   },
-  {
-    title: "Writing to Better Health",
-    screenshot: wtbh,
-    p: "ADD mindmap/diagrams for bettering health - thru WTBH. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
+  // {
+  //   title: "Writing to Better Health",
+  //   screenshot: wtbh,
+  //   p: "ADD mindmap/diagrams for bettering health - thru WTBH. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
  
-    url: "https://writingtobetterhealth.com",
-    github: "https://github.com/elsahv/writing-to-better-health",
-  },
-  {
-    title: "The Indoor Jungle Project",
-    screenshot: jungle,
-    p: "a horror-themed botany journal. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.",
-    url: "https://theindoorjungleproject.com",
-    github: "https://github.com/elsahv/-the-indoor-jungle-project",
-  },
+  //   url: "https://writingtobetterhealth.com",
+  //   github: "https://github.com/elsahv/writing-to-better-health",
+  // },
+  // {
+  //   title: "The Indoor Jungle Project",
+  //   screenshot: jungle,
+  //   p: "a horror-themed botany journal. atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum voluptatibus culpa, at non quos earum, perferendis optiimi repudiandae corporis.",
+  //   url: "https://theindoorjungleproject.com",
+  //   github: "https://github.com/elsahv/-the-indoor-jungle-project",
+  // },
 ];
 ---
 <>
@@ -56,10 +58,10 @@ const websites = [
                       />
             <div id="content-wrapper" class=" xl:pl-5 p-0">
               <div id="content-container" class="bgtest1 pl-5">
-              <div id="content-wrapper" class="ml-1 mt-3 py-2 pl-1">
+              <div id="content-wrapper" class="ml-1 mt-3 py-2 pl-1 2xl:px-[70px] md:px-2 px-1 mb-5 opacity-90 text-onyx">
                 <!-- TODO: MAKE HOVER TEXT/BG-  COLOR CHANGES CONDITIONAL v-->
-                         
-                <p class="2xl:px-[70px] md:px-2 px-1 mb-5 opacity-90 text-onyx">{website.p}</p>
+                 <h2 class="font-bold opacity-100">{website.title}</h2> 
+                <p class="">{website.p}</p>
               </div>
             </div>
           </div>
