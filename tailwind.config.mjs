@@ -22,6 +22,7 @@ export default {
         test1: "#f88379",
         test2: "lightgreen",
         aliceBlue: "#f1f5f9",
+        orange: "#FF7F50",
       },
     },
   },

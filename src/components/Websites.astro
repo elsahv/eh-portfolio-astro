@@ -5,17 +5,17 @@ import rq from "../images/rq.png";
 
 const websites = [
   {
-    title: "Laughing Coyote Dev",
+    title: "Featured Freelance Site",
     screenshot: lc,
-    p: "Provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
+    p: "Laughing Coyote Dev provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
     websiteId: "lc",
   },
   {
-    title: "The Running Quail",
+    title: "Featured Fullstack Project",
     screenshot: rq,
-    p: "Going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
+    p: "The Running Quail is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     url: "rq",
     github: "https://github.com/elsahv/-the-running-quail",
     websiteId: "rq",
@@ -29,7 +29,10 @@ const websites = [
       <div class="md:mt-[50px] mt-[75px] xl:pl-[35px] lg:pl-5 pl-0 bg-test">
         {
           websites.map((website: any) => (
-            <div id="sq" class="2xl:p-5 p-1 mt-5 mb-[20px] mr-5 md:pl-4 pl-0">
+            <div
+              id="sq"
+              class="2xl:p-5 p-1 mt-5 mb-[20px] mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
+            >
               <div
                 id={website.websiteId}
                 class="px-5 mx-5  mb-[75px] dropshadow-lg scroll-smooth "
@@ -38,7 +41,7 @@ const websites = [
                   <Image
                     src={website.screenshot}
                     alt=""
-                    class="mx-5 border border-rosyBrown hover:border-carribean opacity-80 hover:opacity-100 "
+                    class="mx-5 border border-rosyBrown hover:border-carribean"
                   />
                   <div id="content-wrapper" class=" xl:pl-5 p-0 bg-">
                     <div id="content-container" class="bgtest1 pl-5">
