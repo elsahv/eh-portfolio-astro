@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import lc from "../images/lc.jpg";
-import rq from "../images/rq.png";
+import lc from "../../images/lc.jpg";
+import rq from "../../images/rq.png";
 
 const websites = [
   {
@@ -49,10 +49,10 @@ const websites = [
                         id="content"
                         class="ml-1 mt- py-2 pl-1 2xl:px-[70px] md:px-2 px-1 mb-5 opacity-90 text-onyx"
                       >
-                        <h2 class="font-bold opacity-100 pt-3">
+                        <h2 class="font-bold opacity-100 pt-3 mt-1 text-xl hover:underline">
                           {website.title}
                         </h2>
-                        <p class="">{website.p}</p>
+                        <p class="pr-5 mr-5 mt-1 ">{website.p}</p>
                       </div>
                     </div>
                   </div>

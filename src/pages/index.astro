@@ -1,19 +1,22 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Websites from "../components/Websites.astro";
-import About from "../components/About.astro";
-import Contact from "../components/Contact.astro";
+import Websites from "../components/sections/Websites.astro";
+import About from "../components/sections/About.astro";
+import Contact from "../components/sections/Contact.astro";
 ---
 
 <MainLayout>
+  <!-- WEBSITES SECTION -->
   <section id="websites">
     <Websites />
   </section>
 
+  <!-- ABOUT SECTION -->
   <section id="about">
     <About />
   </section>
 
+  <!-- WEBSITE SECTION -->
   <section id="contact">
     <Contact />
   </section>
