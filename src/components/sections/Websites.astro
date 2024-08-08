@@ -16,7 +16,7 @@ const websites = [
     title: "Featured Fullstack Project",
     screenshot: rq,
     p: "The Running Quail is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
-    url: "rq",
+    url: "https://therunningquail.com/",
     github: "https://github.com/elsahv/-the-running-quail",
     websiteId: "rq",
   },
@@ -24,26 +24,26 @@ const websites = [
 ---
 
 <>
-  <div id="websites-wrapper" class="mb-5">
+  <div id="websites-wrapper" class="mb-5 md:pl-0 pl-5">
     <div id="websites-container" class="flex flex-col-1 md:gap-y-8 gap-y-1">
       <div class="md:mt-[50px] mt-[75px] xl:pl-[35px] lg:pl-5 pl-0 bg-test">
         {
           websites.map((website: any) => (
             <div
               id="sq"
-              class="2xl:p-5 p-1 mt-5 mb-[20px] mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
+              class="2xl:p-5 p-0 mt-5 mb-[20px] mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
             >
               <div
                 id={website.websiteId}
-                class="px-5 mx-5  mb-[75px] dropshadow-lg scroll-smooth "
+                class="md:px-5 md:mx-5 m-1 mb-[75px] dropshadow-lg scroll-smooth "
               >
                 <a href={website.url} target="_blank" rel="noopener noreferrer">
                   <Image
                     src={website.screenshot}
                     alt=""
-                    class="mx-5 border border-rosyBrown hover:border-carribean"
+                    class="2xl:mx-5 lg:mx-1 border border-rosyBrown hover:border-carribean"
                   />
-                  <div id="content-wrapper" class=" xl:pl-5 p-0 bg-">
+                  <div id="content-wrapper" class="bg-test 2xl:pl-5 pl-1 bg-">
                     <div id="content-container" class="bgtest1 pl-5">
                       <div
                         id="content"
@@ -52,7 +52,9 @@ const websites = [
                         <h2 class="font-bold opacity-100 pt-3 mt-1 text-xl hover:underline">
                           {website.title}
                         </h2>
-                        <p class="pr-5 mr-5 mt-1 ">{website.p}</p>
+                        <p class="2xl:pr-5 pr-0 2xl:mr-5 mr-0 mt-1 ">
+                          {website.p}
+                        </p>
                       </div>
                     </div>
                   </div>
