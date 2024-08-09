@@ -43,15 +43,15 @@ const menuItems = [
         </span>
       </p>
 
-      <div id="map-links-container" class="pl-2 pb-5">
+      <ul id="map-links-container" class="pl-2 pb-5">
         {
           menuItems.map((menuItem) => (
-            <div>
+            <li class="hover:text-aquamarine">
               <a href={menuItem.scrollLink}>-{menuItem.title}</a>
-            </div>
+            </li>
           ))
         }
-      </div>
+      </ul>
     </nav>
     <Image
       src={ProfilePic}

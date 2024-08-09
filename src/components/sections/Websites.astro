@@ -25,13 +25,16 @@ const websites = [
 
 <>
   <div id="websites-wrapper" class="mb-5 md:pl-0 pl-5">
-    <div id="websites-container" class="flex flex-col-1 md:gap-y-8 gap-y-1">
+    <div
+      id="websites-container"
+      class="flex flex-col-1 bg-test md:gap-y-8 gap-y-1"
+    >
       <div class="md:mt-[50px] mt-[75px] xl:pl-[35px] lg:pl-5 pl-0 bg-test">
         {
           websites.map((website: any) => (
             <div
               id="sq"
-              class="2xl:p-5 p-0 mt-5 mb-[20px] mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
+              class="my-5 2xl:p-5 p-0  mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
             >
               <div
                 id={website.websiteId}
@@ -43,7 +46,7 @@ const websites = [
                     alt=""
                     class="2xl:mx-5 lg:mx-1 border border-rosyBrown hover:border-carribean"
                   />
-                  <div id="content-wrapper" class="bg-tes1t 2xl:pl-5 pl-1 bg-">
+                  <div id="content-wrapper" class="bg-test 2xl:pl-5 pl-1 bg-">
                     <div id="content-container" class="bgtest1 pl-5">
                       <div
                         id="content"
