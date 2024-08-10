@@ -7,18 +7,18 @@ const websites = [
   {
     title: "Featured Freelance Site",
     screenshot: lc,
-    p: "Laughing Coyote Dev provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
+    p: "EH- FINALIZE CONTENT, TWO PARAGRAPHS- 1)about, 2)what problems it solves (why does it exist?) provides website solutions for small business/ creatives.... Above is my main project, the Laughing Coyote Dev, a blog and freelance service in progress. ist the languages, tools... an online resource to help small businesses get their website started. Laughing coyote is going to be a resource for small business owners. I wanted to find a way to simplify the process and reduce the overwhelm of figuring out how to build a website, use a website, and market yourself... all on top of worrying about your own business. Scroll down to see other projects!",
     url: "https://laughingcoyote.dev",
     github: "https://github.com/elsahv/--LC-astro",
-    websiteId: "lc",
+    websiteTitle: "Laughing Coyote Dev",
   },
   {
     title: "Featured Fullstack Project",
     screenshot: rq,
-    p: "The Running Quail is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
+    p: "EH- FINALIZE CONTENT, TWO PARAGRAPHS- 1)about, 2)what problems it solves (why does it exist?) is going to be a resource for small business owners. an online bulletin board for the Morongo Basin Community.atque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit atque quaerat. Quia delectus    quidem natus architecto. Lorem ipsum dolor sitatque quaerat. Quia delectus quidem natus architecto. Lorem ipsum dolor sit",
     url: "https://therunningquail.com/",
     github: "https://github.com/elsahv/-the-running-quail",
-    websiteId: "rq",
+    websiteTitle: "The Running Quail",
   },
 ];
 ---
@@ -29,12 +29,12 @@ const websites = [
       id="websites-container"
       class="flex flex-col-1 bg-test md:gap-y-8 gap-y-1"
     >
-      <div class="md:mt-[50px] mt-[75px] xl:pl-[35px] lg:pl-5 pl-0 bg-test">
+      <div class="md:mt-[50px] mt-[75px] xl:pl-[35px] pl-0 bg-test">
         {
           websites.map((website: any) => (
             <div
               id="sq"
-              class="my-5 2xl:p-5 p-0  mr-5 md:pl-4 pl-0 opacity-85 hover:opacity-100 "
+              class="bg-test my-5 2xl:p-5 p-0 mr-5  pl-0 opacity-85 hover:opacity-100"
             >
               <div
                 id={website.websiteId}
@@ -46,16 +46,24 @@ const websites = [
                     alt=""
                     class="2xl:mx-5 lg:mx-1 border border-rosyBrown hover:border-carribean"
                   />
-                  <div id="content-wrapper" class="bg-test 2xl:pl-5 pl-1 bg-">
-                    <div id="content-container" class="bgtest1 pl-5">
+                  <div id="content-wrapper" class="bg-test 2xl:pl-5 pl-0 bg-">
+                    <div id="content-container" class="bgtest1 md:pl-5 p-0">
                       <div
                         id="content"
-                        class="ml-1 mt- py-2 pl-1 2xl:px-[70px] md:px-2 px-1 mb-5 opacity-90 text-onyx"
+                        class="ml- mt- py-2 pl-1 2xl:px-[70px] md:px-2 px-1   mb-5 opacity-90 text-onyx bg-"
                       >
                         {/* <h2 class="font-bold opacity-100 pt-3 mt-1 text-xl hover:underline">
                           {website.title}
                         </h2> */}
                         <p class="2xl:pr-5 pr-0 2xl:mr-5 mr-0 mt-1 ">
+                          <span class="">
+                            <a
+                              href={website.url}
+                              class="text-carribean hover:underline pr-1"
+                            >
+                              {website.websiteTitle}
+                            </a>
+                          </span>
                           {website.p}
                         </p>
                       </div>
