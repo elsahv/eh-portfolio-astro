@@ -2,12 +2,30 @@
 import About from "../components/sections/About.astro";
 import Contact from "../components/sections/Contact.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+// import ProblemSolving from "../components/sections/ProblemSolving.astro";
+// import LandingPgEx from "../components/LandingPgEx.astro";
+// import MainLayout from "../layouts/MainLayout.astro";
+// import Dynamic_Hero from "../components/shared/Dynamic_Hero.astro";
+// import SubSectionBanner from "../components/shared/SubSection_Banner.astro";
 
 const allWorks = await Astro.glob("./works/*.md");
 ---
 
 <!-- TODO CURRENTLY: TEST FOR USING MARKDOWN FOR JOURNAL -->
 <MainLayout>
+  <!-- <div id="hero-section" class="mb-5 bg-">
+    <Dynamic_Hero
+      title="A Web Design Business for Busy Creatives/ Small Business Owners"
+      listitem1="What do you need for a website?"
+      listitem3="The Growing Pup? A template for small businesses just starting out,  increased potential customers, easier to find on Google."
+      listitem2="Or Rising Carnivore? You need a website not just to promote your business, but have the the ablity to tell your story and brand"
+      listitem4="A custom website that fits your business, personality, goals... and you alone."
+    />
+  </div> -->
+  <!-- <section id="how-it-works">
+    <ProblemSolving />
+    <LandingPgEx />
+  </section> -->
   <About />
   <section id="featured-clients">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
