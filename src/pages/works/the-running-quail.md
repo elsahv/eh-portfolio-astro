@@ -4,7 +4,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "The Running Quail"
 category: "small business"
 pubDate: 2022-07-01
-description: "sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+description: "a future Morongo Basin community website. asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:

@@ -5,7 +5,7 @@ title: "laughing coyote dev"
 category: "small business"
 pubDate: 2022-07-01
 description:
-  "a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
+  " Currently a freelancing landing page, revolving around web design service for small businesses and creatives. Corporis doloremque sit minus, asperiores quia velit
   inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:

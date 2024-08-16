@@ -33,13 +33,7 @@ const allWorks = await Astro.glob("./works/*.md");
                       <h2 class="text-test md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing ediv
-                        id="sq"t. Itaque ex nostrum veniam est? Voluptatum
-                        corporis inventore veniam quas, minus sed corrupti
-                        magnam, nostrum voluptates ipsum quibusdam fugit
-                        exercitationem? Maxime, eos!
-                      </p>
+                      <p class="">{work.frontmatter.description}</p>
                     </div>
                   </a>
                 </div>
