@@ -10,7 +10,7 @@ author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=cpzpv1z4&dl=0"
   alt: "The full Astro logo."
-websiteUrl: "/"
+websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---

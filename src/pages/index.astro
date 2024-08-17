@@ -17,25 +17,30 @@ const allWorks = await Astro.glob("./works/*.md");
         <div id="grid-wrapper" class="2xl:px-[50px] px-5">
           <div
             id="grid"
-            class="mt-5 pt-5 grid md:grid-cols-2 grid-cols-1 2xl:gap-xpx] gap-4 2xl:px-[15px] px-0 bg-"
+            class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-4 md:px-5 px-1"
           >
             {
               allWorks.map((work) => (
-                <div id="sq" class="">
-                  <a href={work.url}>
+                <div id="sq" class="opacity-80 hover:opacity-100">
+                  <a href={work.frontmatter.websiteUrl}>
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
-                      class="drop-shadow-md border border-black hover:border-2 hover:cursor-pointer lg:h-[360px] h-[300px] w-full"
+                      class="drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer lg:h-[360px] h-[300px] w-full"
                     />
-
-                    <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3 drop-shadow-md">
+                  </a>
+                  <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3 drop-shadow-md">
+                    <a href={work.url}>
                       <h2 class="text-test md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
-                      <p class="">{work.frontmatter.description}</p>
-                    </div>
-                  </a>
+                      <p class="">
+                        {work.frontmatter.description}
+                        <span class="text-cerulean">Click here</span> for case
+                        study
+                      </p>
+                    </a>
+                  </div>
                 </div>
               ))
             }
