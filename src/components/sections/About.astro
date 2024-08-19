@@ -1,45 +1,76 @@
 ---
-
+const items = [
+  {
+    subject: "Passions & Interests",
+    p: " Highlight your main passions, hobbies, or things that drive you (e.g., travel, technology, art, helping others). -I create cozy, colorful websites",
+  },
+  {
+    subject: " Skills & Strengths ",
+    p: "    Mention key skills or strengths that define you professionally or personally. -I enjoy coding with Javascript, React.  -I also enjoy php and wordpress.",
+  },
+  {
+    subject: "Personal Philosophy/Values",
+    p: "   Share your core values, guiding principles, or a brief personal philosophy.",
+  },
+  {
+    subject: "Future Aspirations ",
+    p: "   End with a note on your future goals or aspirations, giving readers insight into what you're working toward.",
+  },
+];
 ---
 
 <!-- <div id="about" class="bg-munsell pt-5 pb-5 pl-5"> -->
 <div id="about" class="bg- pt-5 pb-5 pl-5">
   <div id="" class="p-5 px-5">
     <div id="" class="md:mr-5 mx-0 lg:p-5 p-0">
-      <!-- <h2 class="font-bold mt-5 md:pt-5 pt-0 text-lg">
-        Work w/ me- using headless /JS/ cms
-      </h2> -->
-      <h1 class="underline text-carribean font-bold mt-5 md:pt-5 pt-0 text-xl">
+      <h1 class="underline text-onyx font-bold mt-5 md:pt-5 pt-0 text-xl">
         About Me
       </h1>
 
       <p class="">
-        For the past few years, I've dedicated myself to my website projects.
-        elit. Iuret. Quia delectus quidem natus architecto. Lorem ipsum dolor
-        sit amet consectetur adipisicing el delectus quidem natus architecto.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius dolor
-        sit amet consectetur adi pisicing elit.Iure eius magnam labore repellat
-        beatae it. Iure eius dolor sit amet consectetur adi pisicing elit.Iure
-        eius magnam labore repellat beatae molestiae id qui debitis ipsam nemo
+        Background: Include details about your background, such as where you're
+        from, educational history, or career path. For the past few years, I've
+        dedicated myself to my website projects. e ure eius dolor sit amet
+        consectetur adi pisicing elit.Iure eius magnam labore repellat beatae
+        it. Iure eius dolor sit amet consectetur adi pisicing elit.Iure eius
+        magnam labore repellat beatae molestiae id qui debitis ipsam nemo
         assumenda- Work w/ me- using headless /JS/ cms pushing the bounderies of
         design. Services- using WP and custom PHP themes
       </p>
+
+      <!-- ! -->
       <ul class="pl-1 pt-1">
-        <li>-skills, bullet pts item 1</li>
-        <li>-skills, bullet pts item 2</li>
-        <li>-skills, bullet pts item 3</li>
-        <li>-skills, bullet pts item 4</li>
-        <li>-skills, bullet pts item 4</li>
+        {
+          items.map((item) => (
+            <li class="pt-2">
+              <span class="underline ">{item.subject}:</span>
+              {item.p}
+            </li>
+          ))
+        }
       </ul>
-      <!-- 
-      <h2 class="underline text-munsell font-bold mt-5 md:pt-5 pt-0 text-xl">
-        Projects Portfolio
-      </h2>
-      <p class="text-">
-        Look down below.... orem ipsum dolor sit amet consectetur adipisicing
-        elit. Iure eius magnam labore repellat beatae molestia I'm the developer
-        who's built: Laughing Coyote Dev and The Running Quail.
-      </p> -->
+      <!-- ! -->
+
+      <!-- <ul class="pl-1 pt-1"> -->
+      <!-- <li>
+          Passions & Interests:Highlight your main passions, hobbies, or things
+          that drive you (e.g., travel, technology, art, helping others). -I
+          create cozy, colorful websites
+        </li> -->
+      <!-- <li> -->
+      <!-- Skills & Strengths: Mention key skills or strengths that define you
+          professionally or personally. -I enjoy coding with Javascript, React.
+          -I also enjoy php and wordpress. -->
+      <!-- </li> -->
+      <!-- <li>
+          Personal Philosophy/Values: Share your core values, guiding
+          principles, or a brief personal philosophy.
+        </li>
+        <li>
+          Future Aspirations: End with a note on your future goals or
+          aspirations, giving readers insight into what you're working toward.
+        </li> -->
+      <!-- </ul> -->
     </div>
   </div>
 </div>
