@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "laughing coyote dev"
+title: "project 1: Laughing Coyote Dev"
 category: "small business"
 pubDate: 2022-07-01
 description:

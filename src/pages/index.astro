@@ -8,20 +8,35 @@ const allWorks = await Astro.glob("./works/*.md");
 
 <!-- TODO CURRENTLY: TEST FOR USING MARKDOWN FOR JOURNAL -->
 <MainLayout>
+  <!-- ABOUT SECTION -->
   <About />
   <section id="featured-clients">
     <div id="wrapper" class="bg-test mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
-        <!-- !WTBH AND JUNGLE -->
-        <!-- <SubSectionBanner title="Featured Clients" /> -->
         <div id="grid-wrapper" class="2xl:px-[50px] px-5">
+          <!-- TITLE, ABOUT CONTENT SECTION v-->
+          <div class="px-4">
+            <h2
+              class="underline text-carribean font-bold mt-5 md:pt-5 pt-0 text-lg"
+            >
+              My Projects
+            </h2>
+            <p class="text-">
+              Look down below.... orem ipsum dolor sit amet consectetur
+              adipisicing elit. Iure eius magnam labore repellat beatae molestia
+              I'm the developer who's built: Laughing Coyote Dev and The Running
+              Quail.
+            </p>
+          </div>
+          <!-- TITLE, ABOUT CONTENT SECTION ^-->
+
           <div
             id="grid"
             class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-4 md:px-5 px-1"
           >
             {
               allWorks.map((work) => (
-                <div id="sq" class="opacity-80 hover:opacity-100">
+                <div id="sq" class="opacity-80 hover:opacity-100 ">
                   <a href={work.frontmatter.websiteUrl}>
                     <img
                       src={work.frontmatter.image.url}
@@ -34,10 +49,14 @@ const allWorks = await Astro.glob("./works/*.md");
                       <h2 class="text-test md:text-3xl text-2xl font- pb-2">
                         {work.frontmatter.title}
                       </h2>
+
                       <p class="">
                         {work.frontmatter.description}
-                        <span class="text-cerulean">Click here</span> for case
-                        study
+
+                        <p>
+                          View case study{" "}
+                          <span class="text-cerulean">here</span>{" "}
+                        </p>
                       </p>
                     </a>
                   </div>
@@ -49,5 +68,6 @@ const allWorks = await Astro.glob("./works/*.md");
       </div>
     </div>
   </section>
+  <!-- CONTACT SECTION -->
   <Contact />
 </MainLayout>

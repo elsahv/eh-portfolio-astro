@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Running Quail"
+title: "project 2: The Running Quail"
 category: "small business"
 pubDate: 2022-07-01
 description: "a future Morongo Basin community website. asperiores quia velit
