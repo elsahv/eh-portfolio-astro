@@ -4,24 +4,27 @@ const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
+  <a href="/#my-projects" class="text-carribean font-bold pl-1">
+    {"<--"}
+  </a>
   <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 dropshadow-3xl">
     <div id="sq1" class="bg-lavender border border-black">
-      <div class="p-5 flex justify-center items-center flex-col h-full">
+      <div class="p-5 m-1 flex justify-center items-center flex-col h-full">
         <h2 class="font-bold text-4xl">{frontmatter.title}</h2>
-        <p class="text-2xl">{frontmatter.category}</p>
+        <p class="text-lg px-5">{frontmatter.description}</p>
       </div>
     </div>
     <div id="sq2" class="bg-test2">
       <img
         src={frontmatter.image.url}
         alt=""
-        class="border border-black hover:opacity-80"
+        class="border border-carribean hover:opacity-80"
       />
     </div>
   </div>
 
   <div
-    class="absolute right-0 lg:w-3/4 w-full 2xl:p-4 p-5 2xl:text-2xl md:text-lg sm:text-md"
+    class="absolute right-0 lg:w-3/4 w-full mr-5 mt-5 p-5 2xl:text-2xl md:text-lg sm:text-md"
   >
     <slot />
   </div>

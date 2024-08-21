@@ -4,9 +4,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "project 1: Laughing Coyote Dev"
 category: "small business"
 pubDate: 2022-07-01
-description:
-  " Currently a freelancing landing page, revolving around web design service for small businesses and creatives. Corporis doloremque sit minus, asperiores quia velit
-  inventore nostrum! Dicta alias corporis numquam."
+description: " Currently a freelancing landing page, revolving around web design service for small businesses and creatives. "
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
