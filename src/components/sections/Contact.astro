@@ -1,34 +1,32 @@
 ---
-import ContactForm from "../ContactForm.astro";
+import { Image } from "astro:assets";
+import Pic1 from "../../../public/mindmaps/map1.jpg";
 ---
 
 <div
   id=""
   class="h-screen md:mt-[100px] mt-1 pt-5 px-5 bg-munsell _shadowText2 border-t border-black"
 >
-  <div id="container" class="mt-5 p-5 bg-test">
+  <div id="container" class="mt-5 p-5">
     <div id="contact-form-container" class="lg:px-5 px-0 mt-5 bg-">
       <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
-        <div
-          id="sq1"
-          class="text-aliceBlue border border-carribean bg- rounded p-2 pl-5 pt-5"
-        >
-          <h2 class="font-bold pt-2 text-2xl text-aliceBlue">Contact-</h2>
+        <div id="sq1" class="text-aliceBlue p-2 pl-5 pt-5">
+          <h2 class="font-bold pt-2 text-2xl">Contact-</h2>
           <p class="pt-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea
-            maxime consectetur quam facilis vero tempora exercitationem aliquam
-            saepe fugiat ex delectus repellat numquam corrupti, odit ullam magni
-            hic animi?
+            Best way to reach me would be through email :<span
+              class="font-bold"
+            >
+              <a href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a>
+            </span>
           </p>
           <p class="pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea
-            maxime consectetur quam facilis vero tempora exercitationem aliquam
-            saepe fugiat ex delectus repellat numquam corrupti, odit ullam magni
-            hic animi?
+            I am always looking for opportunities to further my skills... and
+            work with other like minded people in tech. If you would like to
+            contact me, you can also find me at <i>sm </i>and <i>sm </i>
           </p>
         </div>
         <div id="sq2">
-          <ContactForm />
+          <Image src={Pic1} alt="" />
         </div>
       </div>
     </div>

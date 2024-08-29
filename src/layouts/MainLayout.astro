@@ -20,11 +20,15 @@ import Footer from "../components/Footer.astro";
     <title>Elsa Hovey | Web Developer Portfolio</title>
   </head>
   <Header />
-  <body
-    id=""
-    class="bg-test absolute right-0 2xl:w-3/4 lg:w-[650px] md:w-[495px] w-full"
-  >
-    <slot />
+  <body class="">
+    <div
+      id="slot-wrapper"
+      class="bg-test absolute right-0 2xl:w-3/4 lg:w-[650px] md:w-[495px] w-full"
+    >
+      <div id="slot-container" class="">
+        <slot />
+      </div>
+    </div>
   </body>
   <Footer />
 </html>

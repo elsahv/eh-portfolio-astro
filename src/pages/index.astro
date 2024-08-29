@@ -16,23 +16,21 @@ const allWorks = await Astro.glob("./works/*.md");
         <div id="grid-wrapper" class="2xl:px-[50px] px-5">
           <!-- TITLE, ABOUT CONTENT SECTION v-->
           <div class="px-4" id="my-projects">
-            <h2
-              class="underline text-carribean font-bold mt-5 md:pt-5 pt-0 text-lg"
-            >
+            <h2 class="underline text-onyx font-bold mt-5 md:pt-5 pt-0 text-lg">
               My Projects
             </h2>
-            <p class="text-">
+            <!-- <p class="text-">
               Look down below.... orem ipsum dolor sit amet consectetur
               adipisicing elit. Iure eius magnam labore repellat beatae molestia
               I'm the developer who's built: Laughing Coyote Dev and The Running
               Quail.
-            </p>
+            </p> -->
           </div>
           <!-- TITLE, ABOUT CONTENT SECTION ^-->
 
           <div
             id="grid"
-            class="mt-5 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-4 md:px-5 px-1"
+            class="mt-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 gap-4 md:px-5 px-1"
           >
             {
               allWorks.map((work) => (
@@ -50,7 +48,7 @@ const allWorks = await Astro.glob("./works/*.md");
                         {work.frontmatter.title}
                       </h2>
 
-                      <p class="">
+                      <p class="py-1">
                         {work.frontmatter.description}
 
                         <p>
