@@ -1,19 +1,35 @@
 ---
 const items = [
+  // {
+  //   subject: "Passions & Interests",
+  //   p: " Highlight LC, RQ, WTBH, Jungle (your main passions, hobbies, or things that drive you) (e.g., travel, technology, art, helping others). -I create cozy, colorful websites",
+  // },
+  // {
+  //   subject: " Skills & Strengths ",
+  //   p: "react, javascript, nextJs, vite, sanity, wp, vercel, figma",
+  // },
+  // {
+  //   subject: "Personal Philosophy/Values",
+  //   p: "   Share your core values, guiding principles, or a brief personal philosophy. I create cozy, colorful websites",
+  // },
+  // {
+  //   subject: "Future Aspirations ",
+  //   p: "   End with a note on your future goals or aspirations, giving readers insight into what you're working toward. I am always looking for opportunities to further my skills... and work with other like minded people in tech. If you would like to contact me, you can reach mehere",
+  // },
   {
-    subject: "Passions & Interests",
+    subject: "Laughing Coyote Dev",
     p: " Highlight LC, RQ, WTBH, Jungle (your main passions, hobbies, or things that drive you) (e.g., travel, technology, art, helping others). -I create cozy, colorful websites",
   },
   {
-    subject: " Skills & Strengths ",
+    subject: "Running Quail",
     p: "react, javascript, nextJs, vite, sanity, wp, vercel, figma",
   },
   {
-    subject: "Personal Philosophy/Values",
+    subject: "Writing to Better Health",
     p: "   Share your core values, guiding principles, or a brief personal philosophy. I create cozy, colorful websites",
   },
   {
-    subject: "Future Aspirations ",
+    subject: "The Indoor Jungle Project",
     p: "   End with a note on your future goals or aspirations, giving readers insight into what you're working toward. I am always looking for opportunities to further my skills... and work with other like minded people in tech. If you would like to contact me, you can reach mehere",
   },
 ];
@@ -22,18 +38,24 @@ const items = [
 <div id="about" class="bg- pt-5 pb-5 pl-5">
   <div id="" class="p-5 px-5">
     <div id="" class="md:mr-5 mx-0 lg:p-5 p-0">
-      <h1 class="underline text-onyx font-bold mt-5 md:pt-5 pt-0 text-xl">
-        A little bit about me...
+      <!-- <h1 class="underline text-onyx font-bold mt-5 md:pt-5 pt-0 text-xl"> -->
+      <!-- A little bit about me... -->
+      <!-- </h1> -->
+      <h1 class="text-onyx font-bold mt-5 md:pt-5 pt-0 text-2xl">
+        Hi there, I'm Elsa...
       </h1>
 
       <p class="pt-1 pb-2">
-        2020-2023: I'm based in Joshua Tree, CA. My days are spent working on my
-        websites, and freelance projects. I am also very interested in working
-        with other developers to gain team building experience, and build up a
-        network to bounce ideas off of. During the last few years, I've learned
-        how to program websites using javascript and javascript frameworks. I've
-        utilized resources such as: youtube developer tutorials, Freecodecamp,
-        The Odin Project and Geeks for Geeks.
+        <!-- <span>Hi there, I'm Elsa.</span> -->
+        I'm based in Joshua Tree, CA. My days are spent working on my websites, and
+        freelance projects. I am also very interested in working with other developers
+        to gain team building experience, and build up a network to bounce ideas
+        off of.
+        <!-- During the last few years, I've learned how to program web sites using
+        javascript and javascript frameworks. I've utilized resources such as: youtube
+        developer tutorials, Freecodecamp, The Odin Project and Geeks for Geeks.
+        These are the websites that have been used to not only learn javascript,
+        but to bring my passion projects to life. -->
         <!-- Background: Include details about your
         background, such as where you're from, educational history, or career
         path. For the past few years, I've dedicated myself to my website
@@ -41,16 +63,16 @@ const items = [
         design. Services- using WP and custom PHP themes -->
       </p>
 
-      <ul class="pl-1 pt-1">
+      <!-- <ul class="pl-1 pt-1">
         {
           items.map((item) => (
             <li class="pt-2 my-3">
-              <span class="underline ">{item.subject}:</span>
-              {item.p}
+              <h2 class="underline font-medium text-lg">{item.subject}:</h2>
+              <p class="text-onyx"> {item.p}</p>
             </li>
           ))
         }
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

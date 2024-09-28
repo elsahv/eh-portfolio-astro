@@ -22,12 +22,10 @@ import Footer from "../components/Footer.astro";
   <Header />
   <body class="">
     <div
-      id="slot-wrapper"
-      class="bg-test absolute right-0 2xl:w-3/4 lg:w-[650px] md:w-[495px] w-full"
+      id="slot-container"
+      class="bg-test absolute right-0 2xl:w-3/4 lg:w-[650px] md:w-[445px] w-full"
     >
-      <div id="slot-container" class="">
-        <slot />
-      </div>
+      <slot />
     </div>
   </body>
   <Footer />

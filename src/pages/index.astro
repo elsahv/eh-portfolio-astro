@@ -2,6 +2,8 @@
 import About from "../components/sections/About.astro";
 import Contact from "../components/sections/Contact.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import JournalIcon from "../images/JournalIcon.png";
+import Image from "astro/components/Image.astro";
 
 const allWorks = await Astro.glob("./works/*.md");
 ---
@@ -11,21 +13,25 @@ const allWorks = await Astro.glob("./works/*.md");
   <!-- ABOUT SECTION -->
   <About />
   <section>
-    <div id="wrapper" class="bg-test mt-[70px] pt-5">
+    <div id="wrapper" class="mt-[70px] pt-5">
       <div id="container" class="py-5 my-5">
         <div id="grid-wrapper" class="2xl:px-[50px] px-5">
           <!-- TITLE, ABOUT CONTENT SECTION v-->
-          <div class="px-4" id="my-projects">
-            <h2 class="underline text-onyx font-bold mt-5 md:pt-5 pt-0 text-lg">
-              My Projects
+          <!-- <div
+            id="my-projects"
+            class="px-4 bg-test flex items-center space-x-2"
+          >
+            <h2 class="underline text-onyx font-bold text-lg pt-5 mb-2 ml-2">
+              Project Journal
             </h2>
-            <!-- <p class="text-">
+            <Image src={JournalIcon} alt="" class="w-10 h-9 opacity-75" /> -->
+          <!-- <p class="text-">
               Look down below.... orem ipsum dolor sit amet consectetur
               adipisicing elit. Iure eius magnam labore repellat beatae molestia
               I'm the developer who's built: Laughing Coyote Dev and The Running
               Quail.
             </p> -->
-          </div>
+          <!-- </div> -->
           <!-- TITLE, ABOUT CONTENT SECTION ^-->
 
           <div
@@ -35,20 +41,23 @@ const allWorks = await Astro.glob("./works/*.md");
             {
               allWorks.map((work) => (
                 <div id="sq" class="opacity-80 hover:opacity-100 ">
-                  <a href={work.frontmatter.websiteUrl}>
+                  <a href={work.url}>
+                    {/* <a href={work.frontmatter.websiteUrl}> */}
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
-                      class="drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer lg:h-[360px] h-[300px] w-full"
+                      class="drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer  w-full"
                     />
-                  </a>
-                  <div class="bg-papaya border-2 hover:border border-onyx mt-5 px-4 py-3 drop-shadow-md">
-                    <a href={work.url}>
-                      <h2 class="text-test md:text-3xl text-2xl font- pb-2">
+                    {/* </a> */}
+                    <div class="bg-papaya ml-3 mr-5 px-5 py-3 drop-shadow-md">
+                      <h2 class="md:text-2xl text-xl -2">
+                        <span class="text-cerulean opacity-80 font-medium">
+                          {work.frontmatter.category}.
+                        </span>{" "}
                         {work.frontmatter.title}
                       </h2>
 
-                      <p class="py-1">
+                      <p class="py-1 text-md">
                         {work.frontmatter.description}
 
                         <p>
@@ -56,8 +65,8 @@ const allWorks = await Astro.glob("./works/*.md");
                           <span class="text-cerulean">here</span>{" "}
                         </p>
                       </p>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               ))
             }
@@ -65,7 +74,8 @@ const allWorks = await Astro.glob("./works/*.md");
         </div>
       </div>
     </div>
+    <!-- </section> -->
+    <!-- CONTACT SECTION -->
+    <Contact />
   </section>
-  <!-- CONTACT SECTION -->
-  <Contact />
 </MainLayout>

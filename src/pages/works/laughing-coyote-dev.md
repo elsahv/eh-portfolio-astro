@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "project 1: Laughing Coyote Dev"
-category: "small business"
+title: "Laughing Coyote Dev"
+category: "1"
 pubDate: 2022-07-01
 description: " Currently a blog regarding react, astro, templates, headless JS   living in jt. Eventually a freelancing landing page, revolving around web design service for small businesses and creatives. "
 author: "Astro Learner"
