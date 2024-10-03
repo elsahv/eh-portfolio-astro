@@ -13,56 +13,37 @@ const allWorks = await Astro.glob("./works/*.md");
   <!-- ABOUT SECTION -->
   <About />
   <section>
-    <div id="wrapper" class="mt-[70px] pt-5">
+    <div id="portfolio" class="h-screen pt-5">
       <div id="container" class="py-5 my-5">
-        <div id="grid-wrapper" class="2xl:px-[50px] px-5">
-          <!-- TITLE, ABOUT CONTENT SECTION v-->
-          <!-- <div
-            id="my-projects"
-            class="px-4 bg-test flex items-center space-x-2"
-          >
-            <h2 class="underline text-onyx font-bold text-lg pt-5 mb-2 ml-2">
-              Project Journal
-            </h2>
-            <Image src={JournalIcon} alt="" class="w-10 h-9 opacity-75" /> -->
-          <!-- <p class="text-">
-              Look down below.... orem ipsum dolor sit amet consectetur
-              adipisicing elit. Iure eius magnam labore repellat beatae molestia
-              I'm the developer who's built: Laughing Coyote Dev and The Running
-              Quail.
-            </p> -->
-          <!-- </div> -->
-          <!-- TITLE, ABOUT CONTENT SECTION ^-->
-
+        <div id="grid-wrapper" class="2xl:px-[51px] px-5">
           <div
             id="grid"
-            class="mt-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 gap-4 md:px-5 px-1"
+            class="mt-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 gap-x-8 md:px-5 px-1"
           >
             {
               allWorks.map((work) => (
                 <div id="sq" class="opacity-80 hover:opacity-100 ">
                   <a href={work.url}>
                     {/* <a href={work.frontmatter.websiteUrl}> */}
+                    <span class="font-medium">
+                      {work.frontmatter.category}.
+                    </span>{" "}
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
                       class="drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer  w-full"
                     />
                     {/* </a> */}
-                    <div class="bg-papaya ml-3 mr-5 px-5 py-3 drop-shadow-md">
+                    <div class="bg-papaya ml-1 mr-5 pl-4 pr-2 pt-2   pb-3 drop-shadow-md">
                       <h2 class="md:text-2xl text-xl -2">
-                        <span class="text-cerulean opacity-80 font-medium">
-                          {work.frontmatter.category}.
-                        </span>{" "}
                         {work.frontmatter.title}
                       </h2>
-
                       <p class="py-1 text-md">
                         {work.frontmatter.description}
 
                         <p>
                           View website progress{" "}
-                          <span class="text-cerulean">here</span>{" "}
+                          <span class="text-onyx hover:underline">here</span>{" "}
                         </p>
                       </p>
                     </div>
