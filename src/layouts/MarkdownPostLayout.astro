@@ -13,7 +13,7 @@ const { frontmatter } = Astro.props;
       </a>
       <div class="p-5 m-1 flex justify-center items-center flex-col h-full">
         <h2 class="font-bold text-4xl">{frontmatter.title}</h2>
-        <p class="bg-test text-lg px-5 mx-5">{frontmatter.description}</p>
+        <p class="bg-test1 text-lg px-[50px] mx-5">{frontmatter.description}</p>
       </div>
     </div>
     <div id="sq2" class="bg-test2">
@@ -27,7 +27,7 @@ const { frontmatter } = Astro.props;
     </div>
   </div>
 
-  <div class="w-full m-5 p-5 2xl:text-2xl md:text-lg sm:text-md">
+  <div class="m-5 px-[100px] py-[50px] 2xl:text-2xl md:text-lg sm:text-md">
     <slot />
     <Contact />
   </div>

@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Running Quail"
-category: "2"
+websiteNumber: "2"
 pubDate: 2022-07-01
 description: "a future Morongo Basin community website."
 author: "Astro Learner"

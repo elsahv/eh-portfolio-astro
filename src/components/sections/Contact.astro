@@ -1,6 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import Pic1 from "../../../public/mindmaps/map1.jpg";
+import ContactForm from "../ContactForm.astro";
 ---
 
 <div
@@ -10,23 +9,26 @@ import Pic1 from "../../../public/mindmaps/map1.jpg";
   <div id="container" class="mt-5 p-5">
     <div id="contact-form-container" class="lg:px-5 px-0 mt-5 bg-">
       <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
-        <div id="sq1" class="text- p-2 pl-5 pt-5">
-          <h2 class="font-bold pt-2 text-2xl">Contact-</h2>
-          <p class="pt-1">
-            Best way to reach me would be through email :<span
-              class="font-bold"
-            >
-              <a href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a>
+        <div id="sq1" class="p-2 pl-5 pt-5">
+          <p class="pt-1 text-xl font-semibold">
+            You can contact me by emailing:<span class="">
+              <a
+                class="font-semibold underline text-munsell"
+                href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
+              >
             </span>
           </p>
-          <p class="pt-5">
+          <p class="pl-1 pt-1 opacity-85">
             I am always looking for opportunities to further my skills... and
             work with other like minded people in tech. If you would like to
             contact me, you can also find me at <i>sm </i>and <i>sm </i>
           </p>
         </div>
         <div id="sq2">
-          <Image src={Pic1} alt="" class="border border-rosyBrown" />
+          <!-- <Image src={Pic1} alt="" class="border border-rosyBrown" /> -->
+          <!-- TODO 10/21/24: USE NEW CONTACT FORM ON SQ 2 INSTEAD v-->
+          <ContactForm />
+          <!-- TODO 10/21/24: USE NEW CONTACT FORM ON SQ 2 INSTEAD ^-->
         </div>
       </div>
     </div>

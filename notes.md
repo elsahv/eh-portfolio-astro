@@ -7,7 +7,3 @@
 - Personal Philosophy/Values: Share your core values, guiding principles, or a brief personal philosophy.
 - Future Aspirations: End with a note on your future goals or aspirations, giving readers insight into what you're working toward.
   **_CURRENTLY DOING CREATE CONTENT^_**
-
-<!-- EVENTUALLY: -->
-<!-- -build contact form backend -->
-<!-- instead of random posts, use Month Reviews instead: 6/24 -->
