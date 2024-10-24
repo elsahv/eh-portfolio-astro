@@ -2,14 +2,15 @@
 # layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "Writing to Better Health"
-category: "3"
+websiteNumber: "3"
 pubDate: 2022-07-01
 description: " A nutrition blog. "
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
+  # url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
+  url: "https://images.pexels.com/photos/1120575/pexels-photo-1120575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The Astro logo on a dark background with a pink glow."
-websiteUrl: "https://laughingcoyote.dev"
+websiteUrl: "https://writingtobetterhealth.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---

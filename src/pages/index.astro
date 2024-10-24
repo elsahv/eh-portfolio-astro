@@ -10,12 +10,21 @@ const allWorks = await Astro.glob("./works/*.md");
 <MainLayout>
   <About />
   <section class="mt-[150px]">
-    <div id="portfolio" class="px-5 h-screen pt-5">
+    <div id="portfolio" class="md:px-5 px-0 h- pt-5">
       <div id="container" class="py-5 my-5">
-        <div id="grid-wrapper" class="2xl:px-[51px] px-5">
+        <div id="grid-wrapper" class="2xl:px-[51px] md:px-5 px-2">
+          <div class="text-onyx">
+            <h2 class="text-2xl pb-1 md:pl-5 pl-2">Portfolio</h2>
+            <p class="md:px-5 px-3 pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              nihil, repudiandae ratione ad eum molestias dolore qui, at debitis
+              exercitationem sed, maxime quidem praesentium harum inventore
+              temporibus assumenda quod voluptatum?
+            </p>
+          </div>
           <div
             id="grid"
-            class="mt-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 gap-y-[50px] gap-x-8 md:px-5 px-1"
+            class="mt-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 gap-y-[80px] gap-x-8 md:px-5 px-1"
           >
             {
               allWorks.map((work) => (
@@ -25,19 +34,16 @@ const allWorks = await Astro.glob("./works/*.md");
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span class="font- text-carribean">
+                    <span class="font- text-onyx pl-1">
                       {work.frontmatter.websiteNumber}.
                     </span>{" "}
                     <img
                       src={work.frontmatter.image.url}
                       alt={work.frontmatter.image.alt}
-                      class="drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer  w-full"
+                      class=" drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer "
                     />
-                    <div class="bg-papaya ml-1 mr-5 pl-4 pr-2 pt-2   pb-3 drop-shadow-md">
-                      <h2 class="md:text-2xl text-xl pt-1">
-                        {work.frontmatter.title}
-                      </h2>
-                      <p class="py-1 pr-5 text-md">
+                    <div class="bg-papaya ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
+                      <p class="py-1 md:pr-5 pr-1 text-md">
                         {work.frontmatter.description}
                         <p class="text-onyx underline">View site</p>
                       </p>
