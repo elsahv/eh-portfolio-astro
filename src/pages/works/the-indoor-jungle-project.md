@@ -2,7 +2,7 @@
 # layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Indoor Jungle Project"
-websiteNumber: "4    "
+websiteNumber: "4"
 pubDate: 2022-07-01
 description: "Plant art project"
 author: "Astro Learner"
