@@ -4,7 +4,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Writing to Better Health"
 websiteNumber: "3"
 pubDate: 2022-07-01
-description: " A nutrition blog. "
+description: " A nutrition blog. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illo, ad ipsam et voluptate aspernatur ratione eos, quas obcaecati neque consequuntur earum sit magni distinctio, rem vel itaque vero quod?"
 author: "Astro Learner"
 image:
   # url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
