@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
+import MenuItems from "./MenuItems.astro";
 
 const menuItems = [
   {
@@ -19,18 +20,26 @@ const menuItems = [
 ---
 
 <header
-  class="pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen 2xl:w-1/4 lg:w-[390px] md:w-[345px] max-[690px]:w-[360px] max-[px]:w-full border-black border-r-2"
+  class="pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen
+  2xl:w-1/4
+   lg:w-[390px]
+   md:w-[345px]
+   max-[690px]:w-[360px]
+   max-[px]:w-full
+    border-black border-r-2"
 >
-  <nav
+  <!-- <nav
     class="_shadowText1 text-aliceBlue dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 mb-2"
   >
-    <div class="text-lg mb- pb- pl-2">
+    <div class="text-lg mb- pb- pl-2 munsell">
       <p class="text-4xl text-munsell bg-">
         <a href="/"> Elsa Hovey </a>
       </p>
-    </div>
-
-    <ul id="map-links-container" class="pb-5 pl-3 pt-1">
+    </div>-->
+  <div class="text-aliceBlue">
+    <MenuItems />
+  </div>
+  <!--  <ul id="map-links-container" class="pb-5 pl-3 pt-1">
       {
         menuItems.map((menuItem) => (
           <li class="text-aliceBlue">
@@ -39,6 +48,6 @@ const menuItems = [
         ))
       }
     </ul>
-  </nav>
+  </nav> -->
   <Image src={ProfilePic} alt="" class="absolute bottom-0 z-0 h-screen" />
 </header>

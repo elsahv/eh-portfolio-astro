@@ -1,0 +1,36 @@
+---
+const menuItems = [
+  {
+    title: "Javascript Projects",
+    scrollLink: "/#js",
+  },
+  {
+    title: "Php- Wordpress",
+    scrollLink: "/#php",
+  },
+  {
+    title: "Contact",
+    scrollLink: "/#contact",
+  },
+];
+---
+
+<!-- TODO CURRENTLY: MENUITEMS TEST COMP-->
+<nav class="pl-4 pr-2 w-full mb-2">
+  <!-- <div class="text-lg mb- pb- pl-2 munsell">
+    <p class="text-4xl text- bg-">
+      <a href="/"> Elsa Hovey </a>
+    </p>
+  </div> -->
+  <ul id="map-links-container" class="bg- pb-5 pt-1">
+    {
+      menuItems.map((menuItem) => (
+        <li>
+          <a class="font-medium hover:font-bold" href={menuItem.scrollLink}>
+            -{menuItem.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

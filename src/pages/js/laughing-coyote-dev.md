@@ -14,7 +14,7 @@ githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# Project Journal
+# Site Updates
 
 **8/27/2024**: As of now, I'm changing this site from a full webs design service to just a blog. Lesson learned... gotta walk before I run.
 

@@ -1,32 +1,47 @@
 ---
-import Contact from "../components/sections/Contact.astro";
-import MainLayout from "./MainLayout.astro";
-import Website from "./Website.astro";
+import { Image } from "astro:assets";
+import ProfilePic from "../../public/eh-img.jpg";
+import Test from "../components/Test.astro";
+// import MenuItems from "../components/MenuItems.astro";
+
 const { frontmatter } = Astro.props;
 ---
 
-<MainLayout>
-  <div id="flex" class="mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl">
-    <div id="sq1" class="p-3 2xl:w-1/2">
-      <!-- <a href="/#my-projects" class="text-carribean font-extrabold pl-2">
+<!-- <MainLayout> -->
+<div class="bg-">
+  <div class="text- flex items-end">
+    <Image src={ProfilePic} alt="" class="w-[150px]" />
+    <!-- <MenuItems /> -->
+    <Test />
+  </div>
+  <button class="p-1 font-light">
+    <a href="/">{"<--"} Back to portfolio </a></button
+  >
+  <section class="bg-test 2xl:px-[150px] pr-5 mx-5 bg-">
+    <div
+      id="flex"
+      class="bg- mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl"
+    >
+      <div id="sq1" class="p-3 bg-">
+        <!-- <a href="/#my-projects" class="text-carribean font-extrabold pl-2">
         {"<--"}
       </a> -->
-      <div class="p-5 m-1 flex flex-col h-full">
-        <h2 class="pt-5 mt-5 font-bold text-4xl">{frontmatter.title}</h2>
-        <p class="pt-1 text-lg">{frontmatter.description}</p>
+        <div class="bg- mt-5 p-5 m-1 flex flex-col h-full">
+          <h2 class="pt-5 mt-5 font-bold text-4xl">{frontmatter.title}</h2>
+          <p class="pt-1 text-lg">{frontmatter.description}</p>
+        </div>
+      </div>
+      <div id="sq2" class="bg- border-black border">
+        <a href={frontmatter.websiteUrl}>
+          <img src={frontmatter.image.url} alt="" class="hover:opacity-80" />
+        </a>
       </div>
     </div>
-    <div id="sq2" class="bg-test2 border-black border">
-      <a href={frontmatter.websiteUrl}>
-        <img src={frontmatter.image.url} alt="" class="hover:opacity-80" />
-      </a>
-    </div>
-  </div>
 
-  <div
-    class="m-5 2xl:px-[100px] px-4 py-[50px] 2xl:text-2xl md:text-lg sm:text-md"
-  >
-    <slot />
-    <Contact />
-  </div>
-</MainLayout>
+    <div class="bg- m-5 2xl:px-[150px] px-5 py-[50px] md:text-lg sm:text-md">
+      <slot />
+      <!-- <Contact /> -->
+    </div>
+  </section>
+  <!-- </MainLayout> -->
+</div>

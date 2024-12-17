@@ -14,7 +14,7 @@ githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# Project Journal
+# Site Updates
 
 **8/21/2024**: Begin by introducing the website and its primary purpose or mission. This sets the stage for the story you're about to tell.
 
