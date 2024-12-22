@@ -2,9 +2,9 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "Writing to Better Health"
-websiteNumber: "3"
+websiteNumber: "03"
 pubDate: 2022-07-01
-description: " A nutrition blog. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illo, ad ipsam et voluptate aspernatur ratione eos, quas obcaecati neque consequuntur earum sit magni distinctio, rem vel itaque vero quod?"
+description: " An illustrative blog about cooking for neurodivergents."
 author: "Astro Learner"
 image:
   # url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
@@ -15,7 +15,7 @@ githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# **Site Updates:**
+# **Visit blog:**
 
 **TBD**: As of now, I'm changing this site from a full webs design service to just a blog. Lesson learned... gotta walk before I run.
 

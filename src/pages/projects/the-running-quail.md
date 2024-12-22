@@ -2,12 +2,12 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Running Quail"
-websiteNumber: "02"
+websiteNumber: "2"
 pubDate: 2022-07-01
 description: "a future Morongo Basin community website."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/9qy1g2h7iul9dtps4a2i0/Running-Quail-Silhouette-Free-Vector.jpg?rlkey=hkqc9mh239vcdnasnujwao1qs&st=dooaxc6n&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=cpzpv1z4&dl=0"
   alt: "The full Astro logo."
 websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"

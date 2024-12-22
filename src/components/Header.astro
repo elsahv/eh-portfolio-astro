@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
 import MenuItems from "./MenuItems.astro";
-// import TestMenuitem from "./TestMenuitem.astro";
 ---
 
 <header
@@ -18,11 +17,20 @@ import MenuItems from "./MenuItems.astro";
     <nav
       class="_shadowText1 bg- dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 mb-2"
     >
-      <div class="text-lg mb- pb- pl-2 munsell">
-        <p class="text-4xl text-munsell bg-">
-          <a href="/"> Elsa Hovey </a>
+      <!-- <div class=""> -->
+      <div class="text-munsell">
+        <h1 class="text-3xl">
+          <a href="/">
+            Elsa Hovey- <span class="text-aquamarine text-2xl"
+              >Portfolio
+            </span></a
+          >
+        </h1>
+        <p class="py-1 pr-5 text-md text-aquamarine">
+          <!-- -->
         </p>
       </div>
+      <!-- </div> -->
       <MenuItems />
     </nav>
   </div>

@@ -1,14 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Laughing Coyote Dev"
+title: "Js Sandbox"
 websiteNumber: "01"
 pubDate: 2022-07-01
 # description: " A freelancing landing page, revolving around web design service for small businesses and creatives. "
-description: "Astro templates for small business landing pages."
+description: "A catalog of all Javascript Designs."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/qyv5ljfyiueutf03j8df5/lc-10-18-23.png?rlkey=ikcai42jknyzhw31tbcmtizkw&st=a6pabvkw&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/q14f9bigxyrl4lbq947d9/wtbh-3-26-24.png?rlkey=6s9bv10u0zkfdj63jsaj2sqml&st=r85h7ha7&dl=0"
+
   alt: "The Astro logo on a dark background with a pink glow."
 websiteUrl: "https://laughingcoyote.dev"
 githubUrl: "https://github.com/elsahv/-the-running-quail"

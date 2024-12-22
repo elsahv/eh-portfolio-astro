@@ -1,22 +1,23 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
-// import TestMenuitem from "../components/TestMenuitem.astro";
 import MenuItems from "../components/MenuItems.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
-<div class="bg-">
-  <div class="text- flex items-end">
-    <Image src={ProfilePic} alt="" class="w-[150px]" />
-    <nav class="pl-4 pr-2 w-full mb-2">
-      <MenuItems />
-    </nav>
+<div id="markdown-header">
+  <div class="bg-">
+    <div class="text- flex items-end">
+      <Image src={ProfilePic} alt="" class="w-[150px]" />
+      <nav class="pl-4 pr-2 w-full mb-2">
+        <MenuItems />
+      </nav>
+    </div>
+    <button class="pl-1 pt-1 font-light hover:font-normal">
+      <a href="/">{"<--"} back to portfolio </a></button
+    >
   </div>
-  <button class="pl-1 font-light hover:font-normal">
-    <a href="/">{"<--"} back to portfolio </a></button
-  >
   <section class="bg-test 2xl:px-[150px] pr-5 mx-5 bg-">
     <div
       id="flex"
@@ -26,11 +27,23 @@ const { frontmatter } = Astro.props;
         <div class="bg- mt-5 p-5 m-1 flex flex-col h-full">
           <h2 class="pt-5 mt-5 font-bold text-4xl">{frontmatter.title}</h2>
           <p class="pt-1 text-lg">{frontmatter.description}</p>
+
+          <div id="btn-wrapper">
+            <button
+              class="bg-munsell text-aquamarine hover:bg-aquamarine hover:text-munsell border border-black text-sm px-2 py-1 mt-2"
+            >
+              <a href={frontmatter.websiteUrl}> visit site </a>
+            </button>
+          </div>
         </div>
       </div>
       <div id="sq2" class="bg- border-black border">
         <a href={frontmatter.websiteUrl}>
-          <img src={frontmatter.image.url} alt="" class="hover:opacity-80" />
+          <img
+            src={frontmatter.image.url}
+            alt=""
+            class="hover:opacity-80 w-full"
+          />
         </a>
       </div>
     </div>

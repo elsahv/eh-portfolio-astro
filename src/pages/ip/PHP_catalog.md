@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Laughing Coyote Dev"
+title: "test1"
 websiteNumber: "01"
 pubDate: 2022-07-01
 # description: " A freelancing landing page, revolving around web design service for small businesses and creatives. "

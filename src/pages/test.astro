@@ -1,3 +1,57 @@
 ---
-
+import About from "../components/sections/About.astro";
+import Contact from "../components/sections/Contact.astro";
+import Banner from "../components/Banner.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+// const allPhp = await Astro.glob("./php/*.md");
+// const allJS = await Astro.glob("./js/*.md");
+const allProjects = await Astro.glob("./projects/*.md");
 ---
+
+<MainLayout>
+  <About />
+  <section class="">
+    <div id="portfolio" class="md:px-5 px-0 h- pt-5">
+      <section>
+        <div id="wrapper" class="2xl:mt-[71px] pt-5">
+          <div id="container" class="py-5 my-5">
+            <div id="js" class="2xl:px-[51px] px-2">
+              <div id="bg-test2">
+                <div id="" class="">
+                  <div
+                    id=""
+                    class="mt-3 pt-5 grid grid-cols-1 gap-y-[80px] gap-x-12 md:px-5 px-1"
+                  >
+                    {
+                      allProjects.map((project) => (
+                        <div id="sq" class="opacity-80 hover:opacity-100">
+                          <a href={project.url}>
+                            <img
+                              src={project.frontmatter.image.url}
+                              alt={project.frontmatter.image.alt}
+                              class="w-full h-[700px] drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer "
+                            />
+                            <div class="bg-papaya ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
+                              <div class="py-1 md:pr-5 pr-1 mx-1 text-2xl">
+                                <p>{project.frontmatter.description}</p>
+
+                                <button class="text-sm text-onyx hover:underline">
+                                  visit {project.frontmatter.title}
+                                </button>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      ))
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Contact />
+      </section>
+    </div>
+  </section>
+</MainLayout>

@@ -8,8 +8,11 @@ const { title, paragraph } = Astro.props as Props;
 ---
 
 <div id="js" class="text-onyx 2xl:mt-[150px] mt-2 2xl:pt-[150px] pt-5">
-  <h2 class="2xl:font-medium font-semibold text-2xl pb-1 md:pl-5 pl-2">
-    {title}
-  </h2>
+  <div id="CURRENT" class="">
+    <h2 class="2xl:font-semibold text-xl pb-1 md:pl-5 pl-2">
+      {title}
+    </h2>
+  </div>
+
   <p class="md:px-5 px-3 md:pb-2 pb-3">{paragraph}</p>
 </div>
