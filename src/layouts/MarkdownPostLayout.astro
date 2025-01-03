@@ -6,9 +6,9 @@ import MenuItems from "../components/MenuItems.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<div id="markdown-header">
+<div id="markdown-header" class="text-lg">
   <div class="bg-">
-    <div class="text- flex items-end">
+    <div class="flex items-end">
       <Image src={ProfilePic} alt="" class="w-[150px]" />
       <nav class="pl-4 pr-2 w-full mb-2">
         <MenuItems />
@@ -26,30 +26,35 @@ const { frontmatter } = Astro.props;
       <div id="sq1" class="p-3 bg-">
         <div class="bg- mt-5 p-5 m-1 flex flex-col h-full">
           <h2 class="pt-5 mt-5 font-bold text-4xl">{frontmatter.title}</h2>
-          <p class="pt-1 text-lg">{frontmatter.description}</p>
+          <p class="mt-2 pt-1 font- text-xl">{frontmatter.description}</p>
 
-          <div id="btn-wrapper">
+          <div id="btn-wrapper" class="mt-3">
             <button
-              class="bg-munsell text-aquamarine hover:bg-aquamarine hover:text-munsell border border-black text-sm px-2 py-1 mt-2"
+              class="bg-munsell text-aquamarine hover:bg-aquamarine hover:text-munsell border border-black px-2"
             >
-              <a href={frontmatter.websiteUrl}> visit site </a>
+              <a class="text-sm" href={frontmatter.websiteUrl}
+                >visit site
+                <!-- {frontmatter.title} -->
+              </a>
             </button>
           </div>
         </div>
       </div>
-      <div id="sq2" class="bg- border-black border">
+      <div id="sq2" class="border-black border w-full">
         <a href={frontmatter.websiteUrl}>
           <img
             src={frontmatter.image.url}
             alt=""
-            class="hover:opacity-80 w-full"
+            class="hover:opacity-80 w-full h-[570px]"
           />
         </a>
       </div>
     </div>
 
-    <div class="bg- m-5 2xl:px-[150px] px-5 py-[50px] md:text-lg sm:text-md">
-      <slot />
+    <div id="wrapper" class="absolute right-0 bg- m-5 p-5">
+      <div id="container" class="pl-[570px] pr-[200px]">
+        <slot />
+      </div>
     </div>
   </section>
 </div>

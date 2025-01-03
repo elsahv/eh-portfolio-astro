@@ -7,15 +7,14 @@ pubDate: 2022-07-01
 description: "a future Morongo Basin community website."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/9qy1g2h7iul9dtps4a2i0/Running-Quail-Silhouette-Free-Vector.jpg?rlkey=hkqc9mh239vcdnasnujwao1qs&st=dooaxc6n&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0"
   alt: "The full Astro logo."
 websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# visit community
-
-**12/18/2024**: Begin by introducing the website and its primary purpose or mission. This sets the stage for the story you're about to tell.
+**About**: As of now, I'm changing this site from a full webs design service to just a blog. Lesson learned... gotta walk before I run.
 
 Share the backstory of how the website came into existence. This could include the inspiration behind its creation, the individuals or team involved, and any challenges or obstacles they faced in bringing it to life.
+<br><br>
