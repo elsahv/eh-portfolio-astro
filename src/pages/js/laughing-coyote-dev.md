@@ -5,7 +5,7 @@ title: "Laughing Coyote Dev"
 websiteNumber: "01"
 pubDate: 2022-07-01
 # description: " A freelancing landing page, revolving around web design service for small businesses and creatives. "
-description: "Astro templates for small business landing pages."
+description: "A collection of my astro templates for small business landing pages."
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/g23z3n6u9joennznyqxc4/lc-9-20-24.png?rlkey=q75joo6od6ixkfoxr9q57kfkb&st=nb5wvp4s&dl=0"
