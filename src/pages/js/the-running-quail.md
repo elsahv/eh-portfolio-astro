@@ -4,7 +4,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "The Running Quail"
 websiteNumber: "02"
 pubDate: 2022-07-01
-description: "a future Morongo Basin community website."
+description: "a future Morongo Basin community website, build with LC astro templates, by my freelance service.  "
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0"
