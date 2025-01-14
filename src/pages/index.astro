@@ -3,8 +3,7 @@ import About from "../components/sections/About.astro";
 import Contact from "../components/sections/Contact.astro";
 import Banner from "../components/Banner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-const allJS = await Astro.glob("./js/*.md");
-const allPhp = await Astro.glob("./php/*.md");
+const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
@@ -14,43 +13,39 @@ const allPhp = await Astro.glob("./php/*.md");
       <section>
         <div id="wrapper" class="2xl:mt-[71px] pt-5">
           <div id="container" class="py-5 my-5">
-            <div id="javascript-projects" class="2xl:px-[51px] px-2">
-              <!-- *JS  -v -->
-              <div class="bg-">
-                <div class="mr-5 pr-5">
-                  <Banner
-                    title="JavaScript Projects"
-                    paragraph="These first 2 websites aremy most ambitous small businesses starting out, both build with JS frameworks, sit amet consectetur adipisicing. dolore qui, at debitis exercitationem sed, maxime quidem "
-                  />
-                </div>
+            <div id="javascript-projects" class="text-onyx 2xl:px-[51px] px-2">
+              <div id="TestJS" class="2xl:mr-5 2xl:pr-5">
+                <Banner title="Featured Websites" paragraph="CTA to LC" />
+              </div>
+              <!-- <div
+                id="grid"
+                class="mt-3 pt-5 md:px-5 px-1 grid grid-cols-2 gap-x-10"
+              > -->
+              <div id="grid-container" class="mt-5 pt-5">
                 <div
-                  id="TestJS"
-                  class="mt-3 pt-5 gap-y-10 gap-x-12 md:px-5 px-1 flex flex-col-reverse"
+                  id="grid"
+                  class="mt-5 pt-5 md:px-5 px-1 grid grid-cols-1 gap-y-24"
                 >
                   {
-                    allJS.map((work) => (
-                      <div id="sq" class="opacity-80 hover:opacity-100">
-                        {/* <div id="banner-container" class="w-3/4 text-bold">
-                          <Banner
-                            title="website title"
-                            paragraph="a future Morongo Basin community website, build with LC astro templates, by my freelance service.  "
-                          />
-                        </div> */}
+                    allFeaturedSites.map((work) => (
+                      <div
+                        id="sq"
+                        class="2xl:pr-5 2xl:mr-5 mt-5 opacity-80 hover:opacity-100 "
+                      >
                         <a href={work.url}>
                           <img
                             src={work.frontmatter.image.url}
                             alt={work.frontmatter.image.alt}
-                            class="w-3/4   drop-shadow-md border border-black hover:border-parchment hover:border-2 hover:cursor-pointer "
+                            class="drop-shadow-md border border-black hover:border-munsell hover:border-2 hover:cursor-pointer "
                           />
-                          <div class="bg-papaya ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
-                            <h3 class="font-semibold">
+                          <div class="bg-test text-onyx bg-papaya mb-5 ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
+                            <h3 class="text-onyx font-semibold text-xl">
                               {work.frontmatter.title}
                             </h3>
-                            <p class="py-1 md:pr-5 pr-1 text-md">
+                            <p class=" text-md">
                               {work.frontmatter.description}
-                              <button class="bg-munsell text-sm px-1">
-                                {" "}
-                                visit site
+                              <button class="underline text-sm  py-1">
+                                read more
                               </button>
                             </p>
                           </div>
@@ -60,44 +55,6 @@ const allPhp = await Astro.glob("./php/*.md");
                   }
                 </div>
               </div>
-              <!-- //*PHP -v -->
-              <div id="php-wordpress">
-                <Banner
-                  title="Php- Wordpress "
-                  paragraph="2 more of my passion projects, first one ever being wtbh .these are my php projects, sit amet consectetur adipisicing. dolore qui, at debitis exercitationem sed, maxime quidem "
-                />
-
-                <div id="" class="">
-                  <div
-                    id=""
-                    class="mt-3 pt-5 grid 2xl:grid-cols-2 grid-cols-1 gap-y-[80px] gap-x-12 md:px-5 px-1"
-                  >
-                    {
-                      allPhp.map((work) => (
-                        <div id="sq" class="opacity-80 hover:opacity-100">
-                          <a href={work.url}>
-                            <img
-                              src={work.frontmatter.image.url}
-                              alt={work.frontmatter.image.alt}
-                              class=" drop-shadow-md border border-rosyBrown hover:border-cerulean hover:border-2 hover:cursor-pointer "
-                            />
-                            <div class="bg-papaya ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
-                              <div class="py-1 md:pr-5 pr-1 mx-1 text-2xl">
-                                <p>{work.frontmatter.description}</p>
-
-                                <button class="text-sm text-onyx hover:underline">
-                                  visit {work.frontmatter.title}
-                                </button>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      ))
-                    }
-                  </div>
-                </div>
-              </div>
-              <!-- TODO: JS SECTION ^-->
             </div>
           </div>
         </div>
