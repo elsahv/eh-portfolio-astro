@@ -1,0 +1,44 @@
+---
+const frontmatter = Astro.props;
+const { title, image, alt, url, testItem1, testItem2, testItem3, testItem4 } =
+  frontmatter;
+---
+
+<div id="sq" class="2xl:pr-5 2xl:mr-5 mt-5 opacity-80 hover:opacity-100">
+  <a href={url}>
+    <h3 class="text-onyx font-semibold text-xl pb-1 pl-1">
+      {title}
+    </h3>
+    <img
+      src={image}
+      class="drop-shadow-md border-2 border-black hover:border-munsell hover:border-2 hover:cursor-pointer"
+      alt={alt}
+    />
+
+    <div
+      class="bg-test text-onyx bg-papaya mb-5 ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md"
+    >
+      <ul class="list-disc">
+        <div class="pl-3">
+          <li>{testItem1}</li>
+          <li>{testItem2}</li>
+          <li>made with: {testItem3}</li>
+          <li class="">{testItem4}</li>
+        </div>
+
+        <button class="mt-1 px-2 text-aquamarine bg-munsell rounded">
+          <a href={url}>view site</a>
+        </button>
+      </ul>
+
+      {/* NOT SURE IF KEEPING FEATURED SITE BTN */}
+      {
+        /* <div id="btn-container" class="mt-1">
+      <button class="px-2 py-1 rounded-md bg-munsell border border-black text-aliceBlue text-sm">
+        read more
+      </button>
+    </div> */
+      }
+    </div>
+  </a>
+</div>

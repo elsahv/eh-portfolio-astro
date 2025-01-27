@@ -3,6 +3,7 @@ import About from "../components/sections/About.astro";
 import Contact from "../components/sections/Contact.astro";
 import Banner from "../components/Banner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import SiteCard from "../components/SiteCard.astro";
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
@@ -17,10 +18,7 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
               <div id="TestJS" class="2xl:mr-5 2xl:pr-5">
                 <Banner title="Featured Websites" paragraph="" />
               </div>
-              <!-- <div
-                id="grid"
-                class="mt-3 pt-5 md:px-5 px-1 grid grid-cols-2 gap-x-10"
-              > -->
+
               <div id="grid-container" class="mt-5 pt-5">
                 <div
                   id="grid"
@@ -28,36 +26,16 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
                 >
                   {
                     allFeaturedSites.map((work) => (
-                      <div
-                        id="sq"
-                        class="2xl:pr-5 2xl:mr-5 mt-5 opacity-80 hover:opacity-100 "
-                      >
-                        <a href={work.url}>
-                          <h3 class="text-onyx font-semibold text-xl pb-1 pl-1">
-                            {work.frontmatter.title}
-                          </h3>
-                          <img
-                            src={work.frontmatter.image.url}
-                            alt={work.frontmatter.image.alt}
-                            class="drop-shadow-md border-2 border-black hover:border-munsell hover:border-2 hover:cursor-pointer"
-                          />
-                          <div class="bg-test text-onyx bg-papaya mb-5 ml-1 mr-5 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md">
-                            <ul class="list-disc pl-3">
-                              <li>{work.frontmatter.testItem1}</li>
-                              <li>{work.frontmatter.testItem2}</li>
-                              <li>made with: {work.frontmatter.testItem3}</li>
-                              <li class="">{work.frontmatter.testItem4}</li>
-                            </ul>
-
-                            {/* NOT SURE IF KEEPING FEATURED SITE BTN */}
-                            {/* <div id="btn-container" class="mt-1">
-                              <button class="px-2 py-1 rounded-md bg-munsell border border-black text-aliceBlue text-sm">
-                                read more
-                              </button>
-                            </div> */}
-                          </div>
-                        </a>
-                      </div>
+                      <SiteCard
+                        title={work.frontmatter.title}
+                        image={work.frontmatter.image.url}
+                        alt={work.frontmatter.image.alt}
+                        url={work.url}
+                        testItem1={work.frontmatter.testItem1}
+                        testItem2={work.frontmatter.testItem2}
+                        testItem3={work.frontmatter.testItem3}
+                        testItem4={work.frontmatter.testItem4}
+                      />
                     ))
                   }
                 </div>
