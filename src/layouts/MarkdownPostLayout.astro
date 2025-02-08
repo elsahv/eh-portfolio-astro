@@ -6,7 +6,7 @@ import MenuItems from "../components/MenuItems.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<div id="markdown-header" class="text-lg">
+<div id="markdown-post" class="text-lg">
   <div class="bg-">
     <div class="flex items-end">
       <Image src={ProfilePic} alt="" class="w-[150px]" />
@@ -54,8 +54,8 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
 
-    <div id="wrapper" class="border-black border-t absolute right-0 mt-5 p-5">
-      <div id="container" class="pl-[570px] pr-[200px]">
+    <div id="wrapper" class="absolute right-0 mt-5 p-5">
+      <div id="container" class="bg- 2xl:pl-[570px] pl-[200PX] lg:pr-[200px]">
         <slot />
       </div>
     </div>
