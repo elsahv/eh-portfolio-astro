@@ -18,12 +18,12 @@ const { frontmatter } = Astro.props;
       <a class="" href="/">{"<--"} back to portfolio </a></button
     >
   </div>
-  <section class="bg-test 2xl:px-[150px] pr-5 mx-5 bg-">
+  <section class="2xl:px-[150px] pr-5 mx-5 bg-">
     <div
       id="flex"
-      class="bg- mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl"
+      class="mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl"
     >
-      <div id="sq1" class="p-">
+      <div id="sq1" class="">
         <div class="mt-5 p-5 m-1 flex flex-col h-full">
           <h2 class="pt-5 py-2 mt-5 font-bold text-4xl">
             {frontmatter.title}
@@ -54,7 +54,7 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
 
-    <div id="wrapper" class="absolute right-0 bg- m-5 p-5">
+    <div id="wrapper" class="border-black border-t absolute right-0 mt-5 p-5">
       <div id="container" class="pl-[570px] pr-[200px]">
         <slot />
       </div>

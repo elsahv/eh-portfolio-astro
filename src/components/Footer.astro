@@ -1,15 +1,12 @@
 ---
-// import { FaLinkedin, FaYelp } from "react-icons/fa";
 const today = new Date();
 ---
 
 <footer
   id="projects-footer"
-  class="fixed bottom-0 right-0 border-t border-r rounded-tr-sm border-black pr-1 md:opacity-60 opacity-100 md:bg-aliceBlue bg-munsell"
+  class="border-t border-r rounded-tr-sm border-black pr-1 md:opacity-60 opacity-100 md:bg-aliceBlue bg-munsell"
 >
-  <div id="back-to-top-CTA" class="md:hidden relative">
-    <a href="/"></a>
-  </div>
-  <!-- <p class="md:text-md text-sm">&copy; {today.getFullYear()}</p> -->
-  <p class="md:text-md text-sm">v</p>
+  <p class="absolute bottom-0 left-0 md:text-md text-sm">
+    &copy; {today.getFullYear()}
+  </p>
 </footer>
