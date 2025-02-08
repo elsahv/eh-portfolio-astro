@@ -1,3 +1,9 @@
+About pg:
+
+<!-- *https://journal.jekyllthemes.io/about -->
+
+<!-- todo Introduction: Start with your name and a brief overview of who you are. Mention your profession or primary identity (e.g., student, artist, entrepreneur). -->
+
 git commit notes:
 "section category change, from languages to simple portfolio"
 
