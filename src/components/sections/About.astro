@@ -2,43 +2,46 @@
 import Banner from "../Banner.astro";
 
 const items = [
+  // {
+  //   listItem:
+  //     "I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
+  // },
+  // {
+  //   listItem:
+  //     "My days are spent creating niche websites and solutions for small business owners and creatives.",
+  // },
+  // {
+  //   listItem:
+  //     "My expertise currently lies in javascript websites, and freelance wordpress projects.",
+  // },
   {
     listItem:
       "I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
   },
   {
     listItem:
-      "My days are spent creating niche websites and solutions for small business owners and creatives.",
+      "My desire to learn js was initated by wanting to be more creative, and to build my 4 projects. By experiencing the process of building up these websites, I've gained not only an ability to work with unique colors, and to learn the skills needed to become a very ideal web developer.",
   },
-  {
-    listItem:
-      "My expertise currently lies in javascript websites, and freelance wordpress projects.",
-  },
+  // {
+  //   listItem:
+  //     "I've build my websites to fuel my interests and passions. Now let me fuel yours!",
+  // },
 ];
 ---
 
-<section id="about" class="pt-5 pb-5 md:pl-5 pl-1 h-">
-  <div id="" class="p-5 px-5">
+<section id="about" class="pt-5 pb-5 md:pl-5 pl-1 -">
+  <div id="" class="px-5">
     <div id="" class="md:mr-5 mx-0 lg:p-5 p-0">
       <div class="pb-2 font-medium text-onyx">
-        <Banner title="About" paragraph="" />
+        <!-- <Banner title="About" paragraph="" /> -->
 
         <div id="paragraph-container" class="">
           <h2 class="pt-1 font-semibold">
-            Hi there, I'm Elsa... a web developer for small businesses and
-            creatives.
+            Hi there... im elsa. I've built javascript projects to not only
+            categorize and simplify my life, but get to be creative too!
           </h2>
           <ul class="pt-1 list-disc pl-2 2xl:w-3/4 w-full">
             {items.map((item) => <li class="pt-1">{item.listItem}</li>)}
-            <li class="pt-1">
-              You can view all my featured sites
-              <a
-                href="/#about"
-                class="underline hover:text-carribean text-munsell"
-              >
-                below...</a
-              >
-            </li>
           </ul>
         </div>
         <br />
