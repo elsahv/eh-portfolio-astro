@@ -1,37 +1,39 @@
 ---
 const frontmatter = Astro.props;
-const { title, image, alt, url, testItem1, testItem2, testItem3, testItem4 } =
-  frontmatter;
+const {
+  title,
+  image,
+  alt,
+  url,
+  testItem1,
+  websiteNumber,
+  testItem3,
+  testItem4,
+} = frontmatter;
 ---
 
-<div
-  id="sq"
-  class="2xl:pr-5 pr-1 2xl:mr-5 mr-1 my-5 opacity-80 hover:opacity-100 p-1"
->
+<div id="sq" class="">
   <a href={url}>
     <div class="">
-      <h3 class="text-onyx font-semibold text-xl">latest post title</h3>
-      <!-- CHANGE TO DATE --v -->
-      <p class="pl-1 pt-1">3/25/25</p>
+      <div>{websiteNumber}</div>
     </div>
 
     <img
       src={image}
-      class="drop-shadow-md border-2 border-black hover:border-munsell hover:border-2 hover:cursor-pointer"
+      class="drop-shadow-md border border-onyx rounded"
       alt={alt}
     />
     <div
       id="post-excerpt"
-      class="px-5 mx-5 bg- flex flex-col justify-center text-onyx bg-papaya mb-5 ml-1 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md"
+      class="px-5 mx-5 flex flex-col justify-center text-onyx bg-papaya mb-5 ml-1 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md"
     >
-      <p class="pt-3">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-        assumenda quod corrupti! Laboriosam quam quisquam quibusdam rem eum,
-        quos vero voluptas dolorum soluta impedit asperiores molestias ipsa
-        incidunt
-      </p>
-      <div id="btn-wrapper">
-        <button class="bg-munsell px-2 py-1 text-test2 mt-3 rounded"
+      <h2 class="text-xl font-semibold">
+        {title}
+      </h2>
+      <p class="pt-1 opacity-80 text-lg">{testItem1}</p>
+      <div id="btn-wrapper" class="mt-2">
+        <button
+          class="bg-munsell text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
           >read more</button
         >
       </div>

@@ -1,16 +1,35 @@
 ---
 import About from "../components/sections/About.astro";
 import Contact from "../components/sections/Contact.astro";
-import Banner from "../components/Banner.astro";
-import MainLayout from "../layouts/MainLayout.astro";
 import SiteCard from "../components/SiteCard.astro";
-import TestFeaturedSites from "../components/sections/TestFeaturedSites.jsx";
+import MainLayout from "../layouts/MainLayout.astro";
 
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
   <About />
-  <TestFeaturedSites />
+  <div id="wrapper" class="md:px-5 px-0 pl-2 pt-5 2xl:mt-[71px]">
+    <div id="container" class="py-5 my-5 pl-1">
+      <div id="featured-websites" class="text- px-5">
+        <div id="websites-container" class="mt-1 pt-1">
+          <div id="websites-grid" class="mt-5 pt-5 grid grid-cols-1 gap-y-24">
+            {
+              allFeaturedSites.map((work) => (
+                <SiteCard
+                  title={work.frontmatter.title}
+                  image={work.frontmatter.image.url}
+                  alt={work.frontmatter.image.alt}
+                  url={work.url}
+                  testItem1={work.frontmatter.testItem1}
+                  websiteNumber={work.frontmatter.websiteNumber}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <Contact />
 </MainLayout>

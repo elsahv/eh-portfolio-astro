@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
-import MenuItems from "./MenuItems.astro";
+import SmIcons from "./SmIcons.jsx";
 ---
 
 <header
@@ -16,12 +16,15 @@ import MenuItems from "./MenuItems.astro";
 >
   <!-- <div class=""> -->
   <nav
-    class="text-aliceBlue _shadowText1 bg- dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 md:mb-3 mb-[50px]"
+    class="text-aliceBlue _shadowText1 dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 md:mb-3 mb-[50px]"
   >
     <div id="site-logo" class="text-4xl">
-      <a href="/"> Elsa Hovey </a>
+      <a href="/">Project Journal</a>
     </div>
-    <MenuItems />
+    <p class="text-lg">Some of my favorite website projects.</p>
+    <div id="sm-icons-container" class="text-munsell">
+      <SmIcons />
+    </div>
   </nav>
   <!-- </div> -->
 
