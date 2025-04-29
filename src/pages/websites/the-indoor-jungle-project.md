@@ -3,7 +3,6 @@ id: 4
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Indoor Jungle Project"
-websiteNumber: "04"
 pubDate: 2022-07-01
 testItem1: "A horror-themed botany journal"
 author: "Astro Learner"

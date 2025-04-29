@@ -8,12 +8,41 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
-  <About />
-  <div id="wrapper" class="md:px-5 px-0 pl-2 pt-5 2xl:mt-[71px]">
-    <div id="container" class="py-5 my-5 pl-1">
-      <div id="featured-websites" class="text- px-5">
+  <div id="flex" class="flex bg-munsell">
+    <!-- LEFT SIDE v-->
+    <div id="left-side" class="bg-test1 w-2/5">
+      <!-- *: HEADER -->
+      <header>
+        <nav>
+          <div id="logo" class="text-5xl">Elsa Hovey</div>
+          <ul>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+      </header>
+      <!-- *: HEADER  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- TODO:  about section -->
+      <!-- TODO:  services section -->
+      <!-- TODO:  contact section -->
+    </div>
+    <!-- LEFT SIDE ^-->
+    <!--!  -->
+    <!-- ! -->
+    <!--  !-->
+    <!--!  -->
+    <!-- ! -->
+    <!--  !-->
+    <!-- RIGHT SIDE v-->
+    <div id="right-side" class="w-3/5">
+      <About />
+      <div id="featured-websites" class="bg-test2 px-5">
         <div id="websites-container" class="mt-1 pt-1">
-          <div id="websites-grid" class="mt-5 pt-5 grid grid-cols-1 gap-y-24">
+          <div id="websites-grid" class="mt-5 pt-5 grid grid-cols-2 gap-14">
             {
               allFeaturedSites.map((work) => (
                 <SiteCard
@@ -29,7 +58,9 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
           </div>
         </div>
       </div>
+
+      <Contact />
+      <!-- RIGHT SIDE ^-->
     </div>
   </div>
-  <Contact />
 </MainLayout>
