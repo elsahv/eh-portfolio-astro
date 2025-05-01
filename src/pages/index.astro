@@ -1,67 +1,39 @@
 ---
 import Header from "../components/Header.astro";
-import About from "../components/About.astro";
 import Contact from "../components/sections/Contact.astro";
-import SiteCard from "../components/SiteCard.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import FeaturedSite from "../components/sections/FeaturedSite.astro";
+import AboutMe from "../components/sections/AboutMe.astro";
+import LeftSide from "../components/LeftSide.astro";
+import SiteCard from "../components/SiteCard.astro";
 
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
   <div id="flex" class="flex lg:flex-row flex-col bg-">
-    <!-- *LEFT SIDE v-->
-    <div
-      id="left-side"
-      class="border-r border-black p-5 md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+    <!-- <div
+      id="left-side-wrapper"
+      class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
     >
-      <Header />
-      <About />
+      <div id="LEFT-SIDE " class="pr-3 mr-1">
+        <Header />
+        <AboutMe />
+        <AboutProjects />
+        <Contact />
+      </div>
+    </div> -->
 
-      <!--  -->
-      <!--  -->
-      <!--  -->
-      <!-- TODO:  SERVICES section -->
-      <section id="" class="h-screen">
-        <h2>Creative Projects</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugit
-          dolorem consequuntur? Voluptatibus quasi modi ipsum exercitationem
-          doloribus quam possimus culpa rerum esse enim, nam, doloremque ratione
-          repudiandae totam id.
-        </p>
-        <div id="recent-posts-container" class="mt-5 pt-4">
-          <h3 class="mt-5 bg- underline">Latest Updates-</h3>
-          <ul>
-            <li><span>Writing to Better Health- dskfljdlkflsdfjdksl</span></li>
-            <li><span>The Running Quail- dfdsfdsfdsffsdfsdfsd</span></li>
-            <li>
-              <span>The Indoor Jungle Project-fdsfjsojdodsjflsdkjfsklfj</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- TODO:  CONTACT section -->
-      <Contact />
-    </div>
-    <!-- LEFT SIDE ^-->
-    <!--!  -->
-    <!-- ! -->
-    <!--  !-->
-    <!--!  -->
-    <!-- ! -->
-    <!--  !-->
-    <!-- RIGHT SIDE v-->
+    <LeftSide />
     <div
-      id="right-side"
-      class="border-l border-onyx h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
+      id="RIGHT-SIDE"
+      class="text- border-l border-onyx h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
     >
       <div id="featured-websites" class="bg- px-5">
         <FeaturedSite />
 
         <div id="creative-projects" class="bg- mt-[125px] px-5">
-          <p id="services" class="text-lg text-gray-600">
+          <p id="services" class="text-lg text-gray-00">
             In my free time, I enjoy building out my other projects with js
             frameworks and php wp I've built javascript projects to not only
             categorize and simplify my life, but get to be creative too! For my
@@ -76,14 +48,11 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
                   alt={work.frontmatter.image.alt}
                   url={work.url}
                   testItem1={work.frontmatter.testItem1}
-                  websiteNumber={work.frontmatter.websiteNumber}
                 />
               ))
             }
           </div>
         </div>
-
-        <!-- RIGHT SIDE ^-->
       </div>
     </div>
   </div>

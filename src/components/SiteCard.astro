@@ -1,15 +1,6 @@
 ---
 const frontmatter = Astro.props;
-const {
-  title,
-  image,
-  alt,
-  url,
-  testItem1,
-  websiteNumber,
-  testItem3,
-  testItem4,
-} = frontmatter;
+const { title, image, alt, url, testItem1 } = frontmatter;
 ---
 
 <div id="sq" class="opacity-70 hover:opacity-100">
@@ -21,24 +12,8 @@ const {
       class="drop-shadow-xl rounded border border-gray-300"
       alt={alt}
     />
-    <h2 class="pl-5 text-gray-600 hover:text-cerulean">
+    <p class="pl-5">
       visit <span class="italic">{title}</span>
-    </h2>
-
-    <div class="text-xl">
-      <!-- <h2 class="">{title},</h2> -->
-    </div>
-
-    <!-- <div
-      id="post-excerpt"
-      class="bg- flex flex-col justify-center text-onyx bg-papaya pr-2 drop-shadow-md"
-    > -->
-    <div id="btn-wrapper" class="mt-2">
-      <button
-        class="bg- text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
-        >read more</button
-      >
-    </div>
-    <!-- </div> -->
+    </p>
   </a>
 </div>

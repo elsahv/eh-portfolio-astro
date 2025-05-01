@@ -1,0 +1,18 @@
+---
+import Header from "../components/Header.astro";
+import Contact from "../components/sections/Contact.astro";
+import AboutMe from "../components/sections/AboutMe.astro";
+import AboutProjects from "../components/sections/AboutProjects.astro";
+---
+
+<div
+  id="left-side-wrapper"
+  class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+>
+  <div id="left-side-container" class="pr-3 mr-1">
+    <Header />
+    <AboutMe />
+    <AboutProjects />
+    <Contact />
+  </div>
+</div>

@@ -1,18 +1,22 @@
-<!-- *: HEADER -->
+---
+const items = [
+  { item1: "about me", link: "/#about-me" },
+  { item1: "about projects", link: "/#about-projects" },
+  { item1: "contact", link: "/#wcontact" },
+];
+---
+
 <header>
   <nav class="bg-">
-    <div id="logo" class="lg:text-9xl text-6xl pb-1">Elsa Hovey</div>
-    <ul class="text-2xl pl-5 px-3 py-3 mt-5 border-black border-t border-b">
-      <li>
-        <a href="/#about"> Laughing Coyote Dev </a>
-      </li>
-      <li>
-        <a href="/#services">creative projects</a>
-      </li>
-      <li>
-        <a href="/#contact"> contact</a>
-      </li>
+    <div id="logo" class="text-8xl pb-1">Elsa Hovey</div>
+    <ul class="text-2xl pl-3 px-3 py-3 mt-5 border-black border-t-2 border-b-2">
+      {
+        items.map((item) => (
+          <li>
+            <a href={item.link}>{item.item1}</a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>
-<!-- *: HEADER  -->
