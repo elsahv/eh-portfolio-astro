@@ -1,9 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Contact from "../components/sections/Contact.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import FeaturedSite from "../components/sections/FeaturedSite.astro";
-import AboutMe from "../components/sections/AboutMe.astro";
 import LeftSide from "../components/LeftSide.astro";
 import SiteCard from "../components/SiteCard.astro";
 
@@ -17,7 +14,7 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
       id="RIGHT-SIDE"
       class="text- border-l border-onyx h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
     >
-      <div id="featured-websites" class="bg- px-5">
+      <div id="" class="bg- px-5">
         <FeaturedSite />
 
         <div id="creative-projects" class="bg- mt-[125px] px-5">
@@ -27,7 +24,7 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
             categorize and simplify my life, but get to be creative too! For my
             other creative projects, I've also built...
           </p>
-          <div id="" class="mt-5 pt-5 grid grid-cols-2 gap-14">
+          <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-14">
             {
               allFeaturedSites.map((work) => (
                 <SiteCard

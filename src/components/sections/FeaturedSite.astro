@@ -1,33 +1,6 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import LCimg from "../../images/lc.jpg";
-
-const items = [
-  // {
-  //   listItem:
-  //     "I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
-  // },
-  // {
-  //   listItem:
-  //     "My days are spent creating niche websites and solutions for small business owners and creatives.",
-  // },
-  // {
-  //   listItem:
-  //     "My expertise currently lies in javascript websites, and freelance wordpress projects.",
-  // },
-  {
-    listItem:
-      "I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
-  },
-  {
-    listItem:
-      "My desire to learn js was initated by wanting to be more creative, and to build my 4 projects. By experiencing the process of building up these websites, I've gained not only an ability to work with unique colors, and to learn the skills needed to become a very ideal web developer.",
-  },
-  // {
-  //   listItem:
-  //     "I've build my websites to fuel my interests and passions. Now let me fuel yours!",
-  // },
-];
 ---
 
 <section
@@ -45,18 +18,12 @@ const items = [
             over at <a class="underline" href="https://laughingcoyote.dev">
               Laughing Coyote Dev:</a
             >
-            <!-- 
-            In my free time, I enjoy building out my other projects with js
-            frameworks and php wp I've built javascript projects to not only
-            categorize and simplify my life, but get to be creative too! -->
           </p>
 
           <div id="img-wrapper" class="px-1 py-5">
             <a href="https://laughingcoyote.dev">
               <p class="mt-5 pt-5 hover:text-munsell">visit site</p>
-              <!-- <ul class="space-y-4 pt-1 list-disc pl-2 pr-1">
-              {items.map((item) => <li class="pt-1">{item.listItem}</li>)}
-            </ul> -->
+
               <Image src={LCimg} alt="" class="border border-gray-300" />
             </a>
           </div>
