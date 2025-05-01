@@ -4,7 +4,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "The Indoor Jungle Project"
 pubDate: 2022-07-01
-testItem1: "A horror-themed botany journal"
+testItem1: "a horror-themed botany journal"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/jlhfvwh7ftd2k35r61ycj/plants5.jpg?rlkey=1arbo741cwzyyzx1t6vtvfjmm&st=1uo0cmjn&dl=0"

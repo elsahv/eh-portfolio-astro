@@ -37,9 +37,9 @@ const items = [
   <div id="" class="mt-5">
     <div id="" class="md:mr-5 mx-0">
       <div class="pb-2 font-medium text-onyx">
-        <div id="paragraph-container" class="2xl:pr-5 2xl:mr-5">
-          <p class="text-2xl pt-1 font-semibold">Hi there... im Elsa.</p>
-          <p class="pb-1 mb-1">
+        <div id="paragraph-container" class="font-semibold 2xl:pr-5 2xl:mr-5">
+          <p class="text-2xl pt-1">Hi there... im Elsa.</p>
+          <p class="pb-1 mb-1 text-lg">
             I help small business owners start and maintain their websites,
             along with content creation. You can find some of these examples
             over at <a class="underline" href="https://laughingcoyote.dev">
@@ -50,12 +50,16 @@ const items = [
             frameworks and php wp I've built javascript projects to not only
             categorize and simplify my life, but get to be creative too! -->
           </p>
-          <p class="mt-5 pt-5">visit site</p>
 
-          <!-- <ul class="space-y-4 pt-1 list-disc pl-2 pr-1">
-            {items.map((item) => <li class="pt-1">{item.listItem}</li>)}
-          </ul> -->
-          <Image src={LCimg} alt="" class="border border-gray-300" />
+          <div id="img-wrapper" class="px-1 py-5">
+            <a href="https://laughingcoyote.dev">
+              <p class="mt-5 pt-5 hover:text-munsell">visit site</p>
+              <!-- <ul class="space-y-4 pt-1 list-disc pl-2 pr-1">
+              {items.map((item) => <li class="pt-1">{item.listItem}</li>)}
+            </ul> -->
+              <Image src={LCimg} alt="" class="border border-gray-300" />
+            </a>
+          </div>
         </div>
         <br />
       </div>

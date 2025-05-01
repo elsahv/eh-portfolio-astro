@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props;
 <MainLayout>
   <div id="markdown-post" class="text-lg p-5">
     <section class="bg-">
-      <div id="flex" class="mt-5 2xl:p-5 dropshadow-3xl">
+      <div id="flex" class="grid grid-cols-2 mt-5 2xl:p-5 dropshadow-3xl">
         <h2 class="text-xl font-semibold">
           {frontmatter.title}
         </h2>
@@ -22,7 +22,6 @@ const { frontmatter } = Astro.props;
           class="drop-shadow-md border border-gray-300 rounded mt-3"
         />
       </div>
-
       <div
         id="container"
         class="text-onyx lg:p-[55px] md:p-5 pt-3 p-1 px-1 md:ml-5"
