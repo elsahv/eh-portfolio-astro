@@ -7,9 +7,12 @@ html {
 * {
   box-sizing: border-box;
 }
+h2 {
+  font-size: 20px;
+}
 
 p {
-  /* font-size: 16px; */
+  font-size: 17px;
 }
 
 ._shadowText1 {

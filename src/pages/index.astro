@@ -1,34 +1,26 @@
 ---
-import About from "../components/sections/About.astro";
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
 import Contact from "../components/sections/Contact.astro";
 import SiteCard from "../components/SiteCard.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import FeaturedSite from "../components/sections/FeaturedSite.astro";
 
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
-  <div id="flex" class="flex bg-munsell">
+  <div id="flex" class="flex bg-">
     <!-- LEFT SIDE v-->
-    <div id="left-side" class="bg-test1 w-2/5">
-      <!-- *: HEADER -->
-      <header>
-        <nav>
-          <div id="logo" class="text-5xl">Elsa Hovey</div>
-          <ul>
-            <li>about</li>
-            <li>services</li>
-            <li>contact</li>
-          </ul>
-        </nav>
-      </header>
-      <!-- *: HEADER  -->
+    <div id="left-side" class="bg- w-2/5 border-black border-r p-5 mr-5">
+      <Header />
+      <About />
+
       <!--  -->
       <!--  -->
       <!--  -->
-      <!-- TODO:  about section -->
-      <!-- TODO:  services section -->
-      <!-- TODO:  contact section -->
+      <!-- TODO:  SERVICES section -->
+      <!-- TODO:  CONTACT section -->
     </div>
     <!-- LEFT SIDE ^-->
     <!--!  -->
@@ -38,25 +30,32 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
     <!-- ! -->
     <!--  !-->
     <!-- RIGHT SIDE v-->
-    <div id="right-side" class="w-3/5">
-      <About />
-      <div id="featured-websites" class="bg-test2 px-5">
-        <div id="websites-container" class="mt-1 pt-1">
-          <div id="websites-grid" class="mt-5 pt-5 grid grid-cols-2 gap-14">
-            {
-              allFeaturedSites.map((work) => (
-                <SiteCard
-                  title={work.frontmatter.title}
-                  image={work.frontmatter.image.url}
-                  alt={work.frontmatter.image.alt}
-                  url={work.url}
-                  testItem1={work.frontmatter.testItem1}
-                  websiteNumber={work.frontmatter.websiteNumber}
-                />
-              ))
-            }
-          </div>
+    <div id="right-side" class="w-3/5 px-2 py-5">
+      <FeaturedSite />
+
+      <div id="creative-projects" class="bg- mt-[105px] px-5">
+        <!-- <div id="container" class="mt-1 pt-1"> -->
+        <p id="creative-projects-intro" class="">
+          In my free time, I enjoy building out my other projects with js
+          frameworks and php wp I've built javascript projects to not only
+          categorize and simplify my life, but get to be creative too! For my
+          other creative projects, I've also built...
+        </p>
+        <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-14">
+          {
+            allFeaturedSites.map((work) => (
+              <SiteCard
+                title={work.frontmatter.title}
+                image={work.frontmatter.image.url}
+                alt={work.frontmatter.image.alt}
+                url={work.url}
+                testItem1={work.frontmatter.testItem1}
+                websiteNumber={work.frontmatter.websiteNumber}
+              />
+            ))
+          }
         </div>
+        <!-- </div> -->
       </div>
 
       <Contact />

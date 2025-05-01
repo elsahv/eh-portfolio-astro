@@ -12,31 +12,31 @@ const {
 } = frontmatter;
 ---
 
-<div id="sq" class="">
+<div id="sq" class="opacity-70 hover:opacity-100">
   <a href={url}>
-    <!-- <div class="">
-      <div>{websiteNumber}</div>
-    </div> -->
-    <h2 class="text-xl font-semibold">
-      {title}
-    </h2>
+    <p class="pt-1 opacity-80 text-lg text-test1">... {testItem1}</p>
 
     <img
       src={image}
       class="drop-shadow-xl rounded border border-gray-300"
       alt={alt}
     />
-    <div
-      id="post-excerpt"
-      class="px-5 mx-5 flex flex-col justify-center text-onyx bg-papaya mb-5 ml-1 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md"
-    >
-      <p class="pt-1 opacity-80 text-lg">{testItem1}</p>
-      <div id="btn-wrapper" class="mt-2">
-        <button
-          class="bg-munsell text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
-          >read more</button
-        >
-      </div>
+    <p class="hover:text-cerulean">visit <span>{title}</span></p>
+
+    <div class="text-xl">
+      <!-- <h2 class="">{title},</h2> -->
     </div>
+
+    <!-- <div
+      id="post-excerpt"
+      class="bg- flex flex-col justify-center text-onyx bg-papaya pr-2 drop-shadow-md"
+    > -->
+    <div id="btn-wrapper" class="mt-2">
+      <button
+        class="bg- text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
+        >read more</button
+      >
+    </div>
+    <!-- </div> -->
   </a>
 </div>

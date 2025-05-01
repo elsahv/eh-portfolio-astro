@@ -1,32 +1,12 @@
----
-import { Image } from "astro:assets";
-import ProfilePic from "../../public/eh-img.jpg";
-import SmIcons from "./SmIcons.jsx";
----
-
-<header
-  class="pb-[45px] md:fixed relative md:left-0 top-0 z-50 h-screen
-  2xl:w-1/4
-   lg:w-[380px]
-   md:w-[335px]
-   max-[690px]:w-[360px]
-   max-[600px]:w-[470px]
-   max-[599px]:w-full
-    border-gray-500 border-r"
->
-  <!-- <div class=""> -->
-  <nav
-    class="text-aliceBlue _shadowText1 dropshadow-3xl pl-4 pr-2 w-full absolute z-10 bottom-0 md:mb-3 mb-[50px]"
-  >
-    <div id="site-logo" class="text-4xl">
-      <a href="/">Project Journal</a>
-    </div>
-    <p class="text-lg">Some of my favorite website projects.</p>
-    <div id="sm-icons-container" class="text-munsell">
-      <SmIcons />
-    </div>
+<!-- *: HEADER -->
+<header>
+  <nav class="bg-">
+    <div id="logo" class="text-9xl pb-1">Elsa Hovey</div>
+    <ul class="text-3xl pl-3 px-3 py-3 mt-5 border-black border-t border-b">
+      <li>about</li>
+      <li>services</li>
+      <li>contact</li>
+    </ul>
   </nav>
-  <!-- </div> -->
-
-  <Image src={ProfilePic} alt="" class="absolute top-0 z-0 h-screen" />
 </header>
+<!-- *: HEADER  -->

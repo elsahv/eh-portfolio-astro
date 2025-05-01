@@ -1,0 +1,59 @@
+---
+import Image from "astro/components/Image.astro";
+import LCimg from "../images/eh-img.jpg";
+
+const items = [
+  // {
+  //   listItem:
+  //     "I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
+  // },
+  // {
+  //   listItem:
+  //     "My days are spent creating niche websites and solutions for small business owners and creatives.",
+  // },
+  // {
+  //   listItem:
+  //     "My expertise currently lies in javascript websites, and freelance wordpress projects.",
+  // },
+  {
+    listItem:
+      "Hi there... im elsa. I've built javascript projects to not only categorize and simplify my life, but get to be creative too! I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
+  },
+  {
+    listItem:
+      "My desire to learn js was initated by wanting to be more creative, and to build my 4 projects. By experiencing the process of building up these websites, I've gained not only an ability to work with unique colors, and to learn the skills needed to become a very ideal web developer.",
+  },
+  // {
+  //   listItem:
+  //     "I've build my websites to fuel my interests and passions. Now let me fuel yours!",
+  // },
+];
+---
+
+<section id="about" class="my-5 pt-5 py-5 bg-">
+  <div id="about" class="mb-5 pb-5 mt-5">
+    <!-- <h1>Hi there, I'm Elsa. Welcome to my portfolio.</h1> -->
+    <Image src={LCimg} alt="" class="w-1/2 mt-5 pt-5 pr-5 pl-2" />
+    <div class="pl-3 pt-5">
+      <h2>About</h2>
+      <p>
+        I help small business owners with starting and maintaining tfdsfheir
+        websites, along with content creation.<a>lc. </a> In my free time, I enjoy
+        building out my <a>other projects </a> with js frameworks and php wp
+      </p>
+    </div>
+  </div>
+  <!-- <div id="" class=""> -->
+  <div id="" class="mt-5">
+    <div class="pb-2 font-medium text-onyx">
+      <div id="paragraph-container" class="2xl:pr-5 2xl:mr-5">
+        <!-- <Image src={LCimg} alt="" /> -->
+        <ul class="space-y-4 pt-1 list-disc pl-2 pr-1 pb-5 mb-5">
+          {items.map((item) => <li class="pt-1">{item.listItem}</li>)}
+        </ul>
+      </div>
+      <br />
+    </div>
+  </div>
+  <!-- </div> -->
+</section>
