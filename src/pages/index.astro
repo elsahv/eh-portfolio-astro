@@ -1,8 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import FeaturedSite from "../components/sections/FeaturedSite.astro";
 import LeftSide from "../components/LeftSide.astro";
 import SiteCard from "../components/SiteCard.astro";
+import FeaturedSite from "../components/sections/FeaturedSite.jsx";
 
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
@@ -18,13 +18,13 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
         <FeaturedSite />
 
         <div id="creative-projects" class="bg- mt-[125px] px-5">
-          <p id="services" class="text-lg text-gray-00">
+          <p id="services" class="text-lg text-gray-500">
             In my free time, I enjoy building out my other projects with js
             frameworks and php wp I've built javascript projects to not only
             categorize and simplify my life, but get to be creative too! For my
             other creative projects, I've also built...
           </p>
-          <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-14">
+          <div id="grid" class="mt-5 pt-5 grid grid-cols-2 gap-12">
             {
               allFeaturedSites.map((work) => (
                 <SiteCard
