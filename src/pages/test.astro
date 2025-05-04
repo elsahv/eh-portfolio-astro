@@ -1,3 +1,19 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
+
+<!-- THIS TEST IS FOR COMBINING markdown header and markdown layout/ lc page -->
+<MainLayout>
+  <div
+    id="left-side-wrapper"
+    class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-1/5 w-full overflow-y-scroll overflow-x-hidden"
+  >
+    left
+  </div>
+  <div
+    id="right-side-markdown-container"
+    class="border-l border-onyx h-screen md:absolute relative right-0 md:w-4/5 w-full overflow-y-scroll overflow-x-hidden p-5"
+  >
+    right
+  </div>
+</MainLayout>

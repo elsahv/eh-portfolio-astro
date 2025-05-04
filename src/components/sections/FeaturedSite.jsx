@@ -4,7 +4,7 @@ const FeaturedSite = () => {
   return (
     <section
       id="about"
-      class="wopacity-80 hover:opacity-100 my-5 pt-5 py-5 md:pl-5 pl-1 bg-"
+      class="opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 bg-"
     >
       <div id="" class="mt-5">
         <div id="" class="md:mr-5 mx-0">
@@ -24,9 +24,10 @@ const FeaturedSite = () => {
               </p>
 
               <div id="img-wrapper" class="px-1 py-5">
-                <a href="https://laughingcoyote.dev">
+                <a href="/laughing-coyote ">
                   <div class="flex items-center  text-2xl pt-5 mt-5  hover:text-munsell">
-                    <IoOpenOutline /> <p class="pl-1">visit site</p>
+                    <IoOpenOutline />{" "}
+                    <p class="pl-1">view what LC can do for you... </p>
                   </div>
 
                   <img

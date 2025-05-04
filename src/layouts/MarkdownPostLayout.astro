@@ -1,30 +1,40 @@
 ---
+import TestMarkdownHeader from "../components/tests/TestMarkdownHeader.astro";
 import MainLayout from "./MainLayout.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <div id="markdown-post" class="text-lg p-5">
-    <section class="bg-">
-      <div id="flex" class="grid grid-cols-2 mt-5 2xl:p-5 dropshadow-3xl">
-        <h2 class="text-xl font-semibold">
-          {frontmatter.title}
-        </h2>
-
-        <p class="pt-1 opacity-80 text-lg">{frontmatter.testItem1}</p>
-        <img
-          src={frontmatter.image.url}
-          alt=""
-          class="drop-shadow-md border border-gray-300 rounded mt-3"
-        />
-      </div>
+  <TestMarkdownHeader />
+  <div class="">
+    <div id="markdown-post" class="text-lg p-5">
       <div
-        id="container"
-        class="text-onyx lg:p-[55px] md:p-5 pt-3 p-1 px-1 md:ml-5"
+        id="right-side-markdown-container"
+        class="text- border-l border-onyx h-screen md:absolute relative right-0 md:w-4/5 w-full overflow-y-scroll overflow-x-hidden p-5"
       >
-        <slot />
+        <section class="p-5 mx-5">
+          <img
+            src={frontmatter.image.url}
+            alt=""
+            class="drop-shadow-md border border-gray-300 rounded mt-3"
+          />
+
+          <div
+            id="website-content"
+            class="pl-[50px] pt-4 bg-test dropshadow-3xl"
+          >
+            <h2 class="text-4xl font-semibold">
+              {frontmatter.title}
+            </h2>
+
+            <div class="bg- pt-2 opacity-80 text-lg">
+              {frontmatter.testItem1}
+              <slot />
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </div>
 </MainLayout>
