@@ -4,7 +4,7 @@ const FeaturedSite = () => {
   return (
     <section
       id="about"
-      class="opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 bg-"
+      class="text-munsell opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 bg-"
     >
       <div id="" class="mt-5">
         <div id="" class="md:mr-5 mx-0">
