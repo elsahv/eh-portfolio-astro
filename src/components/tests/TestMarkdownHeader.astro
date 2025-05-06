@@ -1,14 +1,11 @@
 ---
-// import AboutMe from "../sections/AboutMe.astro";
-import AboutProjects from "../sections/AboutProjects.astro";
-import Contact from "../sections/Contact.astro";
-import { Image } from "astro:assets";
-import LCimg from "../../images/eh-img.jpg";
+// import About from "../../components/sections/about/index.astro";
 
 const items = [
-  { item1: "about me", link: "/#about-me" },
-  { item1: "about projects", link: "/#about-projects" },
-  { item1: "contact", link: "/#wcontact" },
+  { item1: "home", link: "/#about" },
+  { item1: "work with me", link: "/work-with-me" },
+  { item1: "side projects", link: "/#creative-projects" },
+  { item1: "contact", link: "/contact" },
 ];
 ---
 
@@ -32,36 +29,5 @@ const items = [
       </ul>
     </nav>
   </header>
-  <!-- <AboutMe /> -->
-  <div class="mt-5 pt-5 pl-1 bg-test">
-    <h1 class="font-bold text-4xl">Laughing <br /> Coyote Dev</h1>
-    <p class="pt-1 pr-2 pl-1 text-lg">
-      Web Design for small business, creatives. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Doloremque delectus accusamus facilis
-      praesentium minima. Doloremque alias asperiores quae cumque numquam.
-      Molestiae suscipit quas animi earum aut ullam natus asperiores expedita!
-    </p>
-    <div class="font-bold">
-      <a href="https://laughingcoyote.dev"> cta to lc</a>
-    </div>
-  </div>
-  <div id="about-me" class="mb-5 pb-5 mt-5 my-5 pt-5 py-5">
-    <!-- <Image src={LCimg} alt="" class="w-1/2 mt-5 pt-5 pr-5 pl-2" /> -->
-    <div id="about-me" class="pl-3 pt-5">
-      <!-- <h2>About Me</h2> -->
-      <!-- <p>
-        "I'm based in Joshua Tree, CA. Its a place which inpires many colors I
-        became interested in programming when I wanted to bring my own passion
-        projects to life."
-      </p>
-      <p>
-        "My days are spent creating niche websites and solutions for small
-        business owners and creatives.",
-      </p> -->
-    </div>
-  </div>
-
-  <!-- <AboutProjects /> -->
-  <!-- <h2>About projects/ learnt skills/ coding experience</h2> -->
-  <!-- <Contact /> -->
+  <!-- <About /> -->
 </div>

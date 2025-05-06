@@ -14,21 +14,29 @@ const { frontmatter } = Astro.props;
         class="text- border-l border-onyx h-screen md:absolute relative right-0 md:w-4/5 w-full overflow-y-scroll overflow-x-hidden p-5"
       >
         <section class="p-5 mx-5">
-          <img
-            src={frontmatter.image.url}
-            alt=""
-            class="drop-shadow-md border border-gray-300 rounded mt-3"
-          />
-
+          <div class="bg- flex flex-row">
+            <img
+              src={frontmatter.image.url}
+              alt=""
+              class="w-[1100px] drop-shadow-md border border-gray-300 rounded mt-3"
+            />
+            <div class="mt-5 pt-5 pl-4">
+              <h1 class="font-bold text-4xl">{frontmatter.title}</h1>
+              <p class="pt-1 pr-2 pl-1 text-lg">
+                {frontmatter.testItem1}
+              </p>
+              <div class="text-gray-600 pl-1 hover:underline">
+                <a href={frontmatter.websiteUrl}> view website</a>
+              </div>
+            </div>
+          </div>
           <div
             id="website-content"
-            class="pl-[50px] pt-4 bg-test dropshadow-3xl"
+            class="pl-5 w-3/4 pt-4 bg-test dropshadow-3xl"
           >
-            <h2 class="text-4xl font-semibold">
-              {frontmatter.title}
-            </h2>
+            <h2 class="text-3xl text-onyx font-bold">Project journal</h2>
 
-            <div class="bg- pt-2 opacity-80 text-lg">
+            <div class="pt-2 opacity-80 text-lg">
               {frontmatter.testItem1}
               <slot />
             </div>
