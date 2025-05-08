@@ -1,14 +1,15 @@
 ---
-// import About from "../../components/sections/about/index.astro";
+// import MenuItems from "../components/MenuItems.jsx";
 
 const items = [
-  { item1: "home", link: "/#about" },
+  { item1: "home", link: "/" },
   { item1: "work with me", link: "/work-with-me" },
-  { item1: "side projects", link: "/#creative-projects" },
+  { item1: "side projects", link: "/side-projects" },
   { item1: "contact", link: "/contact" },
 ];
 ---
 
+<!-- <MenuItems /> -->
 <div
   id="left-side-wrapper"
   class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-1/5 w-full overflow-y-scroll overflow-x-hidden"
@@ -29,5 +30,4 @@ const items = [
       </ul>
     </nav>
   </header>
-  <!-- <About /> -->
 </div>

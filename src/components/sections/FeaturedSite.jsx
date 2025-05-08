@@ -24,7 +24,7 @@ const FeaturedSite = () => {
               </p>
 
               <div id="img-wrapper" class="px-1 py-5">
-                <a href="/work-with-me">
+                <a href="https://laughingcoyote.dev">
                   <div class="flex items-center  text-2xl pt-5 mt-5  hover:text-munsell">
                     <IoOpenOutline />{" "}
                     <p class="pl-1">view what LC can do for you... </p>

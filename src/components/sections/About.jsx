@@ -36,8 +36,8 @@ const About = () => {
       </div>
 
       {/*ABOUT PROJECTS */}
-      <div id="" class="mt-5">
-        <div id="about-projects" class="2xl:pr-5 2xl:mr-5 pl-4 pr-3">
+      <div id="about-" class="h- mt-5">
+        <div id="" class="2xl:pr-5 2xl:mr-5 pl-4 pr-3">
           <h2>Expertise gained through project learning</h2>
           <div class="bg- pt-1 pb-5 mb-5 ">
             {items.map((item) => (
