@@ -3,9 +3,10 @@ import MainLayout from "../layouts/MainLayout.astro";
 import LeftSide from "../components/LeftSide.astro";
 import SiteCard from "../components/SiteCard.astro";
 
-import WorkWithMe from "../components/sections/WorkWithMe.astro";
+// import WorkWithMe from "../components/sections/WorkWithMe.astro";
 import Contact from "../components/sections/Contact.astro";
 const allFeaturedSites = await Astro.glob("./websites/*.md");
+import FeaturedSite from "../components/sections/FeaturedSite.jsx";
 ---
 
 <MainLayout>
@@ -16,9 +17,8 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
       class="bg- border-l border-onyx text-black h-screen md:absolute relative right-0 sm:bottom md:w-3/5 w-full overflow-y-scroll overflow-x-hidden xl:p-5"
     >
       <div id="" class="bg- px-5">
-        <WorkWithMe />
-
-        <!--  -->
+        <FeaturedSite />
+        <!-- <WorkWithMe /> -->
 
         <div id="side-projects" class="text- mr-2 mt-[155px] md:px-5">
           <p id="services" class="text-lg font-bold pr-">
@@ -34,7 +34,7 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
                   title={work.frontmatter.title}
                   image={work.frontmatter.image.url}
                   alt={work.frontmatter.image.alt}
-                  websiteUrl={work.frontmatter.websiteUrl}
+                  url={work.url}
                   testItem1={work.frontmatter.testItem1}
                 />
               ))

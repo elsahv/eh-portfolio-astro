@@ -2,11 +2,11 @@
 import FileImg from "../images/file.png";
 
 const frontmatter = Astro.props;
-const { title, image, alt, websiteUrl, testItem1 } = frontmatter;
+const { title, image, alt, url, testItem1 } = frontmatter;
 ---
 
 <div id="sq" class="py-5">
-  <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
+  <a href={url}>
     <div class="flex font-bold pt-1 pb-1 pl- pr-1 bg-">
       <!-- <Image src={FileImg} alt="" width={25} height={25} /> -->
       <h3 class="pl-1">{">"} {title}</h3>

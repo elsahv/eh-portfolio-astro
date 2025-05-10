@@ -3,10 +3,10 @@ import { IoOpenOutline } from "react-icons/io5";
 const FeaturedSite = () => {
   return (
     <section
-      id="about"
+      id="wrapper"
       class="text-black opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 bg-"
     >
-      <div id="" class="mt-5">
+      <div id="" class="mt-5 ">
         <div id="" class="md:mr-5 mx-0">
           <div class="pb-2 font-medium text-">
             <div
@@ -24,7 +24,7 @@ const FeaturedSite = () => {
               </p>
 
               <div id="img-wrapper" class="px-1 py-5">
-                <a href="https://laughingcoyote.dev">
+                <a href="/work-with-me">
                   <div class="flex items-center  text-2xl pt-5 mt-5  hover:text-munsell">
                     <IoOpenOutline />{" "}
                     <p class="pl-1">view what LC can do for you... </p>
