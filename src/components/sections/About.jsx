@@ -15,11 +15,11 @@ const About = () => {
   return (
     <>
       {/* ABOUT ME */}
-      <div id="about-me" class="mb-5 pb-5 mt-5 my-5 pt-5 py-5">
+      <div id="about-me" class="mb-5 pb-5  bg-">
         <img
           src="https://elsahovey.com/_astro/eh-img.BW9mBPY5_5k3C0.webp"
           alt=""
-          class="2xl:w-1/2 w-3/4 mt-5 pt-5 pr-5 pl-2"
+          class="2xl:w-1/2 w-3/4 mt-2  pr-5 pl-2"
         />
         <div id="about" class="pl-3 pt-5">
           <h2>About Me</h2>

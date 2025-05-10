@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import LeftSide from "../components/LeftSide.astro";
 import SiteCard from "../components/SiteCard.astro";
 
-// import WorkWithMe from "../components/sections/WorkWithMe.astro";
+import WorkWithMe from "../components/sections/WorkWithMe.astro";
 import Contact from "../components/sections/Contact.astro";
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 import FeaturedSite from "../components/sections/FeaturedSite.jsx";
@@ -18,10 +18,10 @@ import FeaturedSite from "../components/sections/FeaturedSite.jsx";
     >
       <div id="" class="bg- px-5">
         <FeaturedSite />
-        <!-- <WorkWithMe /> -->
+        <WorkWithMe />
 
-        <div id="side-projects" class="text- mr-2 mt-[155px] md:px-5">
-          <p id="services" class="text-lg font-bold pr-">
+        <div id="side-projects" class="bg- mr-2 mt-[155px] md:px-5">
+          <p id="services" class="bg- text-mew">
             In my free time, I enjoy building out my other projects with js
             frameworks and php wp I've built javascript projects to not only
             categorize and simplify my life, but get to be creative too! For my

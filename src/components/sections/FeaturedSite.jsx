@@ -9,20 +9,16 @@ const FeaturedSite = () => {
       <div id="" class="mt-5 ">
         <div id="" class="md:mr-5 mx-0">
           <div class="pb-2 font-medium text-">
-            <div
-              id="paragraph-container"
-              class="font-semibold 2xl:pr-5 2xl:mr-5"
-            >
-              <p class="text-2xl pt-1">Hi there... im Elsa.</p>
-              <p class="pb-1 mb-1 text-lg">
-                I help small business owners start and maintain their websites,
-                along with content creation. You can find some of these examples
-                over at{" "}
-                <a class="underline" href="https://laughingcoyote.dev">
-                  Laughing Coyote Dev:
-                </a>
-              </p>
-
+            <div id="paragraph-container" class="font- 2xl:pr-5 2xl:mr-5">
+              <h1 id="work-with-me-title" class="font- 2xl:text-4xl text-3xl ">
+                Work With Me
+              </h1>
+              <h3 class="pt-1 text-lg">
+                "Web Design for small business, creatives. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Doloremque delectus accusamus
+                facilis"
+              </h3>
+              {/*  */}
               <div id="img-wrapper" class="px-1 py-5">
                 <a href="/work-with-me">
                   <div class="flex items-center  text-2xl pt-5 mt-5  hover:text-munsell">
