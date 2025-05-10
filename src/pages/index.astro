@@ -4,6 +4,7 @@ import LeftSide from "../components/LeftSide.astro";
 import SiteCard from "../components/SiteCard.astro";
 
 import WorkWithMe from "../components/sections/WorkWithMe.astro";
+import Contact from "../components/sections/Contact.astro";
 const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
@@ -12,35 +13,35 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
     <LeftSide />
     <div
       id="RIGHT-SIDE"
-      class="bg- border-l border-onyx text-black h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
+      class="bg- border-l border-onyx text-black h-screen md:absolute relative right-0 sm:bottom md:w-3/5 w-full overflow-y-scroll overflow-x-hidden xl:p-5"
     >
       <div id="" class="bg- px-5">
         <WorkWithMe />
 
         <!--  -->
 
-        <div id="side-projects" class="text- mt-[155px] px-5">
-          <p id="services" class="text-lg font-bold">
+        <div id="side-projects" class="text- mr-2 mt-[155px] md:px-5">
+          <p id="services" class="text-lg font-bold pr-">
             In my free time, I enjoy building out my other projects with js
             frameworks and php wp I've built javascript projects to not only
             categorize and simplify my life, but get to be creative too! For my
             other creative projects, I've also built...
           </p>
-          <div id="grid" class="mt-1 pt-2 grid lg:grid-cols-2 gap-12">
+          <div id="grid" class="mt-1 pt-2 grid 2xl:grid-cols-2 gap-12">
             {
               allFeaturedSites.map((work) => (
                 <SiteCard
                   title={work.frontmatter.title}
                   image={work.frontmatter.image.url}
                   alt={work.frontmatter.image.alt}
-                  url={work.url}
+                  websiteUrl={work.frontmatter.websiteUrl}
                   testItem1={work.frontmatter.testItem1}
                 />
               ))
             }
           </div>
         </div>
-        <p>CONTACT CTA</p>
+        <Contact />
       </div>
     </div>
   </div>

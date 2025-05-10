@@ -1,17 +1,16 @@
 ---
 import Header from "../components/Header.astro";
-import Contact from "./sections/Contact.astro";
+// import Contact from "./sections/Contact.astro";
 import About from "./sections/About";
 ---
 
 <div
   id="left-side-wrapper"
-  class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  class="border-r border-black 2xl:p-5 p-2 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
 >
-  <div id="left-side-container" class="pr-3 mr-1">
+  <div id="left-side-container" class="md:pr-3 md:mr-1">
     <Header />
     <About />
-    <Contact />
-    back to top cta
+    <a href="/#contact">Contact cta</a>
   </div>
 </div>

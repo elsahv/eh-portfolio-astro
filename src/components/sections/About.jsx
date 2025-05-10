@@ -19,7 +19,7 @@ const About = () => {
         <img
           src="https://elsahovey.com/_astro/eh-img.BW9mBPY5_5k3C0.webp"
           alt=""
-          class="w-1/2 mt-5 pt-5 pr-5 pl-2"
+          class="2xl:w-1/2 w-3/4 mt-5 pt-5 pr-5 pl-2"
         />
         <div id="about" class="pl-3 pt-5">
           <h2>About Me</h2>

@@ -1,33 +1,10 @@
 ---
-// import MenuItems from "../components/MenuItems.jsx";
-
-const items = [
-  { item1: "home", link: "/" },
-  { item1: "work with me", link: "/work-with-me" },
-  { item1: "side projects", link: "/side-projects" },
-  { item1: "contact", link: "/contact" },
-];
+import MenuItems from "../MenuItems";
 ---
 
-<!-- <MenuItems /> -->
 <div
   id="left-side-wrapper"
   class="border-r border-black p-5 bg- md:h-screen h-full md:absolute relative md:left-0 sm:bottom-0 md:w-1/5 w-full overflow-y-scroll overflow-x-hidden"
 >
-  <header>
-    <nav class="bg-">
-      <div id="logo" class="text-8xl pb-1">EH</div>
-      <ul
-        class="text-2xl pl-3 px-3 py-3 mt-5 border-black border-t-2 border-b-2"
-      >
-        {
-          items.map((item) => (
-            <li>
-              <a href={item.link}>{item.item1}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-  </header>
+  <MenuItems />
 </div>
