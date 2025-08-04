@@ -2,7 +2,7 @@ const LaughingCoyoteDev = () => {
   return (
     <section
       id="featured-work"
-      class="bg-test2 opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 "
+      class="bg- opacity-100 hover:opacity-80 my-5 pt-5 py-5 md:pl-5 pl-1 "
     >
       <div id="" class="mt-5 ">
         <div id="" class="md:mr-5 mx-0">
