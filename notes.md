@@ -8,7 +8,7 @@
 
    <!-- *ABOUT LC -->
    <!-- *MAIN GOALS -->
-<MainGoals />
+<paragraph3s />
    <!-- *KEY FEATURES -->
    <!-- * ABOUT LC -->
    <!-- * GALLERY -->

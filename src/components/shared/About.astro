@@ -1,0 +1,35 @@
+---
+export interface Props {
+  title: string;
+  paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
+  paragraph4: string;
+  paragraph5: string;
+  mainImg: string;
+}
+
+const {
+  title,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  paragraph5,
+  mainImg,
+} = Astro.props as Props;
+---
+
+<div id="about-me-wrapper" class="bg-test2 flex justify-center my-5 py-5 font-">
+  <div id="about-me-container" class="pt-5 mt-5">
+    <h2 class="pb-1 text-3xl font-semibold">{title}</h2>
+    <img src={mainImg} alt="" class="2xl:w-1/2 w-3/4 mt-2 pr-5 pl-2" />
+    <div class="bg-test1 pl-1">
+      <p id="" class="">{paragraph1}</p>
+      <p id="" class="">{paragraph2}</p>
+      <p id="" class="">{paragraph3}</p>
+      <p id="" class="">{paragraph4}</p>
+      <p id="" class="">{paragraph5}</p>
+    </div>
+  </div>
+</div>

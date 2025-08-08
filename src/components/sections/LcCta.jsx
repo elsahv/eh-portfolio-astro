@@ -8,22 +8,20 @@ const LaughingCoyoteDev = () => {
         <div id="" class="md:mr-5 mx-0">
           <div class="pb-2 font- text-">
             <div id="paragraph-container" class="font- 2xl:pr-5 2xl:mr-5">
-              <h1 id="featured work-title" class="text-slate-600 text-xl ">
+              <span id="featured work-title" class=" text-lg opacity-65">
                 view featured website
-              </h1>
-              <h2 class="text-3xl pt-1">Laughing Coyote Dev-</h2>
-              <p></p>
+              </span>
+              <h1 class="text-3xl ">Laughing Coyote Dev</h1>
               <p class="pt-1 text-lg mr-5 pr-5 mt-1 ">
-                A
+                a
                 <button class="ml-2 mr-1 px-2 rounded  bg-munsell text-aliceBlue">
-                  <a href="/featured-work"> digital creative studio</a>
+                  <a href="/laughing-coyote-dev"> web design service</a>
                 </button>
-                where user stories are translated into vivid, handcrafted
-                websites. Each site is designed to reduce cognitive overload,
-                maintain focus, and make navigation intuitive for users with
-                attention differences. I help small business owners start and
-                maintain their websites, along with content creation.
+                which assists small business owners with starting and
+                maintaining their websites, along with content creation and
+                sharing their user stories.
               </p>
+
               <a href="/laughing-coyote-dev">
                 <div id="img-wrapper" class="  bg-">
                   <img
