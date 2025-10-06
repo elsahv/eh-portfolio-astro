@@ -1,0 +1,57 @@
+---
+import Footer from "../components/Footer.astro";
+import BackBtn from "../components/ui/BackBtn.astro";
+import TestLeft from "./TestLeft.astro";
+import MainLayout from "./MainLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout>
+  <TestLeft />
+  <div id="markdown-post" class="text-lg 2xl:p-5 ]">
+    <div
+      id="right-side-markdown-container"
+      class="bg- border-l border-onyx h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
+    >
+      <section class="md:mx-5 mx-5 p-5">
+        <div class="p-5 mr -5">
+          <div id="" class="bg-">
+            <div class="mt-5 pt-5">
+              <h1 class="text-4xl">{frontmatter.title}</h1>
+              <div id="images-wrapper" class="grid grid-cols-2 gap-5">
+                <div id="sq1" class="bg-test" class="">
+                  <img
+                    id="PRIMARY-image"
+                    src={frontmatter.image.url}
+                    alt=""
+                    class="border border-test drop-shadow-md border border-black rounded mt-[50px] col-span-2"
+                  />
+                </div>
+                <div id="sq2" class="bg-test">
+                  <img
+                    id="SECONDARY-image"
+                    src={frontmatter.secondImage.url}
+                    alt=""
+                    class="drop-shadow-md border border-black rounded mt-3"
+                  />
+                  <p class="pt-1 pr-2 md:pl-1 text-lg">
+                    {frontmatter.testItem1}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="website-content" class="space-y-4 pl-3 pt-4 dropshadow-3xl">
+            <div class="bg- 2xl:w-3/4 my-5 py-5 pt-2 opacity-80 text-lg">
+              <div class="py-5">
+                <slot />
+              </div>
+            </div>
+            <BackBtn />
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  </div>
+</MainLayout>

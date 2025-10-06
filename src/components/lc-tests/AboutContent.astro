@@ -1,0 +1,75 @@
+---
+export interface Props {
+  title: string;
+  websiteTitle: string;
+  paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
+  paragraph4: string;
+  paragraph5: string;
+  primaryImage: string;
+  secondaryImage: string;
+  imageLink: string;
+}
+
+const {
+  title,
+  websiteTitle,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  paragraph5,
+  primaryImage,
+  secondaryImage,
+  imageLink,
+} = Astro.props as Props;
+---
+
+<section
+  id="about-lc"
+  class="test-snap mt-5 md:mr-5 mr-2 flex justify-center my-5 py-5 opacity-90 hover:opacity-100"
+>
+  <div id="New About-wrapper" class="">
+    <h1 class="text-3xl font-semibold my-5">... {title}</h1>
+
+    <div id="img-wrapper" class="bg- grid lg:grid-cols-2 grid-cols-1">
+      <div class="img-wrapper-primary mr-3 pr-2">
+        <img
+          src={primaryImage}
+          alt=""
+          class="drop-shadow-lg border border-black my-2"
+        />
+      </div>
+      <div class="img-wrapper-secondary">
+        <a
+          href={imageLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/featured-work"
+        >
+          <img
+            src={secondaryImage}
+            alt=""
+            class="opacity-100 border border-black drop-shadow-lg"
+          />
+          <h3 class="font-bold text-xl pl-5 pt-1">
+            view- {websiteTitle}
+          </h3>
+        </a>
+      </div>
+    </div>
+    <div id="paragraph-wrapper" class="font- pl-1 mt-5">
+      <div
+        id="paragraphs-container"
+        class="ml-1 mt-1 rounded py-2 2xl:px-4 bg-"
+      >
+        <p class="">{paragraph1}</p>
+        <p class="">{paragraph2}</p>
+        <p class="">{paragraph3}</p>
+        <p class="">{paragraph4}</p>
+        <p class="">{paragraph5}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Contact from "../components/sections/Contact.astro";
+const programmingLanguages = await Astro.glob("./languages/*.md");
+const whoIHelp = await Astro.glob("./whoIHelp/*.md");
+import Card from "../components/ui/Card.astro";
+import TestLeft from "../layouts/TestLeft.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout>
+  <div id="homepage-wrapper" class="">
+    <TestLeft />
+    <div
+      id="RIGHT-PANEL"
+      class="md:pr-5 font-medium border-l border-onyx 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
+    >
+      <div id="all-works" class="bg- p-5 md:mr-2 mt-[155px] md:px-5 md:mx-5">
+        <!-- <h2 class="text-3xl">All Works</h2> -->
+        <p id="services" class="text-3xl p-1">I code with...</p>
+        <div id="grid" class="pl-1 pr-3 grid 2xl:grid-cols-2 gap-2">
+          {
+            programmingLanguages.map((work) => (
+              <Card
+                title={work.frontmatter.title}
+                image={work.frontmatter.image.url}
+                alt={work.frontmatter.image.alt}
+                url={work.url}
+                testItem1={work.frontmatter.testItem1}
+                language={work.frontmatter.language}
+                backend={work.frontmatter.backend}
+              />
+            ))
+          }
+        </div>
+      </div>
+      <div id="mt-[55px] mx-5" class="bg-">
+        <section class="bg- m-5 md:pt-5 md:p-5">
+          <div id="" class="bg- 2xl:mx-5 mt-[150px]">
+            <div id="" class="bg-">
+              <div class="pb-2 font- text-">
+                <h1 class="text-3xl text-">I build websites for...</h1>
+
+                <div
+                  id="DYNAMIC-GRID"
+                  class="grid 2xl:grid-cols-2 gap-3 pl-1 pt-3 2xl:pr-5 2xl:mr-5"
+                >
+                  {
+                    whoIHelp.map((help) => (
+                      <Card
+                        title={help.frontmatter.title}
+                        image={help.frontmatter.image.url}
+                        alt={help.frontmatter.image.alt}
+                        url={help.url}
+                        testItem1={help.frontmatter.testItem1}
+                        language={help.frontmatter.language}
+                        backend={help.frontmatter.backend}
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <Contact />
+      <Footer />
+    </div>
+  </div>
+</MainLayout>

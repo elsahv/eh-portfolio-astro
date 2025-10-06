@@ -1,0 +1,32 @@
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 18px;
+  /* text-decoration: underline; */
+  /* font-weight: bold; */
+}
+
+p {
+  font-size: 17px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+._shadowText1 {
+  text-shadow: 2px 2px 2px black;
+}
+
+._shadowText2 {
+  text-shadow: 2px 2px 2px teal;
+}
+  
+ 
+
+ 
