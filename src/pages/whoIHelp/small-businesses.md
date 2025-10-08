@@ -2,9 +2,9 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-title: "small businesses"
+title: "small businesses-lc"
 pubDate: 2022-07-01
-testItem1: "PHP & wordpress theme projects"
+testItem1: "A web design subscription service for small business owners and creatives- focuses on landing pages and user stories"
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?_gl=1*1qv1sgi*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NTgyNTAwMzckbzEkZzEkdDE3NTgyNTAwNjgkajI5JGwwJGgw"

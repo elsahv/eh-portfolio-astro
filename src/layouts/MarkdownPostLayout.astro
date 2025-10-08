@@ -1,13 +1,13 @@
 ---
 import Footer from "../components/Footer.astro";
 import BackBtn from "../components/ui/BackBtn.astro";
-import TestLeft from "./TestLeft.astro";
+import LeftPanel from "./LeftPanel.astro";
 import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <TestLeft />
+  <LeftPanel />
   <div id="markdown-post" class="text-lg 2xl:p-5 ]">
     <div
       id="right-side-markdown-container"
@@ -18,7 +18,7 @@ const { frontmatter } = Astro.props;
           <div id="" class="bg-">
             <div class="mt-5 pt-5">
               <h1 class="text-4xl">{frontmatter.title}</h1>
-              <div id="images-wrapper" class="grid grid-cols-2 gap-5">
+              <div id="images-wrapper" class="bg- grid grid-cols-2 gap-10">
                 <div id="sq1" class="bg-test" class="">
                   <img
                     id="PRIMARY-image"
@@ -28,22 +28,27 @@ const { frontmatter } = Astro.props;
                   />
                 </div>
                 <div id="sq2" class="bg-test">
+                  <p class="pl-2 mt-3 bg-test">Featured Site {"^_^"}</p>
+
                   <img
                     id="SECONDARY-image"
                     src={frontmatter.secondImage.url}
                     alt=""
-                    class="drop-shadow-md border border-black rounded mt-3"
+                    class="drop-shadow-md border border-black rounded ml-2 mr-3"
                   />
-                  <p class="pt-1 pr-2 md:pl-1 text-lg">
+                  <p class="pt-1 pr-2 md:pl-4 text-md">
                     {frontmatter.testItem1}
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="website-content" class="space-y-4 pl-3 pt-4 dropshadow-3xl">
+          <div
+            id="website-content"
+            class="bg- space-y-4 pl-3 pt-5 mt-5 dropshadow-3xl"
+          >
             <div class="bg- 2xl:w-3/4 my-5 py-5 pt-2 opacity-80 text-lg">
-              <div class="py-5">
+              <div class="py-5 mt-5">
                 <slot />
               </div>
             </div>

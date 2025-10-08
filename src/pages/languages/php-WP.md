@@ -2,7 +2,8 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-title: "PHP/ Wordpress themes"
+# title: "PHP/ Wordpress themes"
+title: "Frontend Design"
 pubDate: 2022-07-01
 testItem1: "PHP & wordpress theme projects"
 author: "Astro Learner"
