@@ -3,7 +3,7 @@ id: 4
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 # title: "& React/ Javascript builds"
-title: "Backend Development"
+title: "Software Development"
 pubDate: 2022-07-01
 testItem1: "about what I can do with react and javascript "
 author: "Astro Learner"

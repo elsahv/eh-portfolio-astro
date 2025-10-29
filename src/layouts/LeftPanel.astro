@@ -1,14 +1,16 @@
 ---
-import Contact from "../components/sections/Contact.astro";
-import Header from "../components/ui/Header.astro";
 import AboutMe from "../components/sections/AboutMe.astro";
+import Header from "../components/ui/Header.astro";
 ---
 
 <div
   id="LEFT-PANEL-wrapper"
-  class="bg- border-r border-black 2xl:p-5 p-2 md:h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  class="bg-[#88B7B5] border-r border-black 2xl:ml-[25px] mt-[55px] pr-3 md:h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
 >
-  <div id="LEFT-PANEL-container" class="bg- ml-1">
+  <div
+    id="LEFT-PANEL-container"
+    class="pt-5 py-5 bg-aliceBlue border-r-2 border-onyx"
+  >
     <Header />
     <AboutMe />
   </div>

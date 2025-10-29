@@ -2,17 +2,15 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-title: "share stories-rq"
+title: "04. Writing to Better Health"
 pubDate: 2022-07-01
 testItem1: "A place where Morongo basin artists and small businesses can tell their story for free. No time? Then they'll pay me to do it!"
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/6041284/pexels-photo-6041284.jpeg?_gl=1*1ds56fj*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NTgyNTAwMzckbzEkZzEkdDE3NTgyNTA0MzIkajMwJGwwJGgw"
+  url: "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=pkbt9eej&dl=0"
   alt: "PHP & wordpress theme projects"
 secondImage:
-  url: "https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=jtp9dik6&dl=0"
-  alt: "PHP & wordpress theme projects"
-websiteUrl: "https://therunningquail.com"
+  url: "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=pkbt9eej&dl=0"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 language: "react"

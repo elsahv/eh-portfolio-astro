@@ -20,20 +20,26 @@ const {
 } = Astro.props as Props;
 ---
 
-<div id="about-me-wrapper" class="bg- flex justify-center my-5 py-5 font-">
+<div id="about-me-wrapper" class="bg- flex justify-center px-3 font-">
   <div id="about-me-container" class="pt-5 mt-5">
     <div class="text-black-400 font-">
       <h1 class="border-munsell pl- py-1 rounded font- text-2xl">
         {title}
       </h1>
-      <p class="">{paragraph1}</p>
+      <!-- <p class="">{paragraph1}</p> -->
     </div>
-    <h2 id="" class="pb-5"></h2>
-    <img src={mainImg} alt="" class="2xl:w-1/2 w-3/4 mt-2 pr-5 pl-2" />
-    <div class="bg- mt-3 px-3 py-1">
-      <p id="" class="">{paragraph2}</p>
+    <!-- <h2 id="" class="pb-5"></h2> -->
+    <div id="img-container" class="pr-5 pt-5">
+      <img
+        src={mainImg}
+        alt=""
+        class="border border-[#88B7B5] rounded opacity-90 2xl:w-1/2 w-3/4 mt-2"
+      />
+    </div>
+    <div class="bg-teal- mt-3 py-1">
+      <!-- <p id="" class="">{paragraph2}</p>
       <p id="" class="">{paragraph3}</p>
-      <p id="" class="">{paragraph4}</p>
+      <p id="" class="">{paragraph4}</p> -->
       <p id="" class="">{paragraph5}</p>
     </div>
   </div>

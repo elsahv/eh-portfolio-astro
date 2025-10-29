@@ -3,15 +3,18 @@ import Footer from "../components/Footer.astro";
 import BackBtn from "../components/ui/BackBtn.astro";
 import LeftPanel from "./LeftPanel.astro";
 import MainLayout from "./MainLayout.astro";
+import WebsitesGrid from "../components/lc-tests/WebsitesGrid.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <LeftPanel />
-  <div id="markdown-post" class="text-lg 2xl:p-5 ]">
+  <div class="w-1/2">
+    <LeftPanel />
+  </div>
+  <div id="markdown-post" class="text-lg 2xl:p-5">
     <div
       id="right-side-markdown-container"
-      class="bg- border-l border-onyx h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
+      class="h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
     >
       <section class="md:mx-5 mx-5 p-5">
         <div class="p-5 mr -5">
@@ -24,7 +27,7 @@ const { frontmatter } = Astro.props;
                     id="PRIMARY-image"
                     src={frontmatter.image.url}
                     alt=""
-                    class="border border-test drop-shadow-md border border-black rounded mt-[50px] col-span-2"
+                    class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-[50px] col-span-2"
                   />
                 </div>
                 <div id="sq2" class="bg-test">
@@ -34,7 +37,7 @@ const { frontmatter } = Astro.props;
                     id="SECONDARY-image"
                     src={frontmatter.secondImage.url}
                     alt=""
-                    class="drop-shadow-md border border-black rounded ml-2 mr-3"
+                    class="p-1 opacity-80 hover:opacity-100 drop-shadow-md border border-rosyBrown rounded ml-2 mr-3"
                   />
                   <p class="pt-1 pr-2 md:pl-4 text-md">
                     {frontmatter.testItem1}
@@ -51,6 +54,7 @@ const { frontmatter } = Astro.props;
               <div class="py-5 mt-5">
                 <slot />
               </div>
+              <WebsitesGrid />
             </div>
             <BackBtn />
           </div>

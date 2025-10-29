@@ -2,11 +2,14 @@ html {
   background-color: #f1f5f9;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 * {
   box-sizing: border-box;
 }
+
+
 h2 {
   font-size: 18px;
   /* text-decoration: underline; */

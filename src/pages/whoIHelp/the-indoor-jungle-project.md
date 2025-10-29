@@ -2,12 +2,12 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-title: "small businesses-lc"
+title: "02. The Indoor Jungle Project"
 pubDate: 2022-07-01
 testItem1: "A web design subscription service for small business owners and creatives- focuses on landing pages and user stories"
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?_gl=1*1qv1sgi*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NTgyNTAwMzckbzEkZzEkdDE3NTgyNTAwNjgkajI5JGwwJGgw"
+  url: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?_gl=1*1kezrj*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NjExMDE1NzYkbzQkZzEkdDE3NjExMDE2MDMkajMzJGwwJGgw"
   alt: "PHP & wordpress theme projects"
 secondImage:
   url: "https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=jtp9dik6&dl=0"
