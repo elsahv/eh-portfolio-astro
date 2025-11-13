@@ -1,0 +1,100 @@
+---
+const items = [
+  // TODO: WEBSITES STORIES V
+  {
+    number: "01.",
+    title: "Laughing Coyote Dev",
+    p: "For small businesses with a desire to reach new customers online and grow their business ...web designing for artists and creative. A web design subscription service for small business owners and creatives- focuses on landing pages and user stories. ",
+    link: "/websiteProjects/1-laughing-coyote-dev",
+  },
+  {
+    number: "02.",
+    title: "The Running Quail",
+    p: "A place where Morongo basin artists and small businesses can tell their story",
+    link: "/websiteProjects/2-the-running-quail",
+  },
+  {
+    number: "03.",
+    title: "Writing To Better Health",
+    p: "illustrative mindmaps (with photos) about cooking for neurodivergents, incorporate nutrition",
+    link: "/websiteProjects/3-writing-to-better-health",
+  },
+  {
+    number: "04.",
+    title: "The Indoor Jungle Project",
+    p: "A horror-themed botany journal",
+    link: "/websiteProjects/4-the-running-quail",
+  },
+
+  // BACKEND AND FRONTEND TECH / language, toolbox....
+  {
+    number: "05.",
+    title: "eh- UI/UX design for neurodivergent users ❤️",
+    p: "Each site is designed to reduce cognitive overload, maintain focus, and make navigation intuitive for users with attention differences.",
+    link: "/screenshots/05",
+  },
+  {
+    number: "06.",
+    title: "lc-astro frontend 🪐",
+    p: "reasons why I use astro ",
+    link: "/screenshots/06",
+  },
+  {
+    number: "07.",
+    title: "rq-community driven",
+    p: "full stack community project",
+    link: "/screenshots/07",
+  },
+  {
+    number: "08.",
+    title: "wtbh",
+    p: "SEO",
+    link: "/screenshots/08",
+  },
+  {
+    number: "09.",
+    title: "jungle",
+    p: "wordpress",
+    link: "/screenshots/09",
+  },
+  {
+    number: "10.",
+    title: "lc",
+    p: "expand on sanity cms backend",
+    link: "/screenshots/10",
+  },
+  {
+    number: "11.",
+    title: "rq",
+    p: "beautiful web design",
+    link: "/screenshots/11",
+  },
+  {
+    number: "12.",
+    title: "wtbh",
+    p: "php- custom themes",
+    link: "/screenshots/12",
+  },
+];
+---
+
+<div id="list-container" class="2xl:p-5 2xl:mt-[150px] mx-5">
+  <h2 class="text-5xl mb-5 text-gray-500">Select Portfolio Projects</h2>
+  <div id="list-wrapper" class="bg- ml-1 mt-5 pt-5 pl-1 mb-10">
+    <div id="list-container" class="">
+      <div id="purple" class="bg- grid 2xl:grid-cols-3 grid-cols-2 gap-5">
+        {
+          items.map((item) => (
+            <div id="sq" class="opacity-60 hover:opacity-100  duration-500">
+              <a href={item.link}>
+                <span class="text-sm">{item.number}</span>
+                <h2 class="text-xl font-semibold">{item.title}</h2>
+                <p class="text-sm ">{item.p}</p>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

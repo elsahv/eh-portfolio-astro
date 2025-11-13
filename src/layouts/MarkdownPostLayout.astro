@@ -1,66 +1,57 @@
 ---
+import DynamicAbout from "../components/DynamicAbout.astro";
 import Footer from "../components/Footer.astro";
+import LeftPanelContact from "../components/lc-tests/LeftPanelContact.astro";
+import Contact from "../components/sections/Contact.astro";
 import BackBtn from "../components/ui/BackBtn.astro";
-import LeftPanel from "./LeftPanel.astro";
 import MainLayout from "./MainLayout.astro";
-import WebsitesGrid from "../components/lc-tests/WebsitesGrid.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
   <div class="w-1/2">
-    <LeftPanel />
+    <LeftPanelContact />
   </div>
   <div id="markdown-post" class="text-lg 2xl:p-5">
     <div
       id="right-side-markdown-container"
       class="h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
     >
-      <section class="md:mx-5 mx-5 p-5">
+      <section class="bg- md:mx-5 mx-5 p-5">
         <div class="p-5 mr -5">
           <div id="" class="bg-">
             <div class="mt-5 pt-5">
-              <h1 class="text-4xl">{frontmatter.title}</h1>
-              <div id="images-wrapper" class="bg- grid grid-cols-2 gap-10">
-                <div id="sq1" class="bg-test" class="">
+              <h1 class="text-7xl w-3/4 bg-">
+                {frontmatter.title}
+              </h1>
+              <div id="images-wrapper" class="bg-">
+                <a
+                  href={frontmatter.websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     id="PRIMARY-image"
                     src={frontmatter.image.url}
                     alt=""
                     class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-[50px] col-span-2"
                   />
-                </div>
-                <div id="sq2" class="bg-test">
-                  <p class="pl-2 mt-3 bg-test">Featured Site {"^_^"}</p>
-
-                  <img
-                    id="SECONDARY-image"
-                    src={frontmatter.secondImage.url}
-                    alt=""
-                    class="p-1 opacity-80 hover:opacity-100 drop-shadow-md border border-rosyBrown rounded ml-2 mr-3"
-                  />
-                  <p class="pt-1 pr-2 md:pl-4 text-md">
-                    {frontmatter.testItem1}
-                  </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
-          <div
-            id="website-content"
-            class="bg- space-y-4 pl-3 pt-5 mt-5 dropshadow-3xl"
-          >
-            <div class="bg- 2xl:w-3/4 my-5 py-5 pt-2 opacity-80 text-lg">
-              <div class="py-5 mt-5">
+          <div id="website-content" class="bg- pl-3 dropshadow-3xl">
+            <div class="bg- my-5 py-5 pt-2 opacity-80 text-lg">
+              <div class="py-5 mt-5 bg-">
                 <slot />
               </div>
-              <WebsitesGrid />
+              <Contact />
+              <BackBtn />
             </div>
-            <BackBtn />
           </div>
         </div>
+        <Footer />
       </section>
-      <Footer />
     </div>
   </div>
 </MainLayout>

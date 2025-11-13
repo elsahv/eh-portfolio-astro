@@ -1,11 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-const programmingLanguages = await Astro.glob("./specialties/*.md");
-const whoIHelp = await Astro.glob("./whoIHelp/*.md");
-import Card from "../components/ui/Card.astro";
+const websiteProjects = await Astro.glob("./websiteProjects/*.md");
+const screenshots = await Astro.glob("./screenshots/*.md");
+import WebsiteCard from "../components/ui/WebsiteCard.astro";
+import GalleryScreenshotCard from "../components/ui/GalleryScreenshotCard.astro";
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
+import TestLists from "../components/lc-tests/TestLists.astro";
 ---
 
 <MainLayout>
@@ -13,72 +15,96 @@ import Footer from "../components/Footer.astro";
     <LeftPanel />
     <div
       id="RIGHT-PANEL"
-      class="text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
+      class="px-[50px] mx-5 text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
     >
-      <!-- <div
-        id="all-works"
-        class="bg- opacity-80 hover:opacity-100 p-5 md:mr-2 mt-[155px] md:px-5 md:mx-5"
-      >
-        <p
-          id="services"
-          class="text-4xl text-onyx py-2 border-black border-b w-1/2 mb-5"
-        >
-          My main expertise is in ...
-        </p>
-        <div id="grid" class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5">
-          {
-            programmingLanguages.map((work) => (
-              <Card
-                title={work.frontmatter.title}
-                image={work.frontmatter.image.url}
-                alt={work.frontmatter.image.alt}
-                url={work.url}
-                testItem1={work.frontmatter.testItem1}
-                language={work.frontmatter.language}
-                backend={work.frontmatter.backend}
-              />
-            ))
-          }
-        </div>
-      </div> -->
-      <div id="CONTAINER" class="bg- mt-[75px] mx-5">
-        <section class="bg- m-5 md:pt-5 md:p-5">
-          <div id="" class="bg- 2xl:mx-5 mt-[150px]">
-            <div id="" class="bg-">
-              <div class="pb-2">
-                <h1 class="text-3xl font-semibold text-gray-600">
-                  Hi there, I'm Elsa.
-                </h1>
-                <p class="text-xl pr-2 py-2 mb-5">
-                  I weave interesting stories and web development together. I
-                  dabble in web design and software development. These are my
-                  four most featured website projects ❤️.
-                </p>
+      <div id="right-panel-container">
+        <div id="all-works" class="bg- p-5 mt-[155px] md:px-5 md:mx-5">
+          <div id="CONTAINER" class="bg- opacity-65 mt-[75px]">
+            <div class="pb-2">
+              <h1 class="text-4xl text-">Select Portfolio Projects</h1>
+            </div>
+          </div>
 
-                <div
-                  id="cards-container"
-                  class="bg- flex flex-col gap-y-24 mt-[100px] pt-5 pl-2 2xl:mr-5"
-                >
-                  {
-                    whoIHelp.map((help) => (
-                      <Card
-                        title={help.frontmatter.title}
-                        image={help.frontmatter.image.url}
-                        alt={help.frontmatter.image.alt}
-                        url={help.url}
-                        testItem1={help.frontmatter.testItem1}
-                        language={help.frontmatter.language}
-                        backend={help.frontmatter.backend}
-                      />
-                    ))
-                  }
-                </div>
-              </div>
+          <!-- //* WEBSITES PROJECTS-->
+          <div
+            id="grid"
+            class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my-5 bg-"
+          >
+            {
+              websiteProjects.map((work) => (
+                <WebsiteCard
+                  no={work.frontmatter.no}
+                  image={work.frontmatter.image.url}
+                  alt={work.frontmatter.image.alt}
+                  url={work.url}
+                  testItem1={work.frontmatter.testItem1}
+                  language={work.frontmatter.language}
+                  backend={work.frontmatter.backend}
+                />
+              ))
+            }
+          </div>
+          <TestLists />
+        </div>
+      </div>
+      <div id="CONTAINER" class="bg- px-5">
+        <section class="bg- m-5 md:pt-5 md:p-5">
+          <div class="pb-2">
+            <!-- //* SCREENSHOT -->
+            <div
+              id="cards-container"
+              class="bg- grid grid-cols-3 gap-x-1 pt-5 pl-2"
+            >
+              {
+                screenshots.map((help) => (
+                  <GalleryScreenshotCard
+                    no={help.frontmatter.no}
+                    image={help.frontmatter.image.url}
+                    alt={help.frontmatter.image.alt}
+                    url={help.url}
+                    testItem1={help.frontmatter.testItem1}
+                    language={help.frontmatter.language}
+                    backend={help.frontmatter.backend}
+                  />
+                ))
+              }
             </div>
           </div>
         </section>
       </div>
-      <Contact />
+      <!-- <Contact /> -->
+      <div id="contact" class="pt-5 mx-5 text- my-[100px]">
+        <div id="contact-container" class="md:m-5 mt-5">
+          <div id="contact-grid" class="bg- rounded-md flex flex-col p-5">
+            <div id="sq1" class="bg-test pl-5">
+              <!-- <h2 class="pt-1 text-3xl font-semibold">Contact</h2> -->
+              <p class="font-semibold text-3xl pl-2">
+                Contact me here with this form:<span class="">
+                  <a
+                    class="border border-black rounded-lg px-2 py-1 opacity-80 hover:bg-munsell hover:text-white"
+                    href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
+                  >
+                </span>
+              </p>
+              <p class="bg-test bg- md:pl-3 pt-2 opacity-85 pr-5">
+                Email is the best way to get in touch, you can reach me at
+                elsahvy@gmail.com. You can also find me at <span
+                  class="underline"
+                >
+                  <a href="https://www.instagram.com/elsahoveydevdesign/"
+                    >instagram</a
+                  >
+                </span> and <span class="underline">
+                  <a href="https://www.linkedin.com/in/elsa-hovey.com">
+                    linkedIn.
+                  </a></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   </div>

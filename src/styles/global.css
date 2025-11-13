@@ -1,3 +1,5 @@
+
+
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
@@ -29,7 +31,63 @@ p {
 ._shadowText2 {
   text-shadow: 2px 2px 2px teal;
 }
-  
- 
 
+.hover_effect {
+}
+  
+
+
+#section-about-me #dynamic-title {
+  font-size: 35px;
+}
+
+
+#about-paragraph2 {
+ margin-top: 25px;
+}
+
+
+
+/* //* FOR SKILLS ICON ----v*/
+.skills-sq {
+  border: 1px solid #B18D9B;
+  background: #f9f9f9 ;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+.skills-sq #img-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0792a5;
+  padding: 5px;
+  border: 2px solid #313638;
+}
+
+
+.skills-sq #img-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-sq #img-icon{
+ background: #0792a5;
+ border-radius: 10px;
+ margin-top: 15px;
+}
+
+
+#img-icon #skill-sq1 {
+    color: blue;
+}
+
+/* //* FOR SKILLS ICON ----^*/
+
+  
+
+
+ 
  

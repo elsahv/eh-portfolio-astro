@@ -1,5 +1,8 @@
 ---
 import AboutMe from "../components/sections/AboutMe.astro";
+import Intro from "../components/sections/Intro.astro";
+import Overview from "../components/sections/Overview.astro";
+import Skills from "../components/sections/Skills.astro";
 import Header from "../components/ui/Header.astro";
 ---
 
@@ -9,9 +12,12 @@ import Header from "../components/ui/Header.astro";
 >
   <div
     id="LEFT-PANEL-container"
-    class="pt-5 py-5 bg-aliceBlue border-r-2 border-onyx"
+    class="bg- py-5 pr-[30px] mt-5 bg-aliceBlue border-r-2 border-onyx"
   >
     <Header />
+    <Intro />
     <AboutMe />
+    <Skills />
+    <Overview />
   </div>
 </div>
