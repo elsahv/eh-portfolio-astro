@@ -15,7 +15,7 @@ import TableContents from "../components/sections/TableContents.astro";
     <LeftPanel />
     <div
       id="RIGHT-PANEL"
-      class="px-[50px] mx-5 text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
+      class="2xl:px-[50px] bg- mx-5 text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
     >
       <div id="right-panel-container">
         <div id="myWebsites" class="bg- p-5 mt-[155px] md:px-5 md:mx-5">
@@ -27,7 +27,7 @@ import TableContents from "../components/sections/TableContents.astro";
 
           <div
             id="grid"
-            class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my-5 bg-"
+            class="bg-test2 pl-1 pr-3 grid md:grid-cols-2 gap-5 my-5 bg-"
           >
             {
               myWebsites.map((work) => (
@@ -54,7 +54,7 @@ import TableContents from "../components/sections/TableContents.astro";
           <div class="pb-2">
             <div
               id="expand-on-my-websites-card"
-              class="bg- grid grid-cols-3 gap-x-1 pt-5 pl-2"
+              class="bg- grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pt-5 pl-2"
             >
               {
                 screenshots.map((help) => (

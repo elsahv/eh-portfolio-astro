@@ -8,16 +8,18 @@ import Header from "../components/Header.astro";
 
 <div
   id="LEFT-PANEL-wrapper"
-  class="bg-[#88B7B5] border-r border-black 2xl:ml-[25px] mt-[55px] pr-3 md:h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  class="ml-2 bg-[#88B7B5] border-r border-black 2xl:ml-[25px] mt-[55px] pr-3 md:h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
 >
   <div
     id="LEFT-PANEL-container"
     class="bg- py-5 pr-[30px] mt-5 bg-aliceBlue border-r-2 border-onyx"
   >
     <Header />
-    <Intro />
-    <AboutMe />
-    <MySkills />
-    <Overview />
+    <div id="indent-left" class="2xl:pl-0 pl-2">
+      <Intro />
+      <AboutMe />
+      <MySkills />
+      <Overview />
+    </div>
   </div>
 </div>
