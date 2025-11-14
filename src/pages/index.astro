@@ -1,13 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-const websiteProjects = await Astro.glob("./websiteProjects/*.md");
+const myWebsites = await Astro.glob("./websiteProjects/*.md");
 const screenshots = await Astro.glob("./screenshots/*.md");
 import WebsiteCard from "../components/ui/WebsiteCard.astro";
-import GalleryScreenshotCard from "../components/ui/GalleryScreenshotCard.astro";
+import ExpandOnWebsitesCard from "../components/ui/ExpandOnWebsitesCard.astro";
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
-import TestLists from "../components/lc-tests/TestLists.astro";
+import TableContents from "../components/sections/TableContents.astro";
 ---
 
 <MainLayout>
@@ -18,20 +18,19 @@ import TestLists from "../components/lc-tests/TestLists.astro";
       class="px-[50px] mx-5 text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
     >
       <div id="right-panel-container">
-        <div id="all-works" class="bg- p-5 mt-[155px] md:px-5 md:mx-5">
+        <div id="myWebsites" class="bg- p-5 mt-[155px] md:px-5 md:mx-5">
           <div id="CONTAINER" class="bg- opacity-65 mt-[75px]">
             <div class="pb-2">
               <h1 class="text-4xl text-">Select Portfolio Projects</h1>
             </div>
           </div>
 
-          <!-- //* WEBSITES PROJECTS-->
           <div
             id="grid"
             class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my-5 bg-"
           >
             {
-              websiteProjects.map((work) => (
+              myWebsites.map((work) => (
                 <WebsiteCard
                   no={work.frontmatter.no}
                   image={work.frontmatter.image.url}
@@ -44,20 +43,22 @@ import TestLists from "../components/lc-tests/TestLists.astro";
               ))
             }
           </div>
-          <TestLists />
+          <TableContents />
         </div>
       </div>
-      <div id="CONTAINER" class="bg- px-5">
-        <section class="bg- m-5 md:pt-5 md:p-5">
+      <div id="expand-on-my-websites-wrapper" class="bg- px-5">
+        <div
+          id="expand-on-my-websites-container"
+          class="bg- m-5 md:pt-5 md:p-5"
+        >
           <div class="pb-2">
-            <!-- //* SCREENSHOT -->
             <div
-              id="cards-container"
+              id="expand-on-my-websites-card"
               class="bg- grid grid-cols-3 gap-x-1 pt-5 pl-2"
             >
               {
                 screenshots.map((help) => (
-                  <GalleryScreenshotCard
+                  <ExpandOnWebsitesCard
                     no={help.frontmatter.no}
                     image={help.frontmatter.image.url}
                     alt={help.frontmatter.image.alt}
@@ -70,40 +71,9 @@ import TestLists from "../components/lc-tests/TestLists.astro";
               }
             </div>
           </div>
-        </section>
-      </div>
-      <!-- <Contact /> -->
-      <div id="contact" class="pt-5 mx-5 text- my-[100px]">
-        <div id="contact-container" class="md:m-5 mt-5">
-          <div id="contact-grid" class="bg- rounded-md flex flex-col p-5">
-            <div id="sq1" class="bg-test pl-5">
-              <!-- <h2 class="pt-1 text-3xl font-semibold">Contact</h2> -->
-              <p class="font-semibold text-3xl pl-2">
-                Contact me here with this form:<span class="">
-                  <a
-                    class="border border-black rounded-lg px-2 py-1 opacity-80 hover:bg-munsell hover:text-white"
-                    href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
-                  >
-                </span>
-              </p>
-              <p class="bg-test bg- md:pl-3 pt-2 opacity-85 pr-5">
-                Email is the best way to get in touch, you can reach me at
-                elsahvy@gmail.com. You can also find me at <span
-                  class="underline"
-                >
-                  <a href="https://www.instagram.com/elsahoveydevdesign/"
-                    >instagram</a
-                  >
-                </span> and <span class="underline">
-                  <a href="https://www.linkedin.com/in/elsa-hovey.com">
-                    linkedIn.
-                  </a></span
-                >
-              </p>
-            </div>
-          </div>
         </div>
       </div>
+      <Contact />
 
       <Footer />
     </div>

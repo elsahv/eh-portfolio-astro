@@ -3,7 +3,10 @@ const frontmatter = Astro.props;
 const { no, image, alt, url } = frontmatter;
 ---
 
-<div id="CARD" class="opacity-60 hover:opacity-100 duration-500 mt-5 py-5 bg-">
+<div
+  id="CARD"
+  class="opacity-60 hover:opacity-100 grayscale hover:grayscale-0 duration-500 mt-5 py-5 bg-"
+>
   <div class="bg- pt-1 pb-1 pl- pr-1 saturate-50">
     <h3 class="text-xl text-gray-400">{no}</h3>
   </div>
