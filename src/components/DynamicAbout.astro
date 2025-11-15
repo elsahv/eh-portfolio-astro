@@ -6,6 +6,8 @@ export interface Props {
   mainImg: string;
 }
 
+("bg-munsell border border-[#88B7B5] rounded-lg opacity-90 2xl:w-1/2 w-3/4 l-2");
+
 const { title, paragraph1, paragraph2, mainImg } = Astro.props as Props;
 ---
 
@@ -18,7 +20,13 @@ const { title, paragraph1, paragraph2, mainImg } = Astro.props as Props;
       </h2>
 
       <div id="img-wrapper" class="">
-        <img src={mainImg} id="img-icon" alt="" width="65" class="opacity-80" />
+        <img
+          src={mainImg}
+          id="img-icon"
+          alt=""
+          width="65"
+          class="bg-munsell border border-[#88B7B5] rounded-lg opacity-90 2xl:w-1/2 w-3/4 l-2"
+        />
       </div>
     </div>
     <div class="py- px-1">
