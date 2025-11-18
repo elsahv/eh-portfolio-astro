@@ -13,9 +13,8 @@ const { title, paragraph1, paragraph2, mainImg } = Astro.props as Props;
 
 <div id="about-me-wrapper" class="bg- flex justify-center my-5 px-3">
   <div id="about-me-container" class="">
-    <div class="text-black-400"></div>
-    <div id="img-container" class="mt-5 pr-5 pt-5">
-      <h2 id="dynamic-title" class="pr-2">
+    <div id="img-container" class="bg-">
+      <h2 id="dynamic-title" class="font-bold">
         {title}
       </h2>
 
@@ -25,7 +24,7 @@ const { title, paragraph1, paragraph2, mainImg } = Astro.props as Props;
           id="img-icon"
           alt=""
           width="65"
-          class="bg-munsell border border-[#88B7B5] rounded-lg opacity-90 2xl:w-1/2 w-3/4 l-2"
+          class="bg-munsell border border-[#88B7B5] rounded-lg opacity-90 2xl:w-1/2 w-3/4"
         />
       </div>
     </div>

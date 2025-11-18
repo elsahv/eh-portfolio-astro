@@ -15,11 +15,11 @@ import TableContents from "../components/sections/TableContents.astro";
     <LeftPanel />
     <div
       id="RIGHT-PANEL"
-      class="2xl:px-[50px] bg- mx-5 text- md:pr-5 font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
+      class="bg- font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
     >
-      <div id="right-panel-container">
-        <div id="myWebsites" class="bg- p-5 mt-[155px] md:px-5 md:mx-5">
-          <div id="CONTAINER" class="bg- opacity-65 mt-[75px]">
+      <div id="right-panel-container" class="pl-5 ml-5">
+        <div id="myWebsites" class="p-5 mt-[155px]">
+          <div id="CONTAINER" class="bg opacity-65 mt-[75px]">
             <div class="pb-2">
               <h1 class="text-4xl text-">Select Portfolio Projects</h1>
               <p>
@@ -46,10 +46,11 @@ import TableContents from "../components/sections/TableContents.astro";
               ))
             }
           </div>
+
           <TableContents />
         </div>
       </div>
-      <div id="expand-on-my-websites-wrapper" class="bg- px-5">
+      <div id="expand-on-my-websites-wrapper" class="pl-5">
         <div
           id="expand-on-my-websites-container"
           class="bg- m-5 md:pt-5 md:p-5"
@@ -57,7 +58,7 @@ import TableContents from "../components/sections/TableContents.astro";
           <div class="pb-2">
             <div
               id="expand-on-my-websites-card"
-              class="bg- grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pt-5 pl-2"
+              class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pt-5 pl-2"
             >
               {
                 screenshots.map((help) => (
@@ -75,8 +76,18 @@ import TableContents from "../components/sections/TableContents.astro";
             </div>
           </div>
         </div>
+
+        <!-- TODO: EXPERIMENT WITH contact segment section v-->
+        <div
+          id="CONTACT-SEGMENT"
+          class="bg-[#88B7B5] py-5 pt-3 border-t border-black"
+        >
+          <div class="ml-1 mt-1 py-5 border border-black bg-aliceBlue">
+            <Contact />
+          </div>
+        </div>
+        <!-- TODO: EXPERIMENT WITH contact segment section ^-->
       </div>
-      <Contact />
 
       <Footer />
     </div>

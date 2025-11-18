@@ -24,6 +24,7 @@ const { frontmatter } = Astro.props;
               <h1 class="text-7xl w-3/4 bg-">
                 {frontmatter.title}
               </h1>
+              <p>{frontmatter.testItem1}</p>
               <div id="images-wrapper" class="bg-">
                 <a
                   href={frontmatter.websiteUrl}
@@ -40,12 +41,12 @@ const { frontmatter } = Astro.props;
               </div>
             </div>
           </div>
-          <div id="website-content" class="bg- pl-3 dropshadow-3xl">
+          <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl bg-">
             <div class="bg- my-5 py-5 pt-2 opacity-80 text-lg">
               <div class="py-5 mt-5 bg-">
                 <slot />
               </div>
-              <Contact />
+              <!-- <Contact /> -->
               <BackBtn />
             </div>
           </div>
