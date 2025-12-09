@@ -29,6 +29,10 @@ const websites = [
 
 // BACKEND AND FRONTEND TECH / language, toolbox....
 
+//CB CONTENT: WHY- it is important to maintain your sites, and how I can take that off your hands. HOW- I use only tech that is needed, no BS or filler.
+
+//CB CONTENT:  WHY- do I code with javascript or php?? HOW- react, vite, astro is used to create beautiful things While social media is great, you do not fully own your own content. When owning a website, you have total control."
+
 const screenshots = [
   {
     number: "✓05.",
@@ -81,14 +85,11 @@ const screenshots = [
 ];
 ---
 
-<div id="list-container" class="bg- 2xl:p-5 mx-5">
+<div id="list-container" class="bg- 2xl:p-5 2xl:mx-5">
   <h2 class="text-5xl mb- text-gray-500">Case Studies</h2>
   <div id="list-wrapper" class="bg- ml-1 mt-2 pt-2 pl-1 mb-10">
     <div id="list-container" class="pl-1">
-      <div
-        id="websites-grid"
-        class="bg- grid 2xl:grid-cols-2 grid-cols-2 gap-5"
-      >
+      <div id="websites-grid" class="bg- grid lg:grid-cols-2 grid-cols-1 gap-5">
         {
           websites.map((item) => (
             <div id="sq" class="opacity-60 hover:opacity-100  duration-500">
@@ -105,13 +106,18 @@ const screenshots = [
   </div>
 </div>
 
-<div id="list-container" class="2xl:p- 2xl:mt-[150px] mx-5">
-  <h2 class="text-5xl text-gray-500">Tech Applications</h2>
-  <div id="list-wrapper" class="bg- ml-1 mt-5 pt-5 pl-1 mb-10">
+<div
+  id="list-container"
+  class="bg- 2xl:px-5 pt-4 2xl:p- 2xl:mt-[150px] 2xl:mx-5"
+>
+  <h2 class="font-semibold 2xl:text-5xl text-3xl text-gray-500 pb-2">
+    Tech Applications
+  </h2>
+  <div id="list-wrapper" class="bg- ml-1 pl-1 mb-10">
     <div id="list-container" class="">
       <div
         id="screenshots-grid"
-        class="bg- grid 2xl:grid-cols-3 grid-cols-2 gap-5"
+        class="bg- p-1 grid 2xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5 bg-"
       >
         {
           screenshots.map((item) => (

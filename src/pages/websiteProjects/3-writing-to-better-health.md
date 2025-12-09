@@ -5,7 +5,8 @@ layout: ../../layouts/MarkdownPostLayout.astro
 no: "03. "
 title: "Writing to Better Health"
 pubDate: 2022-07-01
-testItem1: "illustrative mindmaps (with photos) about cooking for neurodivergents, incorporate nutrition"
+# testItem1: "illustrative mindmaps (with photos) about cooking for neurodivergents, incorporate nutrition"
+testItem1: "a neurodivergent way to study for CDM, a easier way to study and make the world a healthier place"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=pkbt9eej&dl=0"
   alt: "Writing to Better"

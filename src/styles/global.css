@@ -36,15 +36,22 @@ p {
 }
   
 
-
+/* MOBLE SIZE ABOUT ME FONT */
 #section-about-me #dynamic-title {
-  font-size: 35px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+#section-about-me #dynamic-title {
+  font-size: 20px;
+}
 }
 
 
 #about-paragraph2 {
  margin-top: 25px;
 }
+/* MOBLE SIZE ABOUT ME FONT */
 
 
 

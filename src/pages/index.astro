@@ -15,13 +15,16 @@ import TableContents from "../components/sections/TableContents.astro";
     <LeftPanel />
     <div
       id="RIGHT-PANEL"
-      class="bg- font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden xl"
+      class="bg-mutedTeal font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
     >
-      <div id="right-panel-container" class="pl-5 ml-5">
-        <div id="myWebsites" class="p-5 mt-[155px]">
-          <div id="CONTAINER" class="bg opacity-65 mt-[75px]">
-            <div class="pb-2">
-              <h1 class="text-4xl text-">Select Portfolio Projects</h1>
+      <div
+        id="right-panel-container"
+        class="bg-aliceBlue rounded-bl ml-3 md:p-5 border-l border-b border-black"
+      >
+        <div id="myWebsites" class="p-5">
+          <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
+            <div class="pb-2 mt-5">
+              <h1 class="text-4xl">Select Portfolio Projects</h1>
               <p>
                 A collection built by weaving stories, software-development, and
                 web-design together.
@@ -30,7 +33,7 @@ import TableContents from "../components/sections/TableContents.astro";
           </div>
           <div
             id="grid"
-            class="bg- pl-1 pr-3 grid md:grid-cols-2 gap-5 my-5 bg-"
+            class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my- bg-"
           >
             {
               myWebsites.map((work) => (
@@ -46,49 +49,32 @@ import TableContents from "../components/sections/TableContents.astro";
               ))
             }
           </div>
-
           <TableContents />
         </div>
-      </div>
-      <div id="expand-on-my-websites-wrapper" class="pl-5">
-        <div
-          id="expand-on-my-websites-container"
-          class="bg- m-5 md:pt-5 md:p-5"
-        >
-          <div class="pb-2">
-            <div
-              id="expand-on-my-websites-card"
-              class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pt-5 pl-2"
-            >
-              {
-                screenshots.map((help) => (
-                  <ExpandOnWebsitesCard
-                    no={help.frontmatter.no}
-                    image={help.frontmatter.image.url}
-                    alt={help.frontmatter.image.alt}
-                    url={help.url}
-                    testItem1={help.frontmatter.testItem1}
-                    language={help.frontmatter.language}
-                    backend={help.frontmatter.backend}
-                  />
-                ))
-              }
-            </div>
+        <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">
+          <div
+            id="expand-on-my-websites-card"
+            class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5"
+          >
+            {
+              screenshots.map((help) => (
+                <ExpandOnWebsitesCard
+                  no={help.frontmatter.no}
+                  image={help.frontmatter.image.url}
+                  alt={help.frontmatter.image.alt}
+                  url={help.url}
+                  testItem1={help.frontmatter.testItem1}
+                  language={help.frontmatter.language}
+                  backend={help.frontmatter.backend}
+                />
+              ))
+            }
           </div>
         </div>
-
-        <!-- TODO: EXPERIMENT WITH contact segment section v-->
-        <div
-          id="CONTACT-SEGMENT"
-          class="bg-[#88B7B5] py-5 pt-3 border-t border-black"
-        >
-          <div class="ml-1 mt-1 py-5 border border-black bg-aliceBlue">
-            <Contact />
-          </div>
-        </div>
-        <!-- TODO: EXPERIMENT WITH contact segment section ^-->
       </div>
-
+      <!-- TODO: EXPERIMENT WITH contact segment section v-->
+      <Contact />
+      <!-- TODO: EXPERIMENT WITH contact segment section ^-->
       <Footer />
     </div>
   </div>
