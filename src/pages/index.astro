@@ -3,8 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
 const myWebsites = await Astro.glob("./websiteProjects/*.md");
 const screenshots = await Astro.glob("./screenshots/*.md");
-import WebsiteCard from "../components/ui/WebsiteCard.astro";
-import ExpandOnWebsitesCard from "../components/ui/ExpandOnWebsitesCard.astro";
+import WebsiteCard from "../components/WebsiteCard.astro";
+import ExpandOnWebsitesCard from "../components/ExpandOnWebsitesCard.astro";
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
@@ -20,7 +20,7 @@ import TableContents from "../components/sections/TableContents.astro";
       <div id="right-panel-wrapper" class="">
         <div
           id="right-panel-container"
-          class="bg border-l-2 border-r-2 border-black rounded-bl mr-1 md:p-5"
+          class="bg border-l-2 border-r-2 border-black rounded-bl mr-2 md:p-5"
         >
           <div id="myWebsites" class="p-5">
             <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
@@ -74,9 +74,7 @@ import TableContents from "../components/sections/TableContents.astro";
           </div>
         </div>
       </div>
-      <!-- TODO: EXPERIMENT WITH contact segment section v-->
       <Contact />
-      <!-- TODO: EXPERIMENT WITH contact segment section ^-->
       <Footer />
     </div>
   </div>
