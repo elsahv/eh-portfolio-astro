@@ -15,60 +15,62 @@ import TableContents from "../components/sections/TableContents.astro";
     <LeftPanel />
     <div
       id="RIGHT-PANEL"
-      class="bg- font-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
+      class="-medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
     >
-      <div
-        id="right-panel-container"
-        class="bg-aliceBlue border-l-2 border-black rounded-bl md:p-5"
-      >
-        <div id="myWebsites" class="p-5">
-          <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
-            <div class="pb-2 mt-5">
-              <h1 class="text-4xl">Select Portfolio Projects</h1>
-              <p>
-                A collection built by weaving stories, software-development, and
-                web-design together.
-              </p>
+      <div id="right-panel-wrapper" class="bg-">
+        <div
+          id="right-panel-container"
+          class="bg- border-l-2 border-r-2 border-black rounded-bl mr-2 md:p-5"
+        >
+          <div id="myWebsites" class="p-5">
+            <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
+              <div class="pb-2 mt-5">
+                <h1 class="text-4xl">Select Portfolio Projects</h1>
+                <p>
+                  A collection built by weaving stories, software-development,
+                  and web-design together.
+                </p>
+              </div>
             </div>
+            <div
+              id="grid"
+              class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my- bg-"
+            >
+              {
+                myWebsites.map((work) => (
+                  <WebsiteCard
+                    no={work.frontmatter.no}
+                    image={work.frontmatter.image.url}
+                    alt={work.frontmatter.image.alt}
+                    url={work.url}
+                    testItem1={work.frontmatter.testItem1}
+                    language={work.frontmatter.language}
+                    backend={work.frontmatter.backend}
+                  />
+                ))
+              }
+            </div>
+            <TableContents />
           </div>
-          <div
-            id="grid"
-            class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my- bg-"
-          >
-            {
-              myWebsites.map((work) => (
-                <WebsiteCard
-                  no={work.frontmatter.no}
-                  image={work.frontmatter.image.url}
-                  alt={work.frontmatter.image.alt}
-                  url={work.url}
-                  testItem1={work.frontmatter.testItem1}
-                  language={work.frontmatter.language}
-                  backend={work.frontmatter.backend}
-                />
-              ))
-            }
-          </div>
-          <TableContents />
-        </div>
-        <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">
-          <div
-            id="expand-on-my-websites-card"
-            class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5"
-          >
-            {
-              screenshots.map((help) => (
-                <ExpandOnWebsitesCard
-                  no={help.frontmatter.no}
-                  image={help.frontmatter.image.url}
-                  alt={help.frontmatter.image.alt}
-                  url={help.url}
-                  testItem1={help.frontmatter.testItem1}
-                  language={help.frontmatter.language}
-                  backend={help.frontmatter.backend}
-                />
-              ))
-            }
+          <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">
+            <div
+              id="expand-on-my-websites-card"
+              class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5"
+            >
+              {
+                screenshots.map((help) => (
+                  <ExpandOnWebsitesCard
+                    no={help.frontmatter.no}
+                    image={help.frontmatter.image.url}
+                    alt={help.frontmatter.image.alt}
+                    url={help.url}
+                    testItem1={help.frontmatter.testItem1}
+                    language={help.frontmatter.language}
+                    backend={help.frontmatter.backend}
+                  />
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>
