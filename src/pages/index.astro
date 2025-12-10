@@ -17,11 +17,8 @@ import TableContents from "../components/sections/TableContents.astro";
       id="RIGHT-PANEL"
       class="medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
     >
-      <div id="right-panel-wrapper" class="">
-        <div
-          id="right-panel-container"
-          class="bg border-l-2 border-r-2 border-black rounded-bl mr-2 md:p-5"
-        >
+      <div id="right-panel-wrapper" class="border-l-2 border-r-2 border-black">
+        <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
           <div id="myWebsites" class="p-5">
             <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
               <div class="pb-2 mt-5">
@@ -73,9 +70,9 @@ import TableContents from "../components/sections/TableContents.astro";
             </div>
           </div>
         </div>
+        <Contact />
+        <Footer />
       </div>
-      <Contact />
-      <Footer />
     </div>
   </div>
 </MainLayout>
